@@ -6,8 +6,8 @@
   "initiative": "We identify a small set of physically consequential mechanics questions and make the theoretical target, known/open boundary, settlement criteria, and progress explicit. The collection is a personal research initiative designed to make difficult mechanics frontiers easier to evaluate, contribute to, and revisit as theory, experiments, computation, and AI-assisted research evolve.",
   "release": {
     "version": "1.0",
-    "status": "release_candidate",
-    "first_published": null,
+    "status": "public",
+    "first_published": "2026-10-06",
     "last_updated": "2026-10-06"
   },
   "author": "Bo Ni · GenMech Lab",

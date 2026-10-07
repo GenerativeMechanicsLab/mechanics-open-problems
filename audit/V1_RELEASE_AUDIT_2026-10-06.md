@@ -1,7 +1,7 @@
-# Open Problems in Mechanics v1.0 — release-candidate audit
+# Open Problems in Mechanics v1.0 — release audit
 
 **Audit date:** 6 October 2026  
-**Target:** the v1.0 publication snapshot in this repository.
+**Target:** the published v1.0 repository and GitHub Pages deployment.
 
 ## Scientific/content scope
 
@@ -22,7 +22,7 @@ The release-candidate HTML was checked for:
 - malformed DOI resolver syntax: **0**
 - stale multipage deployment paths: **0**
 
-The final release-candidate site uses native MathML and contains no raw `span.math` fallback. External references were checked for syntax/provenance during preparation; future link rot remains a maintenance concern rather than a frozen guarantee.
+The published v1.0 site uses native MathML and contains no raw `span.math` fallback. External references were checked for syntax/provenance during preparation; future link rot remains a maintenance concern rather than a frozen guarantee.
 
 ## Visual QA
 
@@ -44,4 +44,11 @@ The checks found no header collision, broken responsive wrapping, or obvious hor
 - automated validator: `scripts/validate_review_site.py`
 - first-publication stamping tool: `scripts/stamp_publication.py`
 
-Before publication, the repository must remain private while automated validation completes. After the Pages endpoint is publicly reachable, the actual first-publication date is stamped, validation is rerun, and the `v1.0` release/tag is created.
+Publication status on 6 October 2026: the repository is public and GitHub Pages successfully deployed commit `97a07e51e4a3dfbb0a4137bdc20507cc02f87b45` to `https://generativemechanicslab.github.io/mechanics-open-problems/`. GitHub reported deployment success at 2026-10-07 02:47 UTC (6 October 2026 in the project timezone). The site first-publication date is therefore stamped as **6 October 2026**. After this stamped commit passes CI and Pages redeploys, create the `v1.0` release/tag.
+
+
+## Public-surface isolation check
+
+- Public branch history contains only the repository initialization and the curated v1.0 release-candidate lineage before the publication stamp.
+- Representative SHAs from the private internal repository do not resolve in this public repository.
+- No internal handoff files, private research-repository references, prototype/candidate folders, or old private-preview audits are present in the public tree.

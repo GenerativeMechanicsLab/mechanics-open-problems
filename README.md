@@ -8,11 +8,11 @@ The initial collection focuses on solid mechanics, structural mechanics, and mec
 
 ## Release status
 
-**Version 1.0 release candidate.** The first-release roster is governed by `CANONICAL_PROBLEM_SET.md` and `content/canonical_problem_set.json`.
+**Version 1.0.** First published **6 October 2026**. The first-release roster is governed by `CANONICAL_PROBLEM_SET.md` and `content/canonical_problem_set.json`.
 
 The GitHub Pages entry point is `docs/index.html`. Mathematical expressions are embedded as native MathML and do not depend on client-side MathJax loading.
 
-The first-publication date is intentionally unset until the site is publicly reachable. After launch, it is stamped once and treated as immutable.
+The first-publication date is recorded as **6 October 2026** and is treated as immutable.
 
 ## Maintenance and provenance
 

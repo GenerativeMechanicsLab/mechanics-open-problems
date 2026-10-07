@@ -4,7 +4,7 @@ All notable public changes to **Open Problems in Mechanics** are recorded here.
 
 The project uses versioned public snapshots while remaining a living resource.
 
-## v1.0 — prepared for first public release
+## v1.0 — 6 October 2026
 
 - Established the canonical first-release set of 10 mechanics problems.
 - Integrated Home, Problems, and Vision into the single-page Mechanics Atlas.
@@ -15,8 +15,8 @@ The project uses versioned public snapshots while remaining a living resource.
 - Added a maintenance protocol and durable canonical/progress records.
 - Removed stale generated pages and transient drafting artifacts from the publication repository.
 
-**First published:** pending actual public release  
-**Last preparation update:** 6 October 2026
+**First published:** 6 October 2026  
+**Last updated:** 6 October 2026
 
 ## Public history baseline
 
