@@ -1,0 +1,23 @@
+name: Correct an entry
+description: Report a missing result, source error, counterexample, or misleading statement
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: input
+    id: problem
+    attributes:
+      label: Problem ID or title
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should be corrected?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and primary sources
+    validations:
+      required: true

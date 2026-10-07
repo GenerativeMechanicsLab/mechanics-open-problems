@@ -1,0 +1,31 @@
+name: Report progress
+description: Report a result that may change a problem's status
+title: "[Progress] "
+labels: ["progress"]
+body:
+  - type: input
+    id: problem
+    attributes:
+      label: Problem ID or title
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: What was proved, disproved, computed, validated, or observed?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and verification status
+      description: State assumptions, limitations, and whether the result is peer reviewed, formally checked, independently reproduced, or preliminary.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or reproducible record
+    validations:
+      required: true

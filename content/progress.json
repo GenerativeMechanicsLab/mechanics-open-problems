@@ -1,0 +1,113 @@
+[
+  {
+    "date": "2026-09-29",
+    "problem_id": "EL01",
+    "title": "Local quantitative Eshelby stability assembled",
+    "text": "The current study develops a manuscript-stage nonlinear two-sided local stability result near general nondegenerate ellipsoids in the stated homogeneous-isotropic dilatational setting.",
+    "refs": []
+  },
+  {
+    "date": "2026-09-29",
+    "problem_id": "PL01",
+    "title": "Finite-width localization theory sharpens the post-instability question",
+    "text": "Recent nonlinear and strain-gradient theories show that finite shear-band widths can be selected in important model classes, moving the open core toward the physical law governing post-localization evolution.",
+    "refs": [
+      "PL01:R7",
+      "PL01:R10"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "problem_id": "FR01",
+    "title": "High-speed hydrogel experiments expose another dynamic-fracture regime",
+    "text": "Recent experiments show strongly material- and rate-dependent crack speeds and branching, reinforcing that attainable speed and first instability are branch-selection problems rather than one universal limit.",
+    "refs": [
+      "FR01:R13"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "problem_id": "SH01",
+    "title": "Defect geometry shown to switch cylindrical-shell bifurcations",
+    "text": "Recent continuation calculations show that small changes in imperfection geometry can reorganize the localized stability landscape and change collapse thresholds non-monotonically.",
+    "refs": [
+      "SH01:R4"
+    ]
+  },
+  {
+    "date": "2026-09-05",
+    "problem_id": "AM02",
+    "title": "LPBF solidification-crack dynamics resolved at sub-millisecond scale",
+    "text": "High-speed synchrotron imaging directly measures initiation and propagation during solidification, making propagation-law tests increasingly observable rather than post-mortem.",
+    "refs": [
+      "AM02:R13"
+    ]
+  },
+  {
+    "date": "2026",
+    "problem_id": "DI02",
+    "title": "Scale-dependent dislocation closure becomes explicit",
+    "text": "Recent continuum-dislocation and network-statistics studies show that the appropriate state representation can depend on observation scale and that additional network variables may be required for closure.",
+    "refs": [
+      "DI02:R14",
+      "DI02:R15"
+    ]
+  },
+  {
+    "date": "2026",
+    "problem_id": "BIO01",
+    "title": "Scale, environment and disorder reshape hierarchical fracture mechanisms",
+    "text": "Recent work shows that hydration, structural scale and microstructural randomness can change the active dissipation zone and fracture mode in hierarchical biological and nacreous materials.",
+    "refs": [
+      "BIO01:R10",
+      "BIO01:R11",
+      "BIO01:R12"
+    ]
+  },
+  {
+    "date": "2026-03-24",
+    "problem_id": "NL01",
+    "title": "Lavrentiev gap separates regular and relaxed finite-elastic states",
+    "text": "A 3D neo-Hookean construction shows that the weak closure can achieve strictly lower energy through a dipole-type singular mechanism, making physical admissibility of singular states unavoidable.",
+    "refs": [
+      "NL01:R9"
+    ]
+  },
+  {
+    "date": "2025-08-06",
+    "problem_id": "CO01",
+    "title": "Continuous and jumping Coulomb-contact evolutions separated in 2D",
+    "text": "A sharp 2D result identifies conditions for absolutely continuous quasistatic evolution and constructs spontaneous jumps outside that regime, sharpening the remaining 3D problem.",
+    "refs": [
+      "CO01:R7"
+    ]
+  },
+  {
+    "date": "2025",
+    "problem_id": "S01",
+    "title": "Stochastic homogenization extended for brittle surface functionals",
+    "text": "Recent rigorous work proves almost-sure homogenization for additional fracture-type surface energies, while strength, initiation and unrestricted crack evolution remain a distinct stochastic frontier.",
+    "refs": [
+      "S01:R9"
+    ]
+  },
+  {
+    "date": "2025",
+    "problem_id": "BIO01",
+    "title": "Cross-level fracture synergy becomes quantitatively modeled",
+    "text": "A hierarchical nacre model explicitly couples microstructural crack bridging to macroscopic stress and morphology, while broader reviews consolidate hierarchy, interfaces and scale as recurring toughening ingredients.",
+    "refs": [
+      "BIO01:R8",
+      "BIO01:R9"
+    ]
+  },
+  {
+    "date": "2024",
+    "problem_id": "S01",
+    "title": "Griffith evolution homogenized in a periodic laminate",
+    "text": "A rigorous special case shows that crack evolution can homogenize when the geometry and crack path are sufficiently structured, clarifying what remains difficult for random unrestricted fracture.",
+    "refs": [
+      "S01:R8"
+    ]
+  }
+]

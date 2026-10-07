@@ -1,0 +1,260 @@
+{
+  "id": "AM02",
+  "slug": "solidification-cracking",
+  "title": "Can a Griffith-type fracture law be defined for a solidifying metal?",
+  "field": "Fracture mechanics",
+  "type": "Evolving-medium fracture",
+  "scientific_status": "Candidate open problem",
+  "editorial_status": "Source-audited draft",
+  "statement_version": "3.0",
+  "last_reviewed": "2026-09-30",
+  "featured": true,
+  "summary": "A solidification crack grows while solid bridges are forming, liquid is feeding, and the load-bearing topology is changing. Can one define a crack-driving force and resistance that govern advance and arrest and recover ordinary Griffith fracture as the metal becomes fully solid?",
+  "statement": {
+    "lead": "Consider the terminal mushy zone after a load-bearing solid skeleton has formed. Let the body consist of evolving solid and liquid regions, with a crack or connected separation set Γ(t), and let z(t) collect the mechanically relevant state. The question is whether this evolving medium admits a Griffith-type fracture closure:",
+    "equations": [
+      "\\Omega(t)=\\Omega_s(t)\\cup\\Omega_\\ell(t),\\qquad z(t)=\\{T,f_s,p_\\ell,K_{\\rm perm},\\mathcal B(t),\\dot\\varepsilon,\\ldots\\},",
+      "\\mathcal G_{\\rm mush}[z,\\Gamma,\\dot z]\\ \\ ?\\ \\ \\mathcal R_{\\rm mush}[z,\\Gamma,\\mathcal H],\\qquad \\lim_{f_s\\to1}(\\mathcal G_{\\rm mush},\\mathcal R_{\\rm mush})=(G,G_c)\\ ?"
+    ],
+    "after": "Here B(t) denotes the evolving solid-bridge/load-bearing network and H denotes history. The open target is to determine when a scalar crack-driving force and fracture resistance can govern crack advance and arrest, or to show that no such Griffith-type reduction is possible and identify the additional state or history variables that are irreducible."
+  },
+  "why": [
+    "Solidification cracking limits casting, welding, and fusion-based additive manufacturing of high-performance alloys. It can render otherwise attractive alloy compositions unmanufacturable or leave crack networks that compromise structural integrity.",
+    "The mechanics is unusual: the crack advances while the material carrying load is itself being created. Solid bridges form and strengthen, liquid channels feed or disconnect, thermal and solidification shrinkage generate loading, and the topology of the skeleton evolves on the same time scale as fracture.",
+    "The question is now experimentally testable in ways that were previously impossible. In-situ synchrotron imaging can resolve crack initiation and propagation during welding and laser powder-bed fusion at micrometre and sub-millisecond scales."
+  ],
+  "scope": [
+    "Primary setting: terminal solidification of metallic alloys after mechanical coherency of the solid skeleton, with casting and welding as mature physical foundations and additive manufacturing as a high-rate benchmark.",
+    "The first target is crack advance, arrest, and the transition from local cavity/bridge failure to a connected crack. Nucleation of the first void is included only insofar as it supplies the initial crack-like defect or affects the subsequent driving state.",
+    "Liquid feeding, permeability, interfacial energy, bridge topology, temperature, solid fraction, and strain rate may enter the state; the page does not assume in advance that they can be collapsed into one conventional K_IC or G_c.",
+    "Liquation cracking, ductility-dip cracking, cold cracking, fatigue of the finished component, and fracture entirely below the solidus are outside the core statement."
+  ],
+  "boundary": [
+    {
+      "text": "Hot tearing has been studied for many decades through strain-, stress-, feeding-, and liquid-film ideas. A 2007 review explicitly argued that a modern criterion should include both crack nucleation and propagation and should be based on fracture mechanics. The present problem therefore has a long engineering history rather than arising only from additive manufacturing.",
+      "refs": [
+        "R1"
+      ]
+    },
+    {
+      "text": "The RDG model provides a classical mechanics description of deformation, solidification shrinkage, interdendritic feeding, permeability, liquid-pressure drop, and cavitation. Kou's later criterion gives a compact solidification-path measure of susceptibility. These theories are important for when separation becomes likely, but neither is a general crack-driving-force theory for an evolving semisolid crack.",
+      "refs": [
+        "R2",
+        "R4"
+      ]
+    },
+    {
+      "text": "Fracture mechanics has already entered the field. The 2009 SKK model lets cavities form when feeding is insufficient and uses a Griffith-type critical cavity dimension to distinguish microporosity from a hot tear. The open problem is therefore not simply to 'apply Griffith' to hot tearing.",
+      "refs": [
+        "R3"
+      ]
+    },
+    {
+      "text": "Direct experiments have separated stages of damage evolution. Synchrotron radiography during steel welding resolved isolated microcavities, coalescence into microcracks, and subsequent crack propagation, including measured propagation speeds. This establishes that initiation and propagation are experimentally distinct observables.",
+      "refs": [
+        "R5"
+      ]
+    },
+    {
+      "text": "Continuum fracture formalisms can reproduce hot-crack patterns in process simulations. A thermodynamically consistent thermo-mechanical phase-field fracture model has been applied to additive-manufacturing hot cracking, including thermal strain and solidification shrinkage. Such models demonstrate computational feasibility but take fracture properties and degradation laws as constitutive inputs rather than deriving a universal mushy-zone fracture resistance from the evolving solid-liquid network.",
+      "refs": [
+        "R6"
+      ]
+    },
+    {
+      "text": "Two 2024 developments moved directly into propagation mechanics. Lin et al. proposed an energy-balance propagation model and in-situ test for steel. Liu, Li and Lu formulated solidification cracking as competition between thermal-stress accumulation and solid-bridge strength and found that their crack-like solidifying structure has no classical LEFM stress singularity. Together these results show both that propagation can be modeled energetically and that the ordinary K-field cannot be assumed a priori.",
+      "refs": [
+        "R7",
+        "R8"
+      ]
+    },
+    {
+      "text": "Work in 2025 resolved additional pieces of the evolving state. A strain-rate/solidification-rate criterion was validated for AZ91D casting; an Al-Li extension of SKK incorporated semisolid high-temperature toughness; and an interfacial-energy/microstructure model predicted the bridging liquid fraction. These advances make bridge formation and semisolid resistance more quantitative, but they produce model- or alloy-specific descriptors rather than a general crack-driving-force/resistance pair.",
+      "refs": [
+        "R9",
+        "R10",
+        "R11"
+      ]
+    },
+    {
+      "text": "In 2026, fracture-style numerical prediction advanced further. A thermo-mechanical peridynamic model with a temperature-dependent critical-stretch law reproduced initiation and propagation of multiple hot cracks in a semisolid AA7050 quenching experiment, while a new analytical L-DED cracking criterion for Ni superalloys improved solidification-susceptibility prediction. These are important predictive closures in declared settings, not evidence that a unique Griffith-type law exists for the underlying evolving two-phase medium.",
+      "refs": [
+        "R12",
+        "R14"
+      ]
+    },
+    {
+      "text": "Also in September 2026, high-speed synchrotron imaging of LPBF Al6061 quantified crack evolution at sub-millisecond resolution: cracking began shortly before melt-pool disappearance and developed over roughly a millisecond. The propagation dynamics needed to test a fracture law are therefore increasingly observable rather than hidden inside a post-mortem crack count.",
+      "refs": [
+        "R13"
+      ]
+    },
+    {
+      "text": "Through the literature audit of 30 September 2026, no general result was identified that derives a process-independent crack-driving force and resistance for a solid-liquid load-bearing network whose bridges, liquid connectivity, and topology evolve during crack growth, together with a controlled reduction to ordinary solid fracture as f_s approaches one. That residual closure—not the absence of hot-cracking criteria—is the conservative open core.",
+      "refs": [
+        "R3",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14"
+      ]
+    }
+  ],
+  "settle": [
+    "For a clearly specified semisolid continuum or homogenization limit, derive a thermodynamically and mechanically consistent crack-evolution law and determine whether a scalar Griffith/J-type driving force and state-dependent resistance exist. The result should state the admissible state variables and history dependence, characterize the relevant crack-tip or process-zone mechanics, and recover the appropriate fully solid fracture law in a controlled limit.",
+    "Mechanically, the proposed closure should predict crack advance versus arrest and at least one propagation observable from independently characterized material/state variables across more than one loading or manufacturing configuration without refitting a new fracture parameter for every test.",
+    "A negative resolution is equally meaningful: prove that no state-local scalar resistance can close the problem for the stated class and identify the minimal additional internal variables, memory, or nonlocal information required."
+  ],
+  "progress": [
+    {
+      "date": "2026",
+      "title": "Crack dynamics become directly measurable and fracture-style simulations mature",
+      "text": "Sub-millisecond LPBF synchrotron imaging now quantifies crack growth during solidification, while semisolid peridynamic simulations reproduce initiation and propagation with a declared critical-stretch law. These advances make the residual fracture closure experimentally and computationally testable.",
+      "refs": [
+        "R12",
+        "R13",
+        "R14"
+      ]
+    },
+    {
+      "date": "2025",
+      "title": "Bridge state and semisolid resistance become more quantitative",
+      "text": "Rate-versus-solidification criteria, semisolid toughness measurements, and an interfacial-energy model for the bridging liquid fraction turn several previously empirical ingredients into measurable or computable state variables.",
+      "refs": [
+        "R9",
+        "R10",
+        "R11"
+      ]
+    },
+    {
+      "date": "2024",
+      "title": "Propagation and solid-bridge fracture become explicit mechanics targets",
+      "text": "Energy-balance propagation theory and solid-bridge fracture modeling move beyond susceptibility and initiation; the latter also shows that a classical crack-tip singularity need not exist in a solidifying crack.",
+      "refs": [
+        "R7",
+        "R8"
+      ]
+    },
+    {
+      "date": "2007–2009",
+      "title": "Fracture-mechanics formulation enters the hot-tearing literature",
+      "text": "The field explicitly called for a nucleation-and-propagation fracture framework, and the SKK model subsequently introduced a Griffith-type critical cavity size. This establishes the historical baseline that the modern open problem must go beyond.",
+      "refs": [
+        "R1",
+        "R3"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "role": "historical fracture-mechanics framing",
+      "label": "Eskin & Katgerman, A Quest for a New Hot Tearing Criterion (2007)",
+      "url": "https://doi.org/10.1007/s11661-007-9169-7"
+    },
+    {
+      "id": "R2",
+      "role": "feeding/cavitation foundation",
+      "label": "Rappaz, Drezet & Gremaud, A new hot-tearing criterion (1999)",
+      "url": "https://doi.org/10.1007/s11661-999-0334-z"
+    },
+    {
+      "id": "R3",
+      "role": "Griffith-type cavity criterion",
+      "label": "Suyitno, Kool & Katgerman, Integrated Approach for Prediction of Hot Tearing (2009)",
+      "url": "https://doi.org/10.1007/s11661-009-9941-y"
+    },
+    {
+      "id": "R4",
+      "role": "solidification-path susceptibility",
+      "label": "Kou, A criterion for cracking during solidification (2015)",
+      "url": "https://doi.org/10.1016/j.actamat.2015.01.034"
+    },
+    {
+      "id": "R5",
+      "role": "direct initiation and propagation kinetics",
+      "label": "Aucott et al., Initiation and growth kinetics of solidification cracking during welding of steel (2017)",
+      "url": "https://doi.org/10.1038/srep40255"
+    },
+    {
+      "id": "R6",
+      "role": "thermodynamic phase-field fracture",
+      "label": "Ruan et al., A thermo-mechanical phase-field fracture model: Application to hot cracking simulations in additive manufacturing (2023)",
+      "url": "https://doi.org/10.1016/j.jmps.2022.105169"
+    },
+    {
+      "id": "R7",
+      "role": "propagation energy model",
+      "label": "Lin et al., A hot tearing propagation model for steel (2024)",
+      "url": "https://doi.org/10.1016/j.jmatprotec.2023.118273"
+    },
+    {
+      "id": "R8",
+      "role": "solid-bridge fracture mechanics",
+      "label": "Liu, Li & Lu, Modeling solidification cracking: A new perspective on solid bridge fracture (2024)",
+      "url": "https://doi.org/10.1016/j.jmps.2024.105651"
+    },
+    {
+      "id": "R9",
+      "role": "rate/solidification criterion",
+      "label": "Li et al., A method for predicting hot tearing during alloy solidification and its application in AZ91D magnesium alloy (2025)",
+      "url": "https://doi.org/10.1016/j.engfailanal.2024.109194"
+    },
+    {
+      "id": "R10",
+      "role": "semisolid toughness extension",
+      "label": "Guo et al., An extended criterion for hot cracking susceptibility of Al-Li alloys (2025)",
+      "url": "https://doi.org/10.1016/j.engfailanal.2025.109348"
+    },
+    {
+      "id": "R11",
+      "role": "bridge-state prediction",
+      "label": "Sheikhi et al., On the development of an interfacial energy and microstructure dependent model to predict bridging phenomenon and solidification cracking behavior (2025)",
+      "url": "https://doi.org/10.1016/j.actamat.2025.121520"
+    },
+    {
+      "id": "R12",
+      "role": "semisolid fracture simulation",
+      "label": "Remani & Nallathambi, Ordinary state based peridynamic thermomechanical simulation of hot crack occurrence during semi-solid plate quenching experiment (2026)",
+      "url": "https://doi.org/10.1016/j.engfracmech.2026.111963"
+    },
+    {
+      "id": "R13",
+      "role": "latest direct AM crack dynamics",
+      "label": "Ali et al., Study of crack formation dynamics in aluminum alloy by using laser powder bed fusion and in-situ synchrotron X-ray characterization (2026)",
+      "url": "https://doi.org/10.1007/s40964-026-01933-z"
+    },
+    {
+      "id": "R14",
+      "role": "latest AM susceptibility criterion",
+      "label": "Guan et al., A new cracking criterion for additive manufacturing and repair of Ni-based superalloys via laser directed energy deposition (2026)",
+      "url": "https://doi.org/10.1016/j.actamat.2026.122400"
+    }
+  ],
+  "categories": [
+    "Fracture mechanics",
+    "Solidification",
+    "Materials processing",
+    "Multiphysics",
+    "Additive manufacturing"
+  ],
+  "theory_tags": [
+    "Evolving media",
+    "Fracture closure",
+    "History dependence",
+    "Topology evolution"
+  ],
+  "application_families": [
+    "Casting",
+    "Welding",
+    "Laser powder-bed fusion",
+    "Alloy printability"
+  ],
+  "tabs": [
+    "Fracture"
+  ]
+}

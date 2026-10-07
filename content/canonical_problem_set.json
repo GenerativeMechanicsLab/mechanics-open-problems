@@ -1,0 +1,135 @@
+{
+  "canonical_as_of": "2026-10-01",
+  "purpose": "Authoritative roster for website assembly and future editorial work. This record overrides stale prototype pages, earlier audit summaries, and obsolete IDs when they conflict.",
+  "first_release": [
+    {
+      "id": "EL01",
+      "title": "How stable is Eshelby uniformity to shape imperfections?",
+      "version": "1.0",
+      "status": "use",
+      "latest_source": "content/problems/EL01.json"
+    },
+    {
+      "id": "FR01",
+      "title": "What determines the attainable speed and first instability of a tensile crack?",
+      "version": "1.0",
+      "status": "use",
+      "latest_source": "content/problems/FR01.json"
+    },
+    {
+      "id": "DI02",
+      "title": "How does continuum plasticity emerge from the collective dynamics of dislocations?",
+      "version": "1.0",
+      "status": "use",
+      "latest_source": "content/problems/DI02.json"
+    },
+    {
+      "id": "PL01",
+      "title": "What selects the physical evolution after plasticity loses ellipticity?",
+      "version": "2.0",
+      "status": "use",
+      "latest_source": "content/problems/PL01.json"
+    },
+    {
+      "id": "NL01",
+      "title": "Which singularities are physically admissible in finite elasticity?",
+      "version": "2.0",
+      "status": "use",
+      "latest_source": "content/problems/NL01.json"
+    },
+    {
+      "id": "SH01",
+      "title": "What sets the safe buckling load of an imperfect cylindrical shell?",
+      "version": "1.0",
+      "status": "use",
+      "latest_source": "content/problems/SH01.json"
+    },
+    {
+      "id": "CO01",
+      "title": "When does three-dimensional elastic contact with Coulomb friction admit a quasistatic solution?",
+      "version": "1.0",
+      "status": "use",
+      "latest_source": "content/problems/CO01.json"
+    },
+    {
+      "id": "S01",
+      "title": "What randomness survives in macroscopic fracture of a random solid?",
+      "version": "1.0",
+      "status": "use",
+      "latest_source": "content/problems/S01.json"
+    },
+    {
+      "id": "AM02",
+      "title": "Can a Griffith-type fracture law be defined for a solidifying metal?",
+      "version": "3.0",
+      "status": "use",
+      "latest_source": "content/problems/AM02.json"
+    },
+    {
+      "id": "BIO01",
+      "title": "How does structural hierarchy transform local failure into macroscopic fracture resistance?",
+      "version": "2.0",
+      "status": "use",
+      "latest_source": "content/problems/BIO01.json"
+    }
+  ],
+  "hold_out": [
+    {
+      "id": "MT01",
+      "title": "What selects the actual scale and three-dimensional hierarchy of martensitic microstructure?",
+      "version": "1.0",
+      "status": "hold_out",
+      "latest_source": "MT01_Website_Page_v1.md",
+      "note": "A mature page exists, but this problem is held out of the first public release unless deliberately re-admitted after further sharpening."
+    }
+  ],
+  "superseded": [
+    {
+      "old": "DI01 v1 — grain-boundary transmission",
+      "replaced_by": "DI01 v2 — high-speed velocity branches"
+    },
+    {
+      "old": "DI01 v2 — high-speed velocity branches",
+      "replaced_by": "DI02 v1 — emergence of continuum plasticity from collective dislocation dynamics"
+    },
+    {
+      "old": "PL01 v1 — finite width/evolution of a plastic shear band",
+      "replaced_by": "PL01 v2 — physical evolution after loss of ellipticity"
+    },
+    {
+      "old": "NL01 cavitation candidate",
+      "replaced_by": "NL01 v1 — 3D neo-Hookean minimum-energy theory"
+    },
+    {
+      "old": "NL01 v1 — 3D neo-Hookean minimum-energy theory",
+      "replaced_by": "NL01 v2 — physical admissibility of singularities in finite elasticity"
+    },
+    {
+      "old": "AM02 earlier hot-tearing / solidification-crack formulations",
+      "replaced_by": "AM02 v3 — Griffith-type fracture law for a solidifying metal"
+    },
+    {
+      "old": "BIO01 v1 — hierarchical bone fracture",
+      "replaced_by": "BIO01 v2 — structural hierarchy and macroscopic fracture resistance"
+    },
+    {
+      "old": "FR02 prototype — strength/toughness sharp-limit",
+      "replaced_by": "Not in first-release roster"
+    },
+    {
+      "old": "BE02 prototype — obstacle-constrained elastica",
+      "replaced_by": "Not in first-release roster"
+    },
+    {
+      "old": "SH02 prototype shell entry",
+      "replaced_by": "SH01 v1 — safe buckling load of an imperfect cylindrical shell"
+    }
+  ],
+  "editorial_rule": [
+    "For future assembly, check this manifest first.",
+    "Then use the latest_source named for each problem.",
+    "Do not infer the current problem set from old repo page IDs, early recency tables, or prototype JSON files.",
+    "When a problem is revised, update this manifest in the same commit as the new canonical page/record.",
+    "Scientific status and editorial status remain separate; source-audited draft does not mean externally certified open."
+  ]
+}

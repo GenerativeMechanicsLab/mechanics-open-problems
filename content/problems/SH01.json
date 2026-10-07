@@ -1,0 +1,154 @@
+{
+  "id": "SH01",
+  "slug": "cylindrical-shell-safe-buckling-load",
+  "title": "What sets the safe buckling load of an imperfect cylindrical shell?",
+  "field": "Shells and stability",
+  "type": "Robust imperfection-sensitive stability",
+  "scientific_status": "Candidate open problem",
+  "editorial_status": "Source-audited draft",
+  "statement_version": "1.0",
+  "last_reviewed": "2026-09-30",
+  "featured": true,
+  "summary": "Can manufacturing tolerances and loading uncertainties be converted into a mechanics-based lower envelope for cylindrical-shell buckling, and what nonlinear instability realizes that worst case?",
+  "statement": {
+    "lead": "Let P_cl be the classical perfect-cylinder buckling load and let 𝒜 be a physically admissible class of geometric imperfections and loading/boundary variations. Define",
+    "equations": [
+      "P_{\\rm safe}=\\inf_{w_0\\in\\mathcal A}P_{\\rm cr}(w_0),\\qquad \\kappa_{\\rm safe}=P_{\\rm safe}/P_{\\rm cl}."
+    ],
+    "after": "The open target is to derive a useful lower envelope from the declared admissible class, identify the sharp or near-sharp imperfection family, and connect the minimizing geometry to the nonlinear localized/global buckling mechanism."
+  },
+  "why": [
+    "Thin cylindrical shells achieve exceptional load capacity at low mass but are among the most imperfection-sensitive structures in mechanics.",
+    "Engineering design therefore uses knockdown factors and conservative lower envelopes; the fundamental question is how a manufacturing tolerance should be converted into a guaranteed stability margin.",
+    "A mechanics-based result could separate truly dangerous defect spectra from harmless imperfections and explain when localized single-dimple states control collapse."
+  ],
+  "scope": [
+    "Primary setting: thin circular cylindrical shells under axial compression, with shell theory, end conditions, loading protocol, imperfection metric, amplitude and admissible wavelength spectrum stated explicitly.",
+    "The core problem is robust stability over a physically justified imperfection class, not the buckling load of one prescribed dent.",
+    "Composite anisotropy, pressure, combined loading, residual stress and manufacturing statistics are extensions that must be declared rather than hidden inside one universal factor."
+  ],
+  "boundary": [
+    {
+      "text": "Modern design practice, including NASA SP-8007 Rev. 2, already uses updated empirical/analysis-based knockdown guidance. The open problem is not the absence of usable engineering design rules.",
+      "refs": [
+        "R1"
+      ]
+    },
+    {
+      "text": "Mountain-pass theory identified localized single-dimple states as organizing structures in the nonlinear energy landscape of axially compressed cylinders.",
+      "refs": [
+        "R2"
+      ]
+    },
+    {
+      "text": "Nonlinear continuation later linked localized states to a lower-bound buckling load that correlates with a large body of experiments, strengthening the mechanics connection between energy barriers and knockdown.",
+      "refs": [
+        "R3"
+      ]
+    },
+    {
+      "text": "Recent 2026 work shows that small changes in defect geometry can switch the triggering bifurcation and produce nonmonotone/discontinuous thresholds and mode changes, reinforcing that the admissible imperfection class cannot be summarized by one amplitude alone.",
+      "refs": [
+        "R4"
+      ]
+    },
+    {
+      "text": "Additional recent stochastic/engineering lower-bound work addresses uncertainty in imperfection-sensitive shells but does not replace the need for a sharp physically grounded worst-case class.",
+      "refs": [
+        "R5"
+      ]
+    },
+    {
+      "text": "No general result was identified that converts a realistic declared imperfection/tolerance class into a validated lower envelope with a proved or certified near-worst-case nonlinear mechanism across relevant shell slenderness and boundary conditions.",
+      "refs": [
+        "R1",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    }
+  ],
+  "settle": [
+    "Freeze the shell model, boundary/loading protocol, admissible imperfection class and norm. Then bound the critical load uniformly over that class and identify the sharp or near-sharp imperfection family.",
+    "Connect the lower-envelope geometry to the bifurcation/energy-barrier mechanism and state when the controlling instability is localized versus global.",
+    "Validate the resulting lower envelope against independent experiments or high-fidelity computations without fitting away the assumptions that define the class."
+  ],
+  "progress": [
+    {
+      "date": "2026-09-16",
+      "title": "Defect geometry shown to switch the triggering bifurcation",
+      "text": "Recent continuation calculations demonstrate that small changes in imperfection geometry can reorganize the localized stability landscape and change the collapse threshold non-monotonically.",
+      "refs": [
+        "R4"
+      ]
+    },
+    {
+      "date": "2020",
+      "title": "Modern NASA shell-buckling guidance consolidated",
+      "text": "SP-8007 Rev. 2 incorporates modern knockdown approaches and the Shell Buckling Knockdown Factor program into current design guidance.",
+      "refs": [
+        "R1"
+      ]
+    },
+    {
+      "date": "2019",
+      "title": "Localized single-dimple route linked to lower-bound design load",
+      "text": "Continuation and experimental comparison strengthened the connection between localized mountain-pass states and engineering knockdown factors.",
+      "refs": [
+        "R3"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "role": "design baseline",
+      "label": "NASA/SP-8007-2020/REV 2, Buckling of Thin-Walled Circular Cylinders",
+      "url": "https://ntrs.nasa.gov/citations/20205011530"
+    },
+    {
+      "id": "R2",
+      "role": "energy-landscape foundation",
+      "label": "Horák, Lord & Peletier, Cylinder Buckling: The Mountain Pass as an Organizing Center (2006)",
+      "url": "https://doi.org/10.1137/050635778"
+    },
+    {
+      "id": "R3",
+      "role": "localized lower bound",
+      "label": "Groh & Pirrera, On the role of localizations in buckling of axially compressed cylinders (2019)",
+      "url": "https://doi.org/10.1098/rspa.2019.0006"
+    },
+    {
+      "id": "R4",
+      "role": "latest imperfection-sensitivity progress · preprint",
+      "label": "Yang & Schneider, origin of imperfection sensitivity in cylindrical-shell buckling (2026)",
+      "url": "https://arxiv.org/abs/2609.19436"
+    },
+    {
+      "id": "R5",
+      "role": "recent uncertainty/lower-bound work · preprint",
+      "label": "Ubamanyu et al., stochastic/engineering lower-bound framework for imperfect shells (2026)",
+      "url": "https://arxiv.org/abs/2607.19245"
+    }
+  ],
+  "categories": [
+    "Structural mechanics",
+    "Stability and buckling",
+    "Nonlinear mechanics",
+    "Robustness"
+  ],
+  "theory_tags": [
+    "Imperfection sensitivity",
+    "Worst-case stability",
+    "Bifurcation",
+    "Energy landscape"
+  ],
+  "application_families": [
+    "Thin-walled structures",
+    "Aerospace shells",
+    "Lightweight structures"
+  ],
+  "tabs": [
+    "Structural mechanics"
+  ]
+}

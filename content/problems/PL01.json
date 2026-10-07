@@ -1,0 +1,187 @@
+{
+  "id": "PL01",
+  "slug": "post-localization-selection",
+  "title": "What selects the physical evolution after plasticity loses ellipticity?",
+  "field": "Plasticity and localization",
+  "type": "Post-instability selection",
+  "scientific_status": "Candidate open problem",
+  "editorial_status": "Source-audited draft",
+  "statement_version": "2.0",
+  "last_reviewed": "2026-09-30",
+  "featured": true,
+  "summary": "Classical localization theory can identify loss of ellipticity, but after that point a local plasticity model may no longer select a unique finite-width, mesh-independent continuation. What physical limiting law selects the observed evolution?",
+  "statement": {
+    "lead": "For an incremental elastoplastic tangent C^ep, localization onset can be detected by loss of acoustic-tensor invertibility,",
+    "equations": [
+      "\\det\\mathbf Q(\\mathbf n)=0,\\qquad Q_{ik}=n_j C^{\\rm ep}_{ijkl}n_l."
+    ],
+    "after": "The open problem begins after this classical criterion: when the local equations cease to select a unique continuation, determine which small-scale physics or limiting principle selects finite band width, propagation, arrest, dissipation and transition to fracture."
+  },
+  "why": [
+    "Loss of ellipticity is where a continuum constitutive law is tested most severely: local softening models can produce vanishing band thickness, mesh-dependent dissipation and nonunique post-bifurcation paths.",
+    "Real materials nevertheless form finite-width bands that propagate, arrest, develop internal structure and sometimes turn into cracks.",
+    "A predictive post-localization theory would explain the emergent lower-dimensional evolution law rather than prescribe a numerical regularization length."
+  ],
+  "scope": [
+    "Primary setting: continuum plasticity after a declared loss-of-ellipticity or related localization instability; shear bands are the canonical example, not the only admissible material system.",
+    "Gradient, viscous, thermomechanical, dislocation-based, nonlocal and damage regularizations are treated as candidate small-scale physics whose limiting selection laws must be compared rather than assumed equivalent.",
+    "The problem distinguishes localization onset from post-localization evolution, and finite-width regularization from the macroscopic law that remains as the regularizing scale becomes small."
+  ],
+  "boundary": [
+    {
+      "text": "Classical bifurcation and loss-of-ellipticity theory can predict localization onset and orientation for broad constitutive classes; that onset problem is not the open target.",
+      "refs": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "text": "Kinetic-relation theory in phase-transforming solids provides a structural precedent: when continuum balance laws are nonunique, small-scale viscosity/gradient physics can select an effective propagation law.",
+      "refs": [
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "text": "Many plasticity regularizations already generate finite-width bands, including microstructured, gradient, viscous and dislocation-based models. Their existence does not identify which limiting law is physically selected in a stated material class.",
+      "refs": [
+        "R5",
+        "R6"
+      ]
+    },
+    {
+      "text": "Recent finite-strain gradient plasticity, dislocation/GND-based simulations and rank-one gradient plasticity give increasingly explicit finite-width or geometry-dependent post-localization behavior.",
+      "refs": [
+        "R7",
+        "R8",
+        "R9"
+      ]
+    },
+    {
+      "text": "A 2026 nonlinear theory also predicts finite-width shear bands in an athermal amorphous-solid setting, showing that no general website statement should claim that band width itself is wholly unexplained.",
+      "refs": [
+        "R10"
+      ]
+    },
+    {
+      "text": "The conservative open core is whether physically motivated small-scale regularizations select a unique effective post-localization evolution and whether different regularizations fall into common universality/kinetic classes or select genuinely different macroscopic continuations.",
+      "refs": [
+        "R3",
+        "R4",
+        "R7",
+        "R8",
+        "R9",
+        "R10"
+      ]
+    }
+  ],
+  "settle": [
+    "Derive an effective admissibility or kinetic law for a propagating/arresting localized plastic zone as an appropriate regularization scale tends to zero.",
+    "Show that a declared class of physically distinct regularizations converges to the same post-localization law, or construct a counterexample proving genuine nonuniqueness between equally admissible small-scale models.",
+    "Separate nucleation, propagation, arrest and transition to fracture within one consistent selection framework and validate discriminating predictions experimentally."
+  ],
+  "progress": [
+    {
+      "date": "2026-09-29",
+      "title": "Finite-width theory sharpens the residual target",
+      "text": "Recent analytic and gradient-plasticity results show that finite band widths can be predicted in important model classes; the remaining question is the physically selected continuation and limiting law.",
+      "refs": [
+        "R7",
+        "R10"
+      ]
+    },
+    {
+      "date": "2026",
+      "title": "Dislocation and rank-one gradient models add explicit post-localization regimes",
+      "text": "Recent work produces finite-width bands and geometry-dependent nucleation/selection in additional classes, making comparison of limiting selection laws increasingly concrete.",
+      "refs": [
+        "R8",
+        "R9"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "role": "localization criterion",
+      "label": "Rudnicki & Rice, Conditions for the localization of deformation in pressure-sensitive dilatant materials (1975)",
+      "url": "https://doi.org/10.1016/0022-5096(75)90001-0"
+    },
+    {
+      "id": "R2",
+      "role": "classical localization framework",
+      "label": "Rice, The localization of plastic deformation (1976)",
+      "url": "https://esag.harvard.edu/rice/062_Rice_LocalPlasDef_IUTAM76.pdf"
+    },
+    {
+      "id": "R3",
+      "role": "selection-law precedent",
+      "label": "Abeyaratne & Knowles, Kinetic relations and the propagation of phase boundaries in solids (1991)",
+      "url": "https://doi.org/10.1007/BF00375400"
+    },
+    {
+      "id": "R4",
+      "role": "regularization to kinetic law",
+      "label": "Abeyaratne & Knowles, Implications of Viscosity and Strain-Gradient Effects for the Kinetics of Propagating Phase Boundaries in Solids (1991)",
+      "url": "https://doi.org/10.1137/0151061"
+    },
+    {
+      "id": "R5",
+      "role": "microstructured localization",
+      "label": "Santisi d'Avila, Triantafyllidis & Wen, Localization of deformation and loss of macroscopic ellipticity in microstructured solids (2016)",
+      "url": "https://doi.org/10.1016/j.jmps.2016.07.009"
+    },
+    {
+      "id": "R6",
+      "role": "shear-band mechanics review",
+      "label": "Viswanathan, Yadav & Sagapuram, Shear Bands in Materials Processing (2020)",
+      "url": "https://doi.org/10.1115/1.4049353"
+    },
+    {
+      "id": "R7",
+      "role": "finite-strain gradient localization",
+      "label": "Fleck & Hutchinson, Shear band localization in finite strain deformation theory with strain gradient effects (2026)",
+      "url": "https://doi.org/10.1016/j.jmps.2025.106371"
+    },
+    {
+      "id": "R8",
+      "role": "dislocation-based finite-width bands",
+      "label": "Singh et al., Finite-width adiabatic shear banding and dislocation patterning in mesoscale polycrystalline aggregates (2026, preprint)",
+      "url": "https://arxiv.org/abs/2605.17619"
+    },
+    {
+      "id": "R9",
+      "role": "variational selection",
+      "label": "Comella et al., Nucleation in rank-one gradient plasticity: Exact solutions and geometry-dependent regimes (2026)",
+      "url": "https://doi.org/10.1016/j.jmps.2026.106688"
+    },
+    {
+      "id": "R10",
+      "role": "recent nonlinear band theory",
+      "label": "Kumar & Procaccia, analytic nonlinear theory of shear banding in amorphous solids (2026)",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2607028123"
+    }
+  ],
+  "categories": [
+    "Plasticity",
+    "Instability",
+    "Localization",
+    "Failure mechanics"
+  ],
+  "theory_tags": [
+    "Loss of ellipticity",
+    "Post-instability selection",
+    "Regularization",
+    "Kinetic laws"
+  ],
+  "application_families": [
+    "Metal forming",
+    "High-rate deformation",
+    "Shear localization",
+    "Failure"
+  ],
+  "tabs": [
+    "Plasticity",
+    "Fracture"
+  ]
+}

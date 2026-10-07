@@ -1,0 +1,237 @@
+{
+  "id": "DI02",
+  "slug": "continuum-plasticity-from-dislocations",
+  "title": "How does continuum plasticity emerge from the collective dynamics of dislocations?",
+  "field": "Dislocation mechanics and plasticity",
+  "type": "Multiscale closure",
+  "scientific_status": "Candidate open problem",
+  "editorial_status": "Source-audited draft",
+  "statement_version": "1.0",
+  "last_reviewed": "2026-09-30",
+  "featured": true,
+  "summary": "Can atomistic and discrete dislocation dynamics be reduced under controlled limits to a closed continuum plasticity theory whose state variables, hardening, nonlocality and memory are derived rather than postulated?",
+  "statement": {
+    "lead": "Let Γ^ε(t) denote an evolving three-dimensional dislocation network and let μ_t^ε be an empirical line measure on position, orientation, curvature, Burgers vector and other required microscopic variables. A controlled first step is",
+    "equations": [
+      "\\mu_t^\\varepsilon\\rightharpoonup f(\\mathbf x,\\boldsymbol\\ell,\\kappa,\\mathbf b,t),",
+      "\\partial_t f+\\nabla_{\\mathbf x}\\!\\cdot(\\mathbf v f)+\\nabla_{\\boldsymbol\\ell}\\!\\cdot(\\boldsymbol\\omega f)+\\partial_\\kappa(\\dot\\kappa f)=\\mathcal C[f]+\\mathcal R[f]."
+    ],
+    "after": "The deeper closure question is whether a finite set of continuum variables—density, Nye tensor, curvature, correlations, junction statistics or others—can evolve autonomously, and how the required state changes with coarse-graining scale."
+  },
+  "why": [
+    "Engineering plasticity models use yield conditions, slip laws, hardening variables, gradient terms and history dependence, but many of these ingredients are still introduced phenomenologically even though they originate in dislocation mechanics.",
+    "A controlled hierarchy would identify which microscopic information survives coarse-graining, which internal variables are sufficient, and when gradients, nonlocality, stochasticity or memory are unavoidable.",
+    "The problem connects atomistics, discrete dislocation dynamics, continuum dislocation theory, crystal plasticity and macroscopic constitutive laws within one foundational mechanics question."
+  ],
+  "scope": [
+    "Primary target: crystalline plasticity carried by evolving three-dimensional dislocation networks, including long-range interactions, curvature, multiplication, annihilation, junctions and cross-slip as the theory becomes sufficiently mature.",
+    "The problem is not to invent continuum dislocation dynamics or crystal plasticity; both already exist. It is to derive their closure and validity regimes under controlled scale transitions.",
+    "The aim is not one universal equation at all scales, but a hierarchy in which the state variables and constitutive structure required at each scale are determined rather than selected ad hoc."
+  ],
+  "boundary": [
+    {
+      "text": "Nye's tensor established a continuum geometric description of dislocation content, and statistical theories subsequently made the closure problem explicit through hierarchies of one-, two- and higher-order distributions.",
+      "refs": [
+        "R1",
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "text": "Continuum theories based directly on distributed dislocations already generate nonlocal crystal-plasticity structure, while three-dimensional DDD has produced parameter-free hardening ingredients and explicit MD→DDD→crystal-plasticity bridges in important cases.",
+      "refs": [
+        "R4",
+        "R5",
+        "R6"
+      ]
+    },
+    {
+      "text": "Curved-dislocation kinematics and discrete-to-density coarse-graining are substantially developed; the harder problem is dynamical closure, especially for correlations and topology-changing reactions.",
+      "refs": [
+        "R7",
+        "R8"
+      ]
+    },
+    {
+      "text": "Recent work transfers large MD datasets into DDD mobility laws and derives correlation-dependent continuum driving forces, while rigorous discrete-crystal limits establish theorem-level passage to line-dislocation or strain-gradient theories in restricted settings.",
+      "refs": [
+        "R9",
+        "R10",
+        "R11",
+        "R12"
+      ]
+    },
+    {
+      "text": "2026 work on curved-dislocation pair correlations and scale-dependent CDD shows that the appropriate closure can itself depend on observation scale; network link statistics expose additional candidate hidden variables.",
+      "refs": [
+        "R13",
+        "R14",
+        "R15"
+      ]
+    },
+    {
+      "text": "No controlled three-dimensional dynamic derivation was identified that simultaneously closes realistic multi-slip dislocation-network evolution, derives topology-changing reaction terms, identifies a minimal sufficient state, and then reduces that state to transferable macroscopic plasticity over finite strain.",
+      "refs": [
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ]
+    }
+  ],
+  "settle": [
+    "Establish a controlled three-dimensional DDD-to-kinetic or DDD-to-continuum limit for a nontrivial class of curved dislocation networks and derive the required correlation/reaction terms.",
+    "Identify a minimal sufficient continuum state for a declared scale regime, or prove that no finite Markovian state closes the dynamics without memory, nonlocality or richer distributions.",
+    "Derive a macroscopic yield, hardening or flow law from that controlled hierarchy with quantitative error/validity estimates rather than refitting constitutive structure at each scale."
+  ],
+  "progress": [
+    {
+      "date": "2026",
+      "title": "Scale dependence and hidden network variables sharpen the closure problem",
+      "text": "Recent CDD and DDD studies show that the appropriate state representation changes with coarse-graining scale and that link/network statistics carry additional predictive information.",
+      "refs": [
+        "R14",
+        "R15"
+      ]
+    },
+    {
+      "date": "2024–2026",
+      "title": "Rigorous and data-driven scale bridges advance",
+      "text": "Recent results include discrete-crystal to line-defect limits, dislocation-to-strain-gradient limits, correlation-aware continuum kinetics and data-driven MD→DDD mobility transfer.",
+      "refs": [
+        "R9",
+        "R10",
+        "R11",
+        "R12",
+        "R13"
+      ]
+    },
+    {
+      "date": "1997–2016",
+      "title": "Statistical closure and continuum kinematics established as the central structure",
+      "text": "Distribution hierarchies, kinetic theories, alignment tensors and density-based coarse-graining made the information-loss and closure problem explicit.",
+      "refs": [
+        "R2",
+        "R3",
+        "R7",
+        "R8"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "role": "continuum geometry",
+      "label": "Nye, Some geometrical relations in dislocated crystals (1953)",
+      "url": "https://doi.org/10.1016/0001-6160(53)90054-6"
+    },
+    {
+      "id": "R2",
+      "role": "statistical closure foundation",
+      "label": "Groma, Link between the microscopic and mesoscopic length-scale description of the collective behavior of dislocations (1997)",
+      "url": "https://doi.org/10.1103/PhysRevB.56.5807"
+    },
+    {
+      "id": "R3",
+      "role": "kinetic theory",
+      "label": "El-Azab, Statistical mechanics treatment of the evolution of dislocation distributions in single crystals (2000)",
+      "url": "https://doi.org/10.1103/PhysRevB.61.11956"
+    },
+    {
+      "id": "R4",
+      "role": "continuum dislocation plasticity",
+      "label": "Acharya, A model of crystal plasticity based on the theory of continuously distributed dislocations (2001)",
+      "url": "https://doi.org/10.1016/S0022-5096(00)00060-0"
+    },
+    {
+      "id": "R5",
+      "role": "DDD-derived hardening",
+      "label": "Madec, Devincre & Kubin, From Dislocation Junctions to Forest Hardening (2002)",
+      "url": "https://doi.org/10.1103/PhysRevLett.89.255508"
+    },
+    {
+      "id": "R6",
+      "role": "explicit multiscale bridge",
+      "label": "Groh et al., Multiscale modeling of the plasticity in an aluminum single crystal (2009)",
+      "url": "https://doi.org/10.1016/j.ijplas.2008.11.003"
+    },
+    {
+      "id": "R7",
+      "role": "curved-line kinematics",
+      "label": "Hochrainer, Multipole expansion of continuum dislocations dynamics in terms of alignment tensors (2015)",
+      "url": "https://doi.org/10.1080/14786435.2015.1026297"
+    },
+    {
+      "id": "R8",
+      "role": "discrete-to-density coarse graining",
+      "label": "Valdenaire et al., Density-based crystal plasticity: From the discrete to the continuum (2016)",
+      "url": "https://doi.org/10.1103/PhysRevB.93.214111"
+    },
+    {
+      "id": "R9",
+      "role": "MD to DDD",
+      "label": "Bertin, Bulatov & Zhou, Learning dislocation dynamics mobility laws from large-scale MD simulations (2024)",
+      "url": "https://doi.org/10.1038/s41524-024-01378-4"
+    },
+    {
+      "id": "R10",
+      "role": "correlation-aware continuum kinetics",
+      "label": "Anderson & El-Azab, Dislocation correlations and the continuum dynamics of the weak line bundle ensemble (2024)",
+      "url": "https://doi.org/10.1103/PhysRevB.109.174103"
+    },
+    {
+      "id": "R11",
+      "role": "rigorous discrete-to-line limit",
+      "label": "Conti, Garroni & Ortiz, A discrete crystal model in three dimensions: The line-tension limit for dislocations (2025)",
+      "url": "https://doi.org/10.1515/acv-2024-0007"
+    },
+    {
+      "id": "R12",
+      "role": "rigorous dislocation-to-continuum limit",
+      "label": "Kupferman & Maor, From Volterra dislocations to strain-gradient plasticity (2026)",
+      "url": "https://doi.org/10.1007/s00526-025-03195-z"
+    },
+    {
+      "id": "R13",
+      "role": "curved-line pair correlations",
+      "label": "Marx, Sandfeld & Hochrainer, Continuum approximation of dislocation correlations for systems of curved dislocations (2026)",
+      "url": "https://doi.org/10.1186/s41313-025-00071-3"
+    },
+    {
+      "id": "R14",
+      "role": "scale-dependent closure",
+      "label": "Anderson & El-Azab, Scale-dependence and the line bundle regime in continuum dislocation dynamics (2026)",
+      "url": "https://doi.org/10.1103/7jh2-4zxt"
+    },
+    {
+      "id": "R15",
+      "role": "network state statistics",
+      "label": "Akhondzadeh et al., Link statistics of dislocation network during strain hardening (2026)",
+      "url": "https://doi.org/10.1016/j.jmps.2026.106533"
+    }
+  ],
+  "categories": [
+    "Dislocation mechanics",
+    "Plasticity",
+    "Multiscale mechanics",
+    "Statistical mechanics"
+  ],
+  "theory_tags": [
+    "Coarse-graining",
+    "Closure",
+    "Nonlocality",
+    "Memory"
+  ],
+  "application_families": [
+    "Crystalline materials",
+    "Strengthening",
+    "Crystal plasticity",
+    "Metal deformation"
+  ],
+  "tabs": [
+    "Plasticity",
+    "Multiscale"
+  ]
+}

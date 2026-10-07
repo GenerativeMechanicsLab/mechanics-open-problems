@@ -1,0 +1,27 @@
+name: Feedback or suggestion
+description: General feedback on the site or a suggestion for a future problem
+title: "[Feedback] "
+labels: []
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of feedback
+      options:
+        - Website or presentation
+        - Suggest an additional problem
+        - Editorial policy
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Feedback or suggestion
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Relevant sources or links
+      description: Especially helpful for suggested problems.

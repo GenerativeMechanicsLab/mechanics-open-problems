@@ -1,0 +1,169 @@
+{
+  "id": "CO01",
+  "slug": "3d-coulomb-compactness",
+  "title": "When does three-dimensional elastic contact with Coulomb friction admit a quasistatic solution?",
+  "field": "Contact mechanics",
+  "type": "Existence and quasistatic evolution",
+  "scientific_status": "Candidate open problem",
+  "editorial_status": "Source-audited draft",
+  "statement_version": "1.0",
+  "last_reviewed": "2026-09-30",
+  "featured": true,
+  "summary": "Can ordinary 3D elasticity, unilateral contact, and Coulomb friction determine a mechanically admissible contact state, and when can quasistatic evolution cease to be continuous?",
+  "statement": {
+    "lead": "For an elastic body in unilateral contact, displacement, normal pressure, contact/separation, and stick/slip regions must be determined together. On the possible contact boundary, require",
+    "equations": [
+      "u_n-g\\le 0,\\quad t_n\\le 0,\\quad t_n(u_n-g)=0,",
+      "\\|\\mathbf t_t\\|\\le -f t_n,\\quad \\text{with stick/slip governed by Coulomb friction.}"
+    ],
+    "after": "The open target is the sharp three-dimensional continuum existence boundary for the incremental problem, and the corresponding conditions under which those equilibria form a quasistatic evolution. Restricted 3D existence is classical; the sharp general 2D theory is substantially more complete."
+  },
+  "why": [
+    "Existence has a direct physical meaning: it says that elasticity, nonpenetration, contact pressure, and Coulomb friction are mutually consistent and admit at least one complete mechanical state under the prescribed loading.",
+    "A solution determines the displacement field, contact and separation regions, normal pressure, tangential traction, and stick/slip partition. If no quasistatic state exists under a stated model, the idealized quasistatic assumptions are insufficient to represent the next mechanical state.",
+    "The problem appears in brakes, joints, press fits, seals, tires, forming, particulate contacts, and robotic grasping, despite using only classical elasticity and Coulomb's friction law."
+  ],
+  "scope": [
+    "Primary setting: small-deformation three-dimensional linear elasticity, unilateral Signorini contact against a rigid obstacle, and local Coulomb friction.",
+    "The page distinguishes time-incremental equilibrium from continuous-time quasistatic evolution, and existence from uniqueness.",
+    "Finite-strain contact, elastodynamics, adhesion, wear, thermal effects, and detailed tribology are outside the core statement."
+  ],
+  "boundary": [
+    {
+      "text": "Static and quasistatic continuum existence results are already known in three dimensions under small-friction and additional regularity assumptions; CO01 is not the claim that 3D Coulomb contact has no existence theory.",
+      "refs": [
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "text": "Uniqueness is a separate issue. Multiple Coulomb-contact solutions are known, and conditional uniqueness results require additional hypotheses.",
+      "refs": [
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "text": "Ballard and Iurlano's 2024 theorem gives a sharp general time-incremental theory in 2D. For isotropic elasticity, including heterogeneous isotropic materials, existence holds for arbitrarily large friction; for anisotropic elasticity, a critical friction condition appears and nonexistence can occur beyond it.",
+      "refs": [
+        "R6"
+      ]
+    },
+    {
+      "text": "The 2024 analysis identifies a fine compactness property of the elastic Neumann-to-Dirichlet boundary response that is established in two dimensions and is the point at which their general theorem does not extend to 3D.",
+      "refs": [
+        "R6"
+      ]
+    },
+    {
+      "text": "A 2025 preprint further shows in 2D that incremental existence and continuous quasistatic evolution are distinct: under an optimal friction condition the evolution can remain absolutely continuous, while outside it spontaneous jumps can occur under continuous loading.",
+      "refs": [
+        "R7"
+      ]
+    },
+    {
+      "text": "Through the literature audit of 30 September 2026, no comparable sharp general 3D theorem was identified for the full incremental and quasistatic problem. The conservative open statement is therefore that the sharp general three-dimensional theory remains incomplete.",
+      "refs": [
+        "R6",
+        "R7"
+      ]
+    }
+  ],
+  "settle": [
+    "A sharp three-dimensional existence/nonexistence characterization for the incremental Signorini–Coulomb problem under clearly stated isotropic and anisotropic hypotheses would resolve the principal static/incremental target.",
+    "A corresponding quasistatic result that characterizes when continuously varying loads admit continuous solution paths and when jumps are unavoidable would resolve the evolution part of the problem."
+  ],
+  "progress": [
+    {
+      "date": "2025",
+      "title": "Continuous and jumping quasistatic response separated in 2D",
+      "text": "A preprint identifies an optimal friction condition for absolutely continuous quasistatic evolution and constructs spontaneous jumps when that condition is violated.",
+      "refs": [
+        "R7"
+      ]
+    },
+    {
+      "date": "2024",
+      "title": "Sharp 2D incremental existence theory",
+      "text": "The general 2D time-incremental problem is resolved sharply: isotropic elasticity admits arbitrary friction magnitude, while anisotropy can impose a genuine friction threshold and even nonexistence.",
+      "refs": [
+        "R6"
+      ]
+    },
+    {
+      "date": "1998–2000",
+      "title": "Restricted 3D continuum existence established",
+      "text": "Classical work proves static and quasistatic Coulomb-contact existence under small-friction and regularity assumptions, establishing that the modern open question concerns the sharp general boundary rather than existence in all settings.",
+      "refs": [
+        "R2",
+        "R3"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "role": "foundational framework",
+      "label": "Duvaut & Lions, Inequalities in Mechanics and Physics (1976)",
+      "url": "https://doi.org/10.1007/978-3-642-66165-5"
+    },
+    {
+      "id": "R2",
+      "role": "3D existence baseline",
+      "label": "Eck & Jarušek, Existence results for the static contact problem with Coulomb friction (1998)",
+      "url": "https://doi.org/10.1142/S0218202598000196"
+    },
+    {
+      "id": "R3",
+      "role": "quasistatic baseline",
+      "label": "Andersson, Existence Results for Quasistatic Contact Problems with Coulomb Friction (2000)",
+      "url": "https://doi.org/10.1007/s002450010009"
+    },
+    {
+      "id": "R4",
+      "role": "multiplicity",
+      "label": "Hild, Multiple solutions of stick and separation type in the Signorini model with Coulomb friction (2005)",
+      "url": "https://doi.org/10.1002/zamm.200310205"
+    },
+    {
+      "id": "R5",
+      "role": "conditional uniqueness",
+      "label": "Renard, A Uniqueness Criterion for the Signorini Problem with Coulomb Friction (2006)",
+      "url": "https://doi.org/10.1137/050635936"
+    },
+    {
+      "id": "R6",
+      "role": "sharp recent theory",
+      "label": "Ballard & Iurlano, Existence results for the time-incremental elastic contact problem with Coulomb friction in 2D (2024)",
+      "url": "https://doi.org/10.1142/S0218202524500477"
+    },
+    {
+      "id": "R7",
+      "role": "recent progress · preprint",
+      "label": "Ballard & Iurlano, Transition from Continuous to Jumping Solutions in 2D Quasi-static Elastic Contact Problems with Coulomb Friction (2025)",
+      "url": "https://arxiv.org/abs/2508.04863"
+    }
+  ],
+  "categories": [
+    "Contact mechanics",
+    "Friction",
+    "Quasistatic evolution",
+    "Variational mechanics"
+  ],
+  "theory_tags": [
+    "Existence",
+    "Variational inequalities",
+    "Boundary operators",
+    "Discontinuities"
+  ],
+  "application_families": [
+    "Joints",
+    "Brakes",
+    "Forming",
+    "Tribology",
+    "Robotic contact"
+  ],
+  "tabs": [
+    "Contact"
+  ]
+}

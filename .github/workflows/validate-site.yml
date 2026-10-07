@@ -1,0 +1,16 @@
+name: Validate v1.0 release site
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  release-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate current public-release artifact
+        run: python scripts/validate_review_site.py

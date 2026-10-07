@@ -1,0 +1,46 @@
+name: Propose a problem
+description: Suggest a theoretical mechanics problem for the collection
+title: "[Problem proposal] "
+labels: ["proposal"]
+body:
+  - type: textarea
+    id: significance
+    attributes:
+      label: Why does this matter in mechanics?
+      description: What prediction, interpretation, design decision, or limiting theory would change?
+    validations:
+      required: true
+  - type: textarea
+    id: target
+    attributes:
+      label: Proposed theoretical target
+      description: State the model, assumptions, and unresolved claim as precisely as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: known
+    attributes:
+      label: Strongest known results
+      description: Explain the known/open boundary and include primary sources.
+    validations:
+      required: true
+  - type: textarea
+    id: settlement
+    attributes:
+      label: What would settle or materially advance it?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: DOI, arXiv, journal, book, or other source locators.
+    validations:
+      required: true
+  - type: checkboxes
+    id: responsibility
+    attributes:
+      label: Contributor check
+      options:
+        - label: I have checked the statement and sources myself and take responsibility for this submission, including any AI-assisted material.
+          required: true

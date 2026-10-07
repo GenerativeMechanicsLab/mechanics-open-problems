@@ -1,0 +1,152 @@
+{
+  "id": "EL01",
+  "slug": "quantitative-eshelby-stability",
+  "title": "How stable is Eshelby uniformity to shape imperfections?",
+  "field": "Inclusion mechanics",
+  "type": "Quantitative stability",
+  "scientific_status": "Partial progress",
+  "editorial_status": "Source-audited draft",
+  "statement_version": "1.0",
+  "last_reviewed": "2026-09-30",
+  "featured": true,
+  "summary": "If a real inclusion departs from the ellipsoid family by a measured amount, how much interior strain heterogeneity must appear, and which geometric scales control the error?",
+  "statement": {
+    "lead": "Let q(Ω) measure whole-interior strain heterogeneity and let ρ(Ω,𝓔) measure distance from the ellipsoid family after removing exact ellipsoidal degrees of freedom. The quantitative stability target is",
+    "equations": [
+      "c\\,\\rho(\\Omega,\\mathcal E)\\le q(\\Omega)\\le C\\,\\rho(\\Omega,\\mathcal E)."
+    ],
+    "after": "The upper bound asks whether nearly ellipsoidal shapes are nearly uniform; the lower bound asks whether nearly uniform interior fields force the shape to be near some ellipsoid. The appropriate shape metric is part of the mechanics because morphological wavelength matters."
+  },
+  "why": [
+    "Eshelby's ellipsoidal inclusion solution is foundational to micromechanics, but real precipitates, transforming regions, and engineered inclusions are not exact ellipsoids.",
+    "A quantitative stability theory turns an ellipsoidal approximation from a geometric convenience into a controlled mechanical approximation with an explicit error estimate.",
+    "The problem also exposes which geometric information must be retained: equal-amplitude shape errors at different wavelengths need not produce equal elastic heterogeneity."
+  ],
+  "scope": [
+    "Current partial result: three-dimensional small-strain homogeneous isotropic elasticity, perfect bonding, no modulus mismatch, a smooth inclusion near a nondegenerate ellipsoid, and uniform dilatational eigenstrain.",
+    "The broader problem includes finite shape departures, general eigenstrain modes, elastic contrast, anisotropy, free surfaces and interfaces, periodic domains, and multiple interacting inclusions.",
+    "The geometry is measured relative to the ellipsoid family rather than one arbitrarily chosen reference ellipsoid."
+  ],
+  "boundary": [
+    {
+      "text": "Eshelby established exact uniform interior strain for ellipsoidal inclusions in the classical setting.",
+      "refs": [
+        "R1"
+      ]
+    },
+    {
+      "text": "Local and inverse results show that the ellipsoid family is the natural exact-uniformity set: Markenscoff identified its local tangent structure, and the weak three-dimensional Eshelby conjecture was subsequently proved.",
+      "refs": [
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "text": "Perturbative fields for weakly non-spherical inclusions and constrained progress on the strong conjecture quantify important nearby and inverse regimes, but they do not supply the full two-sided stability law posed here.",
+      "refs": [
+        "R4",
+        "R5",
+        "R6"
+      ]
+    },
+    {
+      "text": "Recent multiphysical inclusion work extends exact field/uniformity theory but does not close the quantitative near-ellipsoid stability problem.",
+      "refs": [
+        "R7"
+      ]
+    },
+    {
+      "text": "The current GenMech study develops manuscript-stage nonlinear two-sided local stability near general nondegenerate ellipsoids in the stated dilatational setting, plus a complementary finite-shape enclosure and independent displacement-based FEM validation. External mathematical review remains pending.",
+      "refs": []
+    },
+    {
+      "text": "Broader finite amplitudes, eigenstrains, elastic mismatch, anisotropy, boundaries, periodicity and interacting inclusions remain outside that local result.",
+      "refs": []
+    }
+  ],
+  "settle": [
+    "Prove a two-sided quantitative relation for a substantially broader declared shape/material/loading class, with the quotient geometry and norm stated precisely.",
+    "A sharp counterexample showing that a proposed global metric or stability statement cannot hold would also materially settle part of the problem.",
+    "For engineering use, provide computable constants or certified geometry-to-field error bounds and validate them independently."
+  ],
+  "progress": [
+    {
+      "date": "2026-09-29",
+      "title": "Local nonlinear two-sided stability assembled",
+      "text": "The current study develops a manuscript-stage local theorem around general nondegenerate ellipsoids in the homogeneous-isotropic dilatational setting.",
+      "refs": []
+    },
+    {
+      "date": "2026-09-22",
+      "title": "Finite-shape enclosure and independent FEM comparison",
+      "text": "A complementary shape-specific residual-field enclosure was paired with an independently assembled displacement-based elasticity calculation.",
+      "refs": []
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "role": "classical foundation",
+      "label": "Eshelby, The determination of the elastic field of an ellipsoidal inclusion, and related problems (1957)",
+      "url": "https://doi.org/10.1098/rspa.1957.0133"
+    },
+    {
+      "id": "R2",
+      "role": "local ellipsoid geometry",
+      "label": "Markenscoff, Inclusions with constant eigenstress (1998)",
+      "url": "https://doi.org/10.1016/S0022-5096(98)00039-8"
+    },
+    {
+      "id": "R3",
+      "role": "weak Eshelby conjecture",
+      "label": "Kang & Milton, Solutions to the Pólya–Szegö Conjecture and the Weak Eshelby Conjecture (2008)",
+      "url": "https://doi.org/10.1007/s00205-007-0087-z"
+    },
+    {
+      "id": "R4",
+      "role": "strong-conjecture progress",
+      "label": "Ammari et al., Progress on the strong Eshelby's conjecture and extremal structures for the elastic moment tensor (2010)",
+      "url": "https://doi.org/10.1016/j.matpur.2010.01.003"
+    },
+    {
+      "id": "R5",
+      "role": "weakly nonspherical fields",
+      "label": "Huang et al., Explicit expressions of the Eshelby tensor for an arbitrary 3D weakly non-spherical inclusion (2011)",
+      "url": "https://doi.org/10.1007/s00707-010-0375-9"
+    },
+    {
+      "id": "R6",
+      "role": "recent inverse progress",
+      "label": "Yuan, Huang & Wang, A constrained proof of the strong version of the Eshelby conjecture for three-dimensional isotropic media (2023)",
+      "url": "https://doi.org/10.1007/s10409-023-22064-x"
+    },
+    {
+      "id": "R7",
+      "role": "adjacent recent theory",
+      "label": "Ye, field solution and uniformity conditions for linear multiphysical inclusions (2025)",
+      "url": "https://doi.org/10.1016/j.ijengsci.2025.104227"
+    }
+  ],
+  "categories": [
+    "Elasticity",
+    "Micromechanics",
+    "Inclusions",
+    "Multiscale mechanics"
+  ],
+  "theory_tags": [
+    "Quantitative stability",
+    "Inverse problems",
+    "Shape sensitivity",
+    "Robustness"
+  ],
+  "application_families": [
+    "Precipitates",
+    "Phase transformations",
+    "Composites",
+    "Microstructure modeling"
+  ],
+  "tabs": [
+    "Elasticity",
+    "Multiscale"
+  ]
+}

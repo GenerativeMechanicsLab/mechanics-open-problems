@@ -1,0 +1,249 @@
+{
+  "id": "BIO01",
+  "slug": "fracture-structural-hierarchy",
+  "title": "How does structural hierarchy transform local failure into macroscopic fracture resistance?",
+  "field": "Hierarchical materials",
+  "type": "Hierarchical fracture mechanics",
+  "scientific_status": "Candidate open problem",
+  "editorial_status": "Source-audited draft",
+  "statement_version": "2.0",
+  "last_reviewed": "2026-09-30",
+  "featured": true,
+  "summary": "Bone, nacre, enamel, tendon and engineered hierarchical composites fail through mechanisms distributed across multiple structural scales. Can mechanics predict how hierarchy selects local failure modes, crack paths and the emergent macroscopic fracture resistance?",
+  "statement": {
+    "lead": "Let a material contain structural levels k=0,...,N with characteristic scale ell_k, architecture A_k, constituent/interface mechanics C_k, and local failure physics Phi_k. For an evolving crack with active mechanism set M(a), the central mechanics question is",
+    "equations": [
+      "\\mathcal H=\\{\\ell_k,\\mathcal A_k,\\mathcal C_k,\\Phi_k\\}_{k=0}^{N},",
+      "\\mathcal H,\\ \\text{loading}\\quad\\longmapsto\\quad\\{\\Gamma(a),\\ \\mathcal M(a),\\ R(\\Delta a)\\}\\ ?",
+      "\\eta_k(a)=\\ell_{\\rm p}(a)/\\ell_k"
+    ],
+    "after": "Here ell_p is a fracture/process-zone scale and eta_k indicates when fracture interacts directly with structural level k. The open target is not generic multiscale simulation or simple coarse-graining: it is to identify the mechanics that selects failure modes across interacting levels and thereby determines crack path and the macroscopic R-curve, while establishing when some levels may legitimately be replaced by an effective fracture law."
+  },
+  "why": [
+    "Many biological materials achieve combinations of strength and damage tolerance using only a small set of relatively ordinary constituents arranged hierarchically. Bone, nacre, enamel, dentin, tendon, wood and arthropod cuticle provide different physical realizations of this strategy; engineered hierarchical composites increasingly reproduce selected features.",
+    "Fracture is where structural hierarchy becomes mechanically nontrivial. A crack can be deflected at one level, activate interface sliding or distributed damage at another, and leave load-bearing bridges at a larger level. The relevant fracture/process-zone scale can therefore interact with several structural scales during one event.",
+    "A predictive theory would connect architecture and local failure physics to quantities used at engineering scale—crack path, initiation versus stable growth, rising R-curves and final instability—without fitting a new macroscopic fracture law separately for each specimen or hierarchy."
+  ],
+  "scope": [
+    "Primary setting: passive quasistatic fracture of hierarchical solids and composites with two or more mechanically distinct structural scales. Biological materials provide the richest physical examples, but the mechanics target also includes engineered bio-inspired and other hierarchical composites.",
+    "System-specific physics is retained through the local laws Phi_k: interface sliding, viscoelasticity, sacrificial bonding, anisotropy, gradients, hydration dependence, or other mechanisms may be essential in a given material. The problem is to understand how those local mechanisms interact with architecture across levels, not to erase them.",
+    "The initial target is structural hierarchy and crack/damage evolution. Active healing, remodeling, growth, cellular mechanobiology and whole-organ adaptation are outside the core statement; dynamic fracture and fatigue are later extensions unless explicitly included."
+  ],
+  "boundary": [
+    {
+      "text": "Hierarchical biological materials have long been understood as mechanically organized across many length scales rather than as homogeneous solids. Classical reviews and fracture-mechanics analyses established characteristic-size, interface and hierarchy effects as central to their strength and toughness.",
+      "refs": [
+        "R1",
+        "R2"
+      ]
+    },
+    {
+      "text": "Mechanics already explains important routes by which hierarchy can transmit flaw tolerance. Gao's hierarchical fracture treatment and Yao & Gao's multiscale cohesive laws provide explicit bottom-up relations for idealized biological architectures. The open problem is therefore not simply whether hierarchy can toughen a material.",
+      "refs": [
+        "R2",
+        "R3"
+      ]
+    },
+    {
+      "text": "Hierarchy is not universally beneficial or monotonic. Zhang, Zhang and Gao predicted an optimal number of hierarchy levels from competing stiffness, strength, flaw-tolerance and stress-transfer requirements, while Sen and Buehler showed that hierarchy alone can generate stable crack growth and strongly rising R-curves in an idealized brittle system.",
+      "refs": [
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "text": "General multiscale fracture mechanics can already derive effective strength, fracture energy and traction-separation relations from constituent properties and microstructure in specific composite settings. Thus a two-scale effective fracture law is not itself the missing theory.",
+      "refs": [
+        "R6"
+      ]
+    },
+    {
+      "text": "A deeper closure issue appears even in energetically consistent scale transitions. Turteltaub and Suárez-Millán constructed two distinct Hill-Mandel-consistent multiscale fracture transitions that dissipate the same energy but generally produce different effective traction-separation laws. Energy consistency alone therefore does not guarantee a unique effective fracture description.",
+      "refs": [
+        "R7"
+      ]
+    },
+    {
+      "text": "Recent biological-materials literature shows that different systems realize toughening through different combinations of characteristic size, interfaces, structural hierarchy, gradients and dissipation mechanisms. A 2025 review synthesizes these common mechanics ingredients across bone, nacre, horns, silks and other systems rather than identifying one universal biological fracture mechanism.",
+      "refs": [
+        "R8"
+      ]
+    },
+    {
+      "text": "System-specific theory is becoming increasingly quantitative. A 2025 hierarchical crack-bridging model couples nacre microstructure to macroscopic T-stress and shell morphology, showing how distinct hierarchy levels can act synergistically on strength and toughness.",
+      "refs": [
+        "R9"
+      ]
+    },
+    {
+      "text": "Recent work also shows why a single intrinsic toughness is often insufficient. In 2026, fracture energy in hierarchical biological composites was shown to depend on hydration and structural scale because those variables change the active crack-tip dissipation mechanisms and process-zone development.",
+      "refs": [
+        "R10"
+      ]
+    },
+    {
+      "text": "Other 2026 studies demonstrate additional forms of mechanism selection: microstructural randomness in nacreous materials can produce a transition to distributed fractal cracking, while a dual-damage phase-field model reproduces different tensile and compressive failure modes through the interaction of brittle tablets, compliant interfaces and architecture.",
+      "refs": [
+        "R11",
+        "R12"
+      ]
+    },
+    {
+      "text": "Through the literature audit of 30 September 2026, no general mechanics theory was identified that takes a declared structural hierarchy and independently characterized local failure physics and predicts, across multiple interacting levels, the sequence of active failure mechanisms, crack trajectory and macroscopic R-curve while also characterizing when lower levels admit a unique effective reduction. That cross-scale mechanism-selection and fracture-resistance problem is the conservative open core.",
+      "refs": [
+        "R3",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R12"
+      ]
+    }
+  ],
+  "settle": [
+    "For a declared hierarchy and loading class, predict the active sequence or competition of fracture mechanisms, crack path and macroscopic growth resistance from independently characterized architecture, constituent/interface mechanics and lower-scale failure laws, without fitting an independent macroscale fracture law to the target response.",
+    "A theoretical resolution should identify the structural and fracture length-scale information required for that prediction and state the regimes in which selected hierarchy levels can be replaced by a closed effective fracture law. If such a reduction is claimed, its uniqueness or admissible nonuniqueness should be characterized.",
+    "A negative result would also be meaningful if it proves that a proposed reduced state—such as a scalar toughness or one traction-separation law—is insufficient, and identifies the additional history, internal variables or nonlocal information required."
+  ],
+  "progress": [
+    {
+      "date": "2026",
+      "title": "Scale, environment and disorder sharpen the fracture-state problem",
+      "text": "Hydration-dependent fracture energy, random-architecture fractal cracking and loading-dependent nacre failure modes show that the active dissipation/process zone and mechanism set can change with structural scale, environment and microstructural statistics.",
+      "refs": [
+        "R10",
+        "R11",
+        "R12"
+      ]
+    },
+    {
+      "date": "2025",
+      "title": "Cross-level synergy becomes quantitatively modelled",
+      "text": "A broad review consolidates hierarchy, interfaces and characteristic size as recurring ingredients across biological materials, while a hierarchical nacre model explicitly couples microstructural crack bridging to macroscale stress and morphology.",
+      "refs": [
+        "R8",
+        "R9"
+      ]
+    },
+    {
+      "date": "2018–2020",
+      "title": "Effective fracture scale transitions established—and shown nonunique",
+      "text": "Computational homogenization derives effective traction-separation relations from microscale fracture, but later work shows that distinct energy-consistent transition rules can generate different effective laws from the same microscale response.",
+      "refs": [
+        "R6",
+        "R7"
+      ]
+    },
+    {
+      "date": "2006–2011",
+      "title": "Hierarchical fracture mechanics establishes the foundation",
+      "text": "Flaw-tolerance theory, recursive cohesive laws, optimal-hierarchy analysis and hierarchy-generated R-curves establish that architecture can transform local failure across scales; the modern problem is to predict that transformation for general interacting hierarchies.",
+      "refs": [
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "R1",
+      "role": "hierarchical-materials foundation",
+      "label": "Fratzl & Weinkamer, Nature's hierarchical materials (2007)",
+      "url": "https://doi.org/10.1016/j.pmatsci.2007.06.001"
+    },
+    {
+      "id": "R2",
+      "role": "hierarchical fracture foundation",
+      "label": "Gao, Application of Fracture Mechanics Concepts to Hierarchical Biomechanics of Bone and Bone-like Materials (2006)",
+      "url": "https://doi.org/10.1007/s10704-006-7156-4"
+    },
+    {
+      "id": "R3",
+      "role": "recursive cohesive mechanics",
+      "label": "Yao & Gao, Multi-scale cohesive laws in hierarchical materials (2007)",
+      "url": "https://doi.org/10.1016/j.ijsolstr.2007.06.007"
+    },
+    {
+      "id": "R4",
+      "role": "optimal hierarchy",
+      "label": "Zhang, Zhang & Gao, On optimal hierarchy of load-bearing biological materials (2011)",
+      "url": "https://doi.org/10.1098/rspb.2010.1093"
+    },
+    {
+      "id": "R5",
+      "role": "hierarchy-generated R-curve",
+      "label": "Sen & Buehler, Structural hierarchies define toughness and defect-tolerance despite simple and mechanically inferior brittle building blocks (2011)",
+      "url": "https://doi.org/10.1038/srep00035"
+    },
+    {
+      "id": "R6",
+      "role": "effective fracture homogenization",
+      "label": "Turteltaub et al., Multiscale analysis of mixed-mode fracture and effective traction-separation relations for composite materials (2018)",
+      "url": "https://doi.org/10.1016/j.jmps.2018.04.009"
+    },
+    {
+      "id": "R7",
+      "role": "scale-transition nonuniqueness",
+      "label": "Turteltaub & Suárez-Millán, Energetically-consistent multiscale analysis of fracture in composites materials (2020)",
+      "url": "https://doi.org/10.1016/j.euromechsol.2020.104079"
+    },
+    {
+      "id": "R8",
+      "role": "cross-system biological mechanics review",
+      "label": "Toughening and strengthening mechanisms of biological materials: A review (2025)",
+      "url": "https://doi.org/10.1016/j.mser.2025.100988"
+    },
+    {
+      "id": "R9",
+      "role": "hierarchical crack bridging",
+      "label": "Yan & Feng, Synergistic toughening mechanisms of macro- and micro-structures in nacre: Effects of T-stresses (2025)",
+      "url": "https://doi.org/10.1016/j.jmps.2025.106067"
+    },
+    {
+      "id": "R10",
+      "role": "scale-dependent fracture resistance",
+      "label": "Kellersztein, Hydration- and scale-dependent fracture energy in hierarchical biological composites (2026)",
+      "url": "https://doi.org/10.1016/j.engfracmech.2026.112174"
+    },
+    {
+      "id": "R11",
+      "role": "disorder and emergent fracture mode",
+      "label": "Yan et al., Fractal cracking: An emergent failure mode of nacreous materials with microstructural randomness (2026)",
+      "url": "https://doi.org/10.1016/j.jmps.2026.106552"
+    },
+    {
+      "id": "R12",
+      "role": "loading-dependent mechanism selection",
+      "label": "Vigliotti, Multiscale phase-field analysis of nacre's asymmetric mechanical strength (2026)",
+      "url": "https://doi.org/10.1016/j.mechmat.2026.105627"
+    }
+  ],
+  "categories": [
+    "Fracture mechanics",
+    "Biomechanics",
+    "Hierarchical materials",
+    "Multiscale mechanics"
+  ],
+  "theory_tags": [
+    "Cross-scale mechanism selection",
+    "Emergent fracture resistance",
+    "Interfaces",
+    "Hierarchy"
+  ],
+  "application_families": [
+    "Bone",
+    "Nacre",
+    "Enamel",
+    "Tendon",
+    "Bio-inspired composites"
+  ],
+  "tabs": [
+    "Fracture",
+    "Multiscale"
+  ]
+}
