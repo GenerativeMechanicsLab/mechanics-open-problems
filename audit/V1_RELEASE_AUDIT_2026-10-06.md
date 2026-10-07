@@ -52,3 +52,11 @@ Publication status on 6 October 2026: the repository is public and GitHub Pages 
 - Public branch history contains only the repository initialization and the curated v1.0 release-candidate lineage before the publication stamp.
 - Representative SHAs from the private internal repository do not resolve in this public repository.
 - No internal handoff files, private research-repository references, prototype/candidate folders, or old private-preview audits are present in the public tree.
+
+
+## Publication stamp
+
+- First successful public Pages deployment: commit `97a07e51e4a3dfbb0a4137bdc20507cc02f87b45`.
+- GitHub Pages reported successful deployment at 2026-10-07 02:47 UTC, corresponding to **6 October 2026** in the project timezone.
+- Publication stamp commit: `0817b8b52df7bbdc4f15e33487409024934ced9e`.
+- The stamped state sets `release.status = public`, `first_published = 2026-10-06`, and retains `last_updated = 2026-10-06`.
