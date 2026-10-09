@@ -3,17 +3,17 @@
   "subtitle": "A curated map of theoretical challenges in solids, structures, and materials",
   "description": "A curated, evolving map of theoretical mechanics problems that connects physical significance, mathematical formulation, known boundaries, settlement criteria, and documented progress.",
   "focus": "The initial collection focuses on solid mechanics, structural mechanics, and mechanics of materials. The scope can expand through well-motivated community contributions.",
-  "initiative": "We identify a small set of physically consequential mechanics questions and make the theoretical target, known/open boundary, settlement criteria, and progress explicit. The collection is a personal research initiative designed to make difficult mechanics frontiers easier to evaluate, contribute to, and revisit as theory, experiments, computation, and AI-assisted research evolve.",
+  "initiative": "We identify a small set of physically consequential mechanics questions and make the theoretical target, known/open boundary, settlement criteria, and progress explicit. The collection is an independent research initiative designed to make difficult mechanics frontiers easier to evaluate, contribute to, and revisit as theory, experiments, computation, and AI-assisted research evolve.",
   "release": {
     "version": "1.0",
     "status": "public",
     "first_published": "2026-10-06",
-    "last_updated": "2026-10-06"
+    "last_updated": "2026-10-08"
   },
   "author": "Bo Ni · GenMech Lab",
   "author_url": "https://github.com/GenerativeMechanicsLab",
   "contact_label": "Feedback and problem suggestions",
   "contact_url": "https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose",
-  "author_note": "a personal research initiative",
+  "author_note": "an independent research initiative",
   "public_url": "https://generativemechanicslab.github.io/mechanics-open-problems/"
 }

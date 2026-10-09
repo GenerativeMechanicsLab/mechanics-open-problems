@@ -26,7 +26,7 @@ python scripts/validate_review_site.py
 
 ## Author and feedback
 
-Author and curator: **Bo Ni · GenMech Lab — a personal research initiative**
+Author and curator: **Bo Ni · GenMech Lab — an independent research initiative**
 
 Feedback, corrections, progress reports, and problem suggestions are welcome through GitHub Issues.
 
