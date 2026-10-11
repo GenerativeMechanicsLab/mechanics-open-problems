@@ -4,6 +4,11 @@ All notable public changes to **Open Problems in Mechanics** are recorded here.
 
 The project uses versioned public snapshots while remaining a living resource.
 
+## 10 October 2026 — Website sharing QR code
+
+- Added PNG and SVG QR codes with the OPM lettermark, linking directly to the public homepage.
+- Added a README preview, download links, and guidance for use in slides, documents, and print.
+
 ## 8 October 2026 — Attribution wording correction
 
 - Updated the initiative description to “an independent research initiative” to match the manuscript.

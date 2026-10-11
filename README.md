@@ -14,6 +14,19 @@ The GitHub Pages entry point is `docs/index.html`. Mathematical expressions are 
 
 The first-publication date is recorded as **6 October 2026** and is treated as immutable.
 
+## Share the website
+
+The QR code opens the [Open Problems in Mechanics homepage](https://generativemechanicslab.github.io/mechanics-open-problems/).
+
+<a href="https://generativemechanicslab.github.io/mechanics-open-problems/"><img src="assets/qr/OPM_website_QR.png" alt="QR code for Open Problems in Mechanics with the OPM logo" width="240" height="240"></a>
+
+- [PNG](assets/qr/OPM_website_QR.png): 1140 × 1140 pixels, suitable for slides and documents.
+- [SVG](assets/qr/OPM_website_QR.svg): scalable vector artwork for posters and print, with the lettering stored as outlines.
+
+Keep the white border, preserve the square proportions, and check scanning after placing it in the final slide or printed layout. The code encodes the homepage URL directly, without a link-shortening service; ordinary content updates at that URL do not require a new code.
+
+The code uses high error correction (H) with the OPM lettermark at the center. The PNG was verified to decode to the homepage at 1140, 320, and 240 pixels.
+
 ## Maintenance and provenance
 
 Canonical scientific records live in `content/problems/`; dated scientific progress is tracked in `content/progress.json`; release QA is recorded in `audit/`. See `MAINTENANCE.md` for the update protocol and `CHANGELOG.md` for version history.
