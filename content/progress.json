@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-10-11",
+    "problem_id": "EL01",
+    "title": "Eshelby stability preprint: local theorem, critical scaling and finite-shape bounds",
+    "text": "The arXiv preprint reports nonlinear two-sided local stability, the critical half-order geometric scale with an exact sphere spectrum, and convergent bounds for prescribed finite geometries. Independent displacement-based finite-element comparisons provide numerical evidence. EL01 now distinguishes these results from the remaining global geometry-only and broader physical-setting questions.",
+    "refs": [
+      "EL01:R8"
+    ]
+  },
+  {
     "date": "2026-09-29",
     "problem_id": "EL01",
     "title": "Local quantitative Eshelby stability assembled",

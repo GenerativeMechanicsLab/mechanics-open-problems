@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-10-08"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
+<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-10-11"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
 :root{--ink:#17222c;--muted:#5c6873;--line:#d9e0e5;--paper:#fbfcfd;--soft:#f2f5f7;--accent:#1d5b78;--accent2:#134157;--warm:#f6f1e8;--max:1180px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.62}
@@ -358,13 +358,15 @@ math[display="inline"]{font-size:1em}
 <div class="vision-anchor">AI changes the scale and distribution of reasoning.</div>
 <p>For most of this history, a researcher or small group had to carry much of the chain: formulate the question, search for an analogy, manipulate the mathematics, write the code, inspect the result, notice contradictions, and decide what to try next. AI can now participate across many of these stages. It can explore alternative formulations, connect distant methods, sustain several analytical and computational branches, perform symbolic and numerical checks, and revisit assumptions with unusual breadth and persistence.</p>
 <p>As these capabilities scale, the important question is not simply which tasks remain uniquely human. It is where human attention becomes most consequential. Which physical question is worth pursuing? Which abstraction preserves the essential physics? Which apparently correct result has answered the wrong question? What evidence is genuinely independent? What new explanation changes how we understand the system?</p>
-<p>Our Eshelby study made this collaboration concrete. Human direction selected the mechanics question and observable, rejected formulations that were mathematically convenient but physically insufficient, demanded independent validation, and interpreted what the result meant for mechanics. AI broadened the search over mathematical connections, derivations, computation, checking, and reformulation. The useful division was not “human thinks, machine calculates.” Machine capability enlarged the space of reasoning; human judgment kept the investigation tied to a consequential physical question.</p>
+<p>Our <a href="https://arxiv.org/abs/2610.13400">Eshelby study</a>, now available as an arXiv preprint, makes this collaboration concrete. For a uniform dilatational eigenstrain in a homogeneous isotropic solid, it relates departures from ellipsoidal shape to interior strain heterogeneity. Local stability theory and complementary finite-shape bounds connect the mathematical analysis to prescribed inclusion geometries, with independent finite-element calculations providing a separate numerical check.</p>
+<p>Human direction selected the mechanics question and observable, rejected formulations that were mathematically convenient but physically insufficient, demanded independent validation, and interpreted what the result meant for mechanics. AI broadened the search over mathematical connections, derivations, computation, checking, and reformulation. The useful division was not “human thinks, machine calculates.” Machine capability enlarged the space of reasoning; human judgment kept the investigation tied to a consequential physical question.</p>
 <div class="vision-anchor">Mechanics can help define what AI-assisted science should become.</div>
 <p>We do not know how far machine reasoning will develop. AI may eventually construct representations of the physical world that are powerful, predictive, and very different from the concepts humans naturally use. That possibility makes the connection back to human understanding more important, not less.</p>
 <p>For science, prediction alone has never been the whole objective. We also seek explanations that can be examined, challenged, related to other knowledge, and used to reason about situations we have not yet encountered. Mechanics is unusually well placed to preserve this connection because it already spans many levels of representation—from direct observation to continuum fields, constitutive laws, asymptotics, numerical discretizations, and engineering models. Its assumptions can be exposed, its abstractions can be challenged, and its predictions can return to experiment.</p>
 <p>Open theoretical problems make this process especially visible. With no known answer to imitate, progress must move repeatedly between physical intuition, mathematical structure, computation, validation, and reformulation. The problems in this collection are chosen for that reason. They are not intended to represent every grand challenge in mechanics. They are theory-rich questions with consequences across broad families of materials or engineering systems, and with a boundary precise enough that progress can be recognized and audited.</p>
 <div class="vision-anchor">One paper started the experiment. The map is meant to outgrow it.</div>
 <p>The project began with quantitative Eshelby stability as one practical test of human-led, AI-assisted theoretical mechanics. Its long-term contribution, however, should stand independently of that paper: a living research resource where new material systems and engineering demands can be translated into transferable theoretical questions, where progress is documented rather than overwritten, and where increasingly capable machine reasoning remains connected to human understanding of the physical world.</p>
+<p class="muted">Related preprint: Bo Ni. <a href="https://arxiv.org/abs/2610.13400"><em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em></a>. arXiv:2610.13400 (2026).</p>
 <div class="actions">
 <button class="button" onclick="show('problems')">Explore the problems</button>
 <a class="button secondary" href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Suggest an update or problem</a>
@@ -377,11 +379,12 @@ math[display="inline"]{font-size:1em}
 <div class="eyebrow">EL01 · Inclusion mechanics</div>
 <h1>How stable is Eshelby uniformity to shape imperfections?</h1>
 <p class="muted">Mechanics tabs: Elasticity · Multiscale</p>
+<p class="muted">Updated 11 October 2026 with the Eshelby stability preprint.</p>
 <div class="status">
 <div><span>Scientific status</span><strong>Partial progress</strong></div>
 <div><span>Problem type</span><strong>Quantitative stability</strong></div>
 <div><span>Literature audit</span><strong>30 September 2026</strong></div>
-<div><span>Statement</span><strong>v1.0</strong></div>
+<div><span>Statement</span><strong>v1.1</strong></div>
 </div>
 </div></section>
 <div class="wrap narrow problem-body">
@@ -395,8 +398,7 @@ measured amount, how much interior strain heterogeneity must
 appear?</strong></p>
 </blockquote></section>
 <div class="toc"><a href="#EL01-why-it-matters">Why it matters</a><a href="#EL01-what-we-know">What we know</a><a href="#EL01-the-frontier-from-exactness-to-stability">The frontier: from
-exactness to stability</a><a href="#EL01-partial-progress-in-the-current-study">Partial progress in the
-current study</a><a href="#EL01-what-remains-open">What remains open</a><a href="#EL01-what-would-count-as-progress">What would count as progress?</a><a href="#EL01-scientific-scope">Scientific scope</a><a href="#EL01-selected-milestones">Selected milestones</a><a href="#EL01-progress-log">Progress log</a></div>
+exactness to stability</a><a href="#EL01-partial-progress-in-the-current-study">Recent progress</a><a href="#EL01-what-remains-open">What remains open</a><a href="#EL01-what-would-count-as-progress">What would count as progress?</a><a href="#EL01-scientific-scope">Scientific scope</a><a href="#EL01-selected-milestones">Selected milestones</a><a href="#EL01-progress-log">Progress log</a></div>
 <article class="technical"><div class="layer-label">Complete technical layer</div><h2 id="EL01-why-it-matters">Why it matters</h2><p>Eshelby’s solution is a foundation of micromechanics. Ellipsoids are
 used to represent coherent precipitates, phase-transforming regions,
 inclusions and inhomogeneities, and they enter many homogenization and
@@ -481,43 +483,26 @@ necessarily nearly uniform. The <strong>lower bound</strong> is a
 rigidity statement: if the interior strain is nearly uniform, must the
 shape itself be near some ellipsoid?</p><p>The correct shape distance is part of the mechanics. A metric based
 only on maximum radial amplitude can miss rapidly varying roughness that
-has a disproportionately large elastic effect.</p><hr/><h2 id="EL01-partial-progress-in-the-current-study">Partial progress in the
-current study</h2><p><strong>Manuscript-stage result — not a solution of the full EL01
-problem.</strong></p><p>For a local neighborhood of a nondegenerate ellipsoid in homogeneous
-isotropic linear elasticity, with a uniform dilatational eigenstrain and
-no elastic-modulus mismatch, the current study develops a nonlinear
-two-sided relation between whole-interior strain heterogeneity and
-distance to the local ellipsoid family.</p><p>The analysis removes perturbations that merely translate, rotate,
-rescale, or otherwise move within the ellipsoid family, and identifies a
-morphology-sensitive half-order geometric scale for the remaining shape
-variation. The sphere permits more explicit estimates.</p><p>The study also develops a complementary finite-shape enclosure for a
-prescribed geometry and compares its predictions with an independent
-displacement-based finite-element calculation.</p><p><strong>What this changes:</strong> it supplies a quantitative local
-answer in one important regime.</p><p><strong>What it does not change:</strong> the broader EL01 problem
-remains open outside that regime.</p><hr/><h2 id="EL01-what-remains-open">What remains open</h2><p>The central question is how far the quantitative relation between
-<strong>shape departure</strong> and <strong>loss of uniformity</strong>
-extends beyond the local special setting.</p><p>Important directions include broader finite shape deviations and
-possible global stability or counterexamples; general volumetric,
-deviatoric, and mixed eigenstrain modes; elastic modulus mismatch and
-anisotropic constitutive response; inclusions near free surfaces or
-interfaces; periodic domains; and interacting multiple inclusions.</p><p>A complete theory may not use one universal constant or one universal
-geometry metric. Part of the problem is to determine which quantities
-remain stable across these different physical settings.</p><hr/><h2 id="EL01-what-would-count-as-progress">What would count as progress?</h2><ul>
-<li>A theorem extending two-sided stability to a substantially larger
-shape class or a more general eigenstrain/material setting.</li>
-<li>A sharp counterexample showing that a proposed metric or global
-stability statement cannot hold.</li>
-<li>Quantitative constants or asymptotic laws that make the bounds
-practically computable from measured geometry.</li>
-<li>A validated geometry-to-field error estimate that connects
-three-dimensional characterization of real inclusions to the accuracy of
-ellipsoidal micromechanics.</li>
+has a disproportionately large elastic effect.</p><hr/><h2 id="EL01-partial-progress-in-the-current-study">Recent progress: quantitative local stability and finite-shape bounds</h2>
+<p><a href="https://arxiv.org/abs/2610.13400">Ni (2026), <em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em></a>, is available as an arXiv preprint. It establishes three complementary results in an infinite homogeneous isotropic linear-elastic solid with uniform dilatational eigenstrain, identical inclusion and matrix moduli, perfect bonding, and no remote loading.</p>
+<p><strong>Nonlinear two-sided local stability.</strong> Near any fixed nondegenerate ellipsoid, whole-interior strain heterogeneity is bounded above and below by a geometry-only distance to the nearby ellipsoid family. The admissible shapes lie in a sufficiently small smooth neighborhood. Changes that merely translate, rotate, rescale, or otherwise produce another ellipsoid are removed from the distance. The theorem controls both how shape imperfections generate heterogeneity and how near-uniformity constrains the shape.</p>
+<p><strong>Critical half-order geometric scaling.</strong> The half-order Sobolev scale captures both imperfection amplitude and morphological wavelength. It is the critical order for frequency-independent two-sided control: a weaker order loses the uniform upper bound, while a stronger order loses the positive uniform lower bound. For a sphere, the preprint derives the exact linear spectrum and sharp all-mode bounds after the ellipsoidal directions are removed.</p>
+<p><strong>Convergent bounds for prescribed finite shapes.</strong> Subtracting a volume-balanced ellipsoidal source gives an exact residual-field budget. Partial interior and exterior field information yields lower and upper bounds on the heterogeneity. With exact integration, these bounds converge to the exact response as the resolved regions exhaust the respective domains. This construction applies to prescribed finite geometries beyond the local theorem's neighborhood.</p>
+<p><strong>Numerical evidence.</strong> The finite-shape bounds are evaluated for protruded, indented, and necked inclusions. Independently assembled displacement-based finite-element calculations give heterogeneity values within the reported intervals.</p>
+<hr/><h2 id="EL01-what-remains-open">What remains open</h2>
+<p>The local theorem supplies a geometry-only two-sided relation near ellipsoids. The finite-shape construction supplies convergent bounds for a specified geometry using residual-field information. A <strong>global geometry-only two-sided stability law</strong> beyond the local neighborhood remains open, including the appropriate shape class, distance, constants, and possible counterexamples.</p>
+<p>Further questions concern general deviatoric and mixed eigenstrain modes, elastic modulus mismatch, anisotropic constitutive response, inclusions near free surfaces or interfaces, periodic domains, and interacting multiple inclusions. Both the geometry-only stability relation and the finite-shape bounds require extension to these physical settings.</p>
+<p>A complete theory may not use one universal constant or one universal geometry metric. Part of the problem is to determine which quantities remain stable across these different physical settings.</p><hr/><h2 id="EL01-what-would-count-as-progress">What would count as progress?</h2><ul>
+<li>Prove a geometry-only two-sided stability relation beyond the local neighborhood, or extend the relation to a more general eigenstrain, material or boundary setting, with the shape class and norm stated precisely.</li>
+<li>A sharp counterexample showing that a proposed global metric or stability statement cannot hold would materially settle part of the problem.</li>
+<li>Obtain effective local constants for general nonspherical ellipsoids, including their dependence on aspect ratio and the admissible neighborhood.</li>
+<li>Extend computable geometry-to-field error bounds and independent validation to additional material, loading or boundary settings relevant to real inclusions.</li>
 </ul><hr/><h2 id="EL01-scientific-scope">Scientific scope</h2><p>This page does <strong>not</strong> claim that the classical Eshelby
 conjecture is simply open. The weak three-dimensional conjecture is
 solved in its standard setting, and strong formulations have substantial
 partial results.</p><p>Experimental precipitate morphologies motivate the need for finite
 shape deviations and best-fit ellipsoidal reductions; they are not, by
-themselves, experimental validation of a stability theorem.</p><p>Our literature audit did not identify a published result matching the
+themselves, experimental validation of a stability theorem.</p><p>The literature audit of 30 September 2026, preceding this preprint, did not identify a published result matching the
 full combination of a whole-interior heterogeneity measure, two-sided
 quantitative control, distance to the full ellipsoid family, a
 morphology-sensitive half-order geometry scale, and nonlinear validity
@@ -547,7 +532,8 @@ Huang &amp; J. Wang, <em>A constrained proof of the strong version of
 the Eshelby conjecture for three-dimensional isotropic media</em>
 (2023)</a> — constrained progress on the remaining strong-conjecture
 structure.</li>
-</ul><hr/><h2 id="EL01-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
+<li><a href="https://arxiv.org/abs/2610.13400">Bo Ni, <em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em>, arXiv:2610.13400 (2026, preprint)</a> — nonlinear local stability, critical half-order scaling, and convergent finite-shape bounds.</li>
+</ul><hr/><h2 id="EL01-progress-log">Progress log</h2><p><strong>11 October 2026 — Preprint incorporated; entry v1.1.</strong><br/>The <a href="https://arxiv.org/abs/2610.13400">arXiv preprint</a> supplies a public reference for the local theorem, critical geometric scaling and sphere spectrum, and convergent finite-shape construction. This update states the model assumptions, records the independent numerical comparisons, and distinguishes the remaining global geometry-only and broader physical-setting questions. Scientific status remains partial progress.</p><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
 Quantitative stability is separated explicitly from the classical exact
 Eshelby conjectures. The current manuscript is recorded as partial
 progress in a local isotropic setting; broader material, loading,
@@ -3085,7 +3071,7 @@ S01 is formulated around the distinction between homogenization of fracture ener
 </article>
 </div>
 </div>
-<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 8 October 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
+<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 11 October 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
 <script>
 function show(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));

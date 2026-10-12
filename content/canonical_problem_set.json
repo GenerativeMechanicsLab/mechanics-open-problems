@@ -1,11 +1,11 @@
 {
-  "canonical_as_of": "2026-10-01",
+  "canonical_as_of": "2026-10-11",
   "purpose": "Authoritative roster for website assembly and future editorial work. This record overrides stale prototype pages, earlier audit summaries, and obsolete IDs when they conflict.",
   "first_release": [
     {
       "id": "EL01",
       "title": "How stable is Eshelby uniformity to shape imperfections?",
-      "version": "1.0",
+      "version": "1.1",
       "status": "use",
       "latest_source": "content/problems/EL01.json"
     },

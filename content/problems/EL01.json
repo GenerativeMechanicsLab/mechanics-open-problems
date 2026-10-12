@@ -6,8 +6,8 @@
   "type": "Quantitative stability",
   "scientific_status": "Partial progress",
   "editorial_status": "Source-audited draft",
-  "statement_version": "1.0",
-  "last_reviewed": "2026-09-30",
+  "statement_version": "1.1",
+  "last_reviewed": "2026-10-11",
   "featured": true,
   "summary": "If a real inclusion departs from the ellipsoid family by a measured amount, how much interior strain heterogeneity must appear, and which geometric scales control the error?",
   "statement": {
@@ -23,9 +23,10 @@
     "The problem also exposes which geometric information must be retained: equal-amplitude shape errors at different wavelengths need not produce equal elastic heterogeneity."
   ],
   "scope": [
-    "Current partial result: three-dimensional small-strain homogeneous isotropic elasticity, perfect bonding, no modulus mismatch, a smooth inclusion near a nondegenerate ellipsoid, and uniform dilatational eigenstrain.",
-    "The broader problem includes finite shape departures, general eigenstrain modes, elastic contrast, anisotropy, free surfaces and interfaces, periodic domains, and multiple interacting inclusions.",
-    "The geometry is measured relative to the ellipsoid family rather than one arbitrarily chosen reference ellipsoid."
+    "Results in the 2026 preprint assume an infinite three-dimensional homogeneous isotropic linear-elastic solid, uniform dilatational eigenstrain, identical inclusion and matrix moduli, perfect bonding, and no remote loading.",
+    "The nonlinear geometry-only two-sided theorem applies in a sufficiently small smooth neighborhood of any fixed nondegenerate ellipsoid. A separate residual-field construction gives convergent bounds for a prescribed bounded finite geometry and does not require that local neighborhood.",
+    "The local shape distance is measured relative to the nearby ellipsoid family rather than one arbitrarily chosen reference ellipsoid.",
+    "Open extensions include a global geometry-only two-sided stability law, general eigenstrain modes, elastic contrast, anisotropy, free surfaces and interfaces, periodic domains, and multiple interacting inclusions."
   ],
   "boundary": [
     {
@@ -56,20 +57,51 @@
       ]
     },
     {
-      "text": "The current GenMech study develops manuscript-stage nonlinear two-sided local stability near general nondegenerate ellipsoids in the stated dilatational setting, plus a complementary finite-shape enclosure and independent displacement-based FEM validation. External mathematical review remains pending.",
-      "refs": []
+      "text": "Ni (2026, arXiv preprint) proves nonlinear two-sided local control of whole-interior strain heterogeneity by a geometry-only distance to the nearby ellipsoid family, after removing changes that produce another ellipsoid, in the stated homogeneous-isotropic dilatational setting.",
+      "refs": [
+        "R8"
+      ]
     },
     {
-      "text": "Broader finite amplitudes, eigenstrains, elastic mismatch, anisotropy, boundaries, periodicity and interacting inclusions remain outside that local result.",
-      "refs": []
+      "text": "The half-order Sobolev scale is the critical order for frequency-independent two-sided control. The preprint derives the exact linear spectrum and sharp all-mode bounds for a sphere after removing its ellipsoidal directions.",
+      "refs": [
+        "R8"
+      ]
+    },
+    {
+      "text": "For prescribed finite geometries in the same physical setting, ellipsoidal subtraction gives an exact residual-field budget and lower and upper bounds from partial interior and exterior field information. With exact integration, the bounds converge to the exact heterogeneity as the resolved regions exhaust the respective domains.",
+      "refs": [
+        "R8"
+      ]
+    },
+    {
+      "text": "Numerical evidence: the preprint applies the finite-shape bounds to protruded, indented, and necked inclusions and compares them with independently assembled displacement-based finite-element calculations.",
+      "refs": [
+        "R8"
+      ]
+    },
+    {
+      "text": "The convergent construction for a specified finite geometry is distinct from a global two-sided law in terms of geometry-only distance to ellipsoids. Such a global law, and extensions to general eigenstrains, elastic mismatch, anisotropy, boundaries, periodicity and interacting inclusions, remain open.",
+      "refs": [
+        "R8"
+      ]
     }
   ],
   "settle": [
-    "Prove a two-sided quantitative relation for a substantially broader declared shape/material/loading class, with the quotient geometry and norm stated precisely.",
-    "A sharp counterexample showing that a proposed global metric or stability statement cannot hold would also materially settle part of the problem.",
-    "For engineering use, provide computable constants or certified geometry-to-field error bounds and validate them independently."
+    "Prove a geometry-only two-sided stability relation beyond the local neighborhood, or extend the relation to a more general eigenstrain, material or boundary setting, with the shape class and norm stated precisely.",
+    "A sharp counterexample showing that a proposed global metric or stability statement cannot hold would materially settle part of the problem.",
+    "Obtain effective local constants for general nonspherical ellipsoids, including their dependence on aspect ratio and the admissible neighborhood.",
+    "Extend computable geometry-to-field error bounds and independent validation to additional material, loading or boundary settings relevant to real inclusions."
   ],
   "progress": [
+    {
+      "date": "2026-10-11",
+      "title": "Preprint available: local stability and convergent finite-shape bounds",
+      "text": "The arXiv preprint reports nonlinear two-sided local stability, the critical half-order geometric scale with an exact sphere spectrum, and convergent bounds for prescribed finite geometries. Independent displacement-based finite-element comparisons provide numerical evidence. EL01 now distinguishes these results from the remaining global geometry-only and broader physical-setting questions.",
+      "refs": [
+        "R8"
+      ]
+    },
     {
       "date": "2026-09-29",
       "title": "Local nonlinear two-sided stability assembled",
@@ -125,6 +157,12 @@
       "role": "adjacent recent theory",
       "label": "Ye, field solution and uniformity conditions for linear multiphysical inclusions (2025)",
       "url": "https://doi.org/10.1016/j.ijengsci.2025.104227"
+    },
+    {
+      "id": "R8",
+      "role": "local stability, critical geometric scaling and finite-shape bounds",
+      "label": "Bo Ni, Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics, arXiv:2610.13400 (2026, preprint)",
+      "url": "https://arxiv.org/abs/2610.13400"
     }
   ],
   "categories": [

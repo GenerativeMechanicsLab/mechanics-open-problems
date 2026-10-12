@@ -1,6 +1,6 @@
 # Canonical problem set
 
-**Canonical as of:** 1 October 2026
+**Canonical as of:** 11 October 2026
 
 This file is the authoritative roster for website assembly and future editorial work. It overrides stale prototype pages, early recency tables, and obsolete problem IDs when they conflict.
 
@@ -8,7 +8,7 @@ This file is the authoritative roster for website assembly and future editorial 
 
 | ID | Canonical title | Version | Authoritative source |
 |---|---|---:|---|
-| EL01 | How stable is Eshelby uniformity to shape imperfections? | 1.0 | `content/problems/EL01.json` |
+| EL01 | How stable is Eshelby uniformity to shape imperfections? | 1.1 | `content/problems/EL01.json` |
 | FR01 | What determines the attainable speed and first instability of a tensile crack? | 1.0 | `content/problems/FR01.json` |
 | DI02 | How does continuum plasticity emerge from the collective dynamics of dislocations? | 1.0 | `content/problems/DI02.json` |
 | PL01 | What selects the physical evolution after plasticity loses ellipticity? | 2.0 | `content/problems/PL01.json` |
