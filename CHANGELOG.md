@@ -4,6 +4,14 @@ All notable public changes to **Open Problems in Mechanics** are recorded here.
 
 The project uses versioned public snapshots while remaining a living resource.
 
+## 14 October 2026 — Shareable problem and section URLs
+
+- Added fragment routing for Home, Problems, Vision, and all ten problem pages.
+- Preserved existing section and citation URLs, showing their owning problem before scrolling on direct loads, reloads, and history navigation.
+- Replaced click-only navigation with meaningful links, including atlas problem links, to support copying and opening in new tabs.
+- Added safe fallbacks for unknown routes and checks against placeholder navigation links.
+- Updated the site maintenance date; scientific content, problem versions, and the first-publication date remain unchanged.
+
 ## 11 October 2026 — Eshelby stability preprint and EL01 v1.1
 
 - Linked the Vision essay to Bo Ni's arXiv preprint, [Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics](https://arxiv.org/abs/2610.13400), and added a concise scientific summary and full reference.

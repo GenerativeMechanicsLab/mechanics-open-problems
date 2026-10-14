@@ -43,6 +43,20 @@ python scripts/stamp_publication.py YYYY-MM-DD
 
 Then rerun validation before creating the v1.0 tag/release.
 
+## Navigation and shareable URLs
+
+The static Pages deployment uses URL fragments, without a server-side router:
+
+- Home: the site root or `#home`; catalogue: `#problems`; vision: `#vision`.
+- Each problem: its canonical ID, for example `#DI02`.
+- Sections and citation targets: their existing HTML IDs, for example `#DI02-what-remains-open`.
+
+`renderRoute()` shows the view containing the requested ID before scrolling to it. Native links and `hashchange` keep direct loads, reloads, and Back/Forward consistent. Keep problem and section IDs stable when editing. Use real `href` destinations for navigation, including SVG atlas problem links; do not replace them with click-only controls.
+
+Unknown sections within a recognized problem fall back to that problem's top. Unknown or malformed routes fall back to the catalogue. The address is corrected without adding an extra history entry.
+
+After routing changes, check direct opening and reload for all ten problems, the DI02/EL01/PL01 section links, Back/Forward across views and sections, copied links in fresh tabs, search, mechanics filters, and atlas links.
+
 ## Scientific status
 
 A curated entry is not a formal certification that a problem is globally open. Maintain the distinction between:

@@ -176,11 +176,13 @@ def main() -> int:
                 fail(errors, f"missing internal anchor target: {href}")
 
         if href == "#":
-            m = SHOW_CALL.search(onclick)
-            if not m:
-                fail(errors, 'bare href="#" anchor without show(...) navigation')
-            else:
-                show_targets.append(m.group(1))
+            fail(errors, 'bare href="#" anchor cannot be copied or opened as a view URL')
+
+        m = SHOW_CALL.search(onclick)
+        if m:
+            show_targets.append(m.group(1))
+            if href != "#" + m.group(1):
+                fail(errors, f"navigation link does not match its show(...) target: {href}")
 
         if "cite-ref" in classes:
             citation_links += 1
@@ -211,6 +213,9 @@ def main() -> int:
         fail(errors, f"canonical first-release roster has {len(canonical)} active problems; expected 10")
 
     expected_views = {"home", "problems", "vision", *canonical}
+    missing_routes = sorted(expected_views - set(fragment_links))
+    if missing_routes:
+        fail(errors, f"views without shareable navigation links: {missing_routes}")
     actual_views = set(parser.view_ids)
     missing_views = sorted(expected_views - actual_views)
     extra_views = sorted(actual_views - expected_views)

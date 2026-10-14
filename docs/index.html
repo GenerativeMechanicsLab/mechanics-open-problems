@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-10-11"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
+<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-10-14"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
 :root{--ink:#17222c;--muted:#5c6873;--line:#d9e0e5;--paper:#fbfcfd;--soft:#f2f5f7;--accent:#1d5b78;--accent2:#134157;--warm:#f6f1e8;--max:1180px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.62}
@@ -8,7 +8,9 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .review{background:#fff8db;border-bottom:1px solid #eadba4;padding:9px 0;font-size:13px;color:#665a2c}
 header{position:sticky;top:0;z-index:20;background:rgba(251,252,253,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
 .nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:750}.mark{width:38px;height:38px;border-radius:8px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:12px}
-nav.mainnav{display:flex;gap:8px;flex-wrap:wrap}nav.mainnav button{border:0;background:transparent;padding:8px 10px;border-radius:6px;color:var(--muted);font-weight:650;cursor:pointer}nav.mainnav button.active,nav.mainnav button:hover{background:var(--soft);color:var(--ink)}
+nav.mainnav{display:flex;gap:8px;flex-wrap:wrap}nav.mainnav a{font-size:13.3333px;display:inline-block;border:0;background:transparent;padding:8px 10px;border-radius:6px;color:var(--muted);font-weight:650;cursor:pointer}nav.mainnav a.active,nav.mainnav a:hover{background:var(--soft);color:var(--ink)}
+nav.mainnav a,a.button[href="#problems"],a.button[href="#vision"]{font-family:Arial,sans-serif;line-height:normal;text-decoration:none}
+.atlas-problem:hover{text-decoration:none}
 .hero{padding:70px 0 44px;background:linear-gradient(180deg,#f4f7f8 0%,var(--paper) 100%)}.hero-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(260px,.7fr);gap:68px;align-items:end}
 h1,h2,h3,h4{font-family:Georgia,"Times New Roman",serif;font-weight:500}.hero h1{font-size:clamp(48px,7vw,80px);line-height:1.03;margin:8px 0 16px}.subtitle{font-size:clamp(21px,2.5vw,30px);color:#29404d;line-height:1.28;margin:0 0 18px}.copy,.muted{color:var(--muted)}
 .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:800;color:var(--accent);margin:0 0 10px}.pill{display:inline-block;background:var(--warm);border:1px solid #ded2bd;border-radius:99px;padding:5px 10px;font-size:12px;font-weight:700;margin-bottom:20px}.note{border-left:3px solid var(--accent);padding:18px 0 18px 24px;color:var(--muted)}
@@ -72,7 +74,7 @@ math[display="inline"]{font-size:1em}
 .technical math[display="block"],.short-layer math[display="block"]{font-size:1.03em}
 .math-audit-note{display:none}
 </style></head><body>
-<header><div class="wrap nav"><div class="brand"><span class="mark">OPM</span><span>Open Problems in Mechanics</span></div><nav class="mainnav"><button class="active" data-view="home" onclick="show('home')">Home</button><button data-view="problems" onclick="show('problems')">Problems</button><button data-view="vision" onclick="show('vision')">Vision</button></nav></div></header>
+<header><div class="wrap nav"><div class="brand"><span class="mark">OPM</span><span>Open Problems in Mechanics</span></div><nav class="mainnav"><a class="active" data-view="home" href="#home">Home</a><a data-view="problems" href="#problems">Problems</a><a data-view="vision" href="#vision">Vision</a></nav></div></header>
 <div class="view active" id="home">
 <section class="hero"><div class="wrap hero-grid">
 <div>
@@ -82,7 +84,7 @@ math[display="inline"]{font-size:1em}
 <p class="subtitle">Theory-rich questions where new physical systems, engineering needs, and fundamental mechanics meet.</p>
 <p class="copy">Mechanics stays at the frontier by turning new materials, structures, processes, and observations into principles that travel beyond any one system. This collection focuses on questions where that theoretical step is still open.</p>
 <p class="copy"><strong>Open Problems in Mechanics</strong> maps what is known, what recent progress has changed, what remains open, and what evidence would move the boundary.</p>
-<div class="actions"><button class="button" onclick="show('problems')">Explore problems</button><button class="button secondary" onclick="show('vision')">Read the vision</button></div>
+<div class="actions"><a class="button" href="#problems">Explore problems</a><a class="button secondary" href="#vision">Read the vision</a></div>
 <p class="authorline">Curated by <strong>Bo Ni</strong> · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a></p>
 </div>
 <aside class="note"><strong>What this collection is</strong><p>A selected working frontier, not a ranking or catalogue of every major problem in mechanics. Each entry is theory-deep, physically consequential, and broad enough to matter beyond one material or application.</p></aside>
@@ -93,7 +95,7 @@ math[display="inline"]{font-size:1em}
 <div><strong>Living + versioned</strong><span>built to expand</span></div>
 </section>
 <section class="wrap section atlas-section">
-<div class="section-head"><div><p class="eyebrow">Mechanics atlas</p><h2>The problem landscape</h2></div><a href="#" onclick="show('problems');return false;">Browse &amp; search all →</a></div>
+<div class="section-head"><div><p class="eyebrow">Mechanics atlas</p><h2>The problem landscape</h2></div><a href="#problems">Browse &amp; search all →</a></div>
 <div class="atlas-shell">
 <svg aria-label="Interactive atlas of mechanics open problems" id="mechanics-atlas" role="img" viewbox="0 0 1220 760">
 <defs>
@@ -168,81 +170,81 @@ math[display="inline"]{font-size:1em}
 <text class="tab-count" y="24">4 problems</text>
 </g></g>
 <g class="atlas-problems">
-<g class="atlas-problem" data-problem="EL01" onclick="show('EL01')" tabindex="0" transform="translate(125,150)">
+<a class="atlas-problem" data-problem="EL01" href="#EL01" tabindex="0" transform="translate(125,150)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#63D7E8" height="3" rx="1.5" width="14" x="-74" y="-37"></rect><rect fill="#79A8FF" height="3" rx="1.5" width="14" x="-56" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">EL01</text>
 <text class="problem-title" y="9">Eshelby stability</text>
 <title>How stable is Eshelby uniformity to shape imperfections? — Elasticity · Multiscale</title>
-</g>
-<g class="atlas-problem" data-problem="FR01" onclick="show('FR01')" tabindex="0" transform="translate(1085,145)">
+</a>
+<a class="atlas-problem" data-problem="FR01" href="#FR01" tabindex="0" transform="translate(1085,145)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#FF8F7D" height="3" rx="1.5" width="14" x="-74" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">FR01</text>
 <text class="problem-title" y="3">Dynamic</text>
 <text class="problem-title second" y="14">crack branches</text>
 <title>What determines the attainable speed and first instability of a tensile crack? — Fracture</title>
-</g>
-<g class="atlas-problem" data-problem="DI02" onclick="show('DI02')" tabindex="0" transform="translate(480,58)">
+</a>
+<a class="atlas-problem" data-problem="DI02" href="#DI02" tabindex="0" transform="translate(480,58)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#F2BE6D" height="3" rx="1.5" width="14" x="-74" y="-37"></rect><rect fill="#79A8FF" height="3" rx="1.5" width="14" x="-56" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">DI02</text>
 <text class="problem-title" y="3">Plasticity</text>
 <text class="problem-title second" y="14">from dislocations</text>
 <title>How does continuum plasticity emerge from the collective dynamics of dislocations? — Plasticity · Multiscale</title>
-</g>
-<g class="atlas-problem" data-problem="PL01" onclick="show('PL01')" tabindex="0" transform="translate(765,63)">
+</a>
+<a class="atlas-problem" data-problem="PL01" href="#PL01" tabindex="0" transform="translate(765,63)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#F2BE6D" height="3" rx="1.5" width="14" x="-74" y="-37"></rect><rect fill="#FF8F7D" height="3" rx="1.5" width="14" x="-56" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">PL01</text>
 <text class="problem-title" y="3">Post-localization</text>
 <text class="problem-title second" y="14">selection</text>
 <title>What selects the physical evolution after plasticity loses ellipticity? — Plasticity · Fracture</title>
-</g>
-<g class="atlas-problem" data-problem="NL01" onclick="show('NL01')" tabindex="0" transform="translate(1100,345)">
+</a>
+<a class="atlas-problem" data-problem="NL01" href="#NL01" tabindex="0" transform="translate(1100,345)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#63D7E8" height="3" rx="1.5" width="14" x="-74" y="-37"></rect><rect fill="#FF8F7D" height="3" rx="1.5" width="14" x="-56" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">NL01</text>
 <text class="problem-title" y="3">Finite-elastic</text>
 <text class="problem-title second" y="14">singularities</text>
 <title>Which singularities are physically admissible in finite elasticity? — Elasticity · Fracture</title>
-</g>
-<g class="atlas-problem" data-problem="SH01" onclick="show('SH01')" tabindex="0" transform="translate(1030,600)">
+</a>
+<a class="atlas-problem" data-problem="SH01" href="#SH01" tabindex="0" transform="translate(1030,600)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#B6A2FF" height="3" rx="1.5" width="14" x="-74" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">SH01</text>
 <text class="problem-title" y="9">Shell safe buckling</text>
 <title>What sets the safe buckling load of an imperfect cylindrical shell? — Structural mechanics</title>
-</g>
-<g class="atlas-problem" data-problem="CO01" onclick="show('CO01')" tabindex="0" transform="translate(610,700)">
+</a>
+<a class="atlas-problem" data-problem="CO01" href="#CO01" tabindex="0" transform="translate(610,700)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#79D3AE" height="3" rx="1.5" width="14" x="-74" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">CO01</text>
 <text class="problem-title" y="9">3D Coulomb contact</text>
 <title>When does three-dimensional elastic contact with Coulomb friction admit a quasistatic solution? — Contact</title>
-</g>
-<g class="atlas-problem" data-problem="S01" onclick="show('S01')" tabindex="0" transform="translate(280,665)">
+</a>
+<a class="atlas-problem" data-problem="S01" href="#S01" tabindex="0" transform="translate(280,665)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#FF8F7D" height="3" rx="1.5" width="14" x="-74" y="-37"></rect><rect fill="#79A8FF" height="3" rx="1.5" width="14" x="-56" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">S01</text>
 <text class="problem-title" y="9">Random fracture</text>
 <title>What randomness survives in macroscopic fracture of a random solid? — Fracture · Multiscale</title>
-</g>
-<g class="atlas-problem" data-problem="AM02" onclick="show('AM02')" tabindex="0" transform="translate(120,545)">
+</a>
+<a class="atlas-problem" data-problem="AM02" href="#AM02" tabindex="0" transform="translate(120,545)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#FF8F7D" height="3" rx="1.5" width="14" x="-74" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">AM02</text>
 <text class="problem-title" y="3">Solidification</text>
 <text class="problem-title second" y="14">fracture</text>
 <title>Can a Griffith-type fracture law be defined for a solidifying metal? — Fracture</title>
-</g>
-<g class="atlas-problem" data-problem="BIO01" onclick="show('BIO01')" tabindex="0" transform="translate(120,330)">
+</a>
+<a class="atlas-problem" data-problem="BIO01" href="#BIO01" tabindex="0" transform="translate(120,330)">
 <rect class="problem-card-svg" height="76" rx="15" width="164" x="-82" y="-38"></rect>
 <rect fill="#FF8F7D" height="3" rx="1.5" width="14" x="-74" y="-37"></rect><rect fill="#79A8FF" height="3" rx="1.5" width="14" x="-56" y="-37"></rect>
 <text class="problem-id-svg" x="-63" y="-17">BIO01</text>
 <text class="problem-title" y="9">Hierarchy &amp; fracture</text>
 <title>How does structural hierarchy transform local failure into macroscopic fracture resistance? — Fracture · Multiscale</title>
-</g></g>
+</a></g>
 </svg>
 <div class="atlas-info" id="atlas-info"><strong>Read the atlas</strong><span>Six classical mechanics domains form the inner structure; the ten current problems sit on the frontier. Hover to trace connections. Click any problem to open it.</span></div>
 </div>
@@ -251,12 +253,12 @@ math[display="inline"]{font-size:1em}
 <section class="wrap section" style="padding-top:16px">
 <div class="section-head"><div><p class="eyebrow">The larger purpose</p><h2>Mechanics and the human work of understanding</h2></div></div>
 <p class="copy" style="max-width:900px">AI is changing the scale and distribution of scientific reasoning. Mechanics offers a rigorous place to ask how those new capabilities can enlarge the human work of understanding—from observation and theory to computation, validation, and engineering use.</p>
-<a href="#" onclick="show('vision');return false;">Read the full vision →</a>
+<a href="#vision">Read the full vision →</a>
 </section>
 </div>
 <div class="view" id="problems">
 <section class="problem-hero"><div class="wrap">
-<a class="back" href="#" onclick="show('home');return false;">← Home</a>
+<a class="back" href="#home">← Home</a>
 <p class="eyebrow">The collection</p><h1>Problems</h1>
 <p class="lede">The first release contains ten theory-rich problems. The mechanics tabs are intentionally few and familiar; membership is nonexclusive, while richer topics and applications remain available through keyword search.</p>
 </div></section>
@@ -273,70 +275,70 @@ math[display="inline"]{font-size:1em}
 <h3>How stable is Eshelby uniformity to shape imperfections?</h3>
 <p>How strongly does departure from the ellipsoid family force loss of interior strain uniformity, and which geometric scales control the error?</p>
 <div class="card-foot"><span>Quantitative stability</span>
-<a href="#" onclick="show('EL01');return false;">Read problem →</a></div>
+<a href="#EL01">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="fr01 what determines the attainable speed and first instability of a tensile crack? dynamic fracture dynamic branch selection what determines the dynamically attainable crack-speed branches and which instability terminates smooth tensile-crack growth first? fracture dynamics instability nonlinear mechanics branch selection process zone disorder impact fragmentation" data-tabs="Fracture">
 <div class="meta"><span class="id">FR01</span><span class="badge cross">Fracture</span><span class="badge">Open</span></div>
 <h3>What determines the attainable speed and first instability of a tensile crack?</h3>
 <p>What determines the dynamically attainable crack-speed branches and which instability terminates smooth tensile-crack growth first?</p>
 <div class="card-foot"><span>Dynamic branch selection</span>
-<a href="#" onclick="show('FR01');return false;">Read problem →</a></div>
+<a href="#FR01">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="di02 how does continuum plasticity emerge from the collective dynamics of dislocations? dislocation mechanics / multiscale plasticity multiscale closure which information from collective dislocation dynamics must survive coarse-graining for continuum plasticity to become closed and predictive? plasticity multiscale dislocations coarse graining closure nonlocality memory crystal plasticity strengthening" data-tabs="Plasticity|Multiscale">
 <div class="meta"><span class="id">DI02</span><span class="badge cross">Plasticity</span><span class="badge cross">Multiscale</span><span class="badge">Open</span></div>
 <h3>How does continuum plasticity emerge from the collective dynamics of dislocations?</h3>
 <p>Which information from collective dislocation dynamics must survive coarse-graining for continuum plasticity to become closed and predictive?</p>
 <div class="card-foot"><span>Multiscale closure</span>
-<a href="#" onclick="show('DI02');return false;">Read problem →</a></div>
+<a href="#DI02">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="pl01 what selects the physical evolution after plasticity loses ellipticity? continuum plasticity and localization post-instability selection when local plasticity loses ellipticity, what physical principle selects the finite-width, post-localization evolution observed in the material? plasticity fracture localization loss of ellipticity regularization kinetic laws shear bands forming high rate" data-tabs="Plasticity|Fracture">
 <div class="meta"><span class="id">PL01</span><span class="badge cross">Plasticity</span><span class="badge cross">Fracture</span><span class="badge">Open</span></div>
 <h3>What selects the physical evolution after plasticity loses ellipticity?</h3>
 <p>When local plasticity loses ellipticity, what physical principle selects the finite-width, post-localization evolution observed in the material?</p>
 <div class="card-foot"><span>Post-instability selection</span>
-<a href="#" onclick="show('PL01');return false;">Read problem →</a></div>
+<a href="#PL01">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="nl01 which singularities are physically admissible in finite elasticity? nonlinear elasticity and singularities singularities and admissibility when does a singular finite deformation represent real defect physics, and when does it expose an incomplete or overly broad continuum theory? elasticity fracture nonlinear elasticity variational mechanics singularities admissibility relaxation topology cavitation soft solids" data-tabs="Elasticity|Fracture">
 <div class="meta"><span class="id">NL01</span><span class="badge cross">Elasticity</span><span class="badge cross">Fracture</span><span class="badge">Open</span></div>
 <h3>Which singularities are physically admissible in finite elasticity?</h3>
 <p>When does a singular finite deformation represent real defect physics, and when does it expose an incomplete or overly broad continuum theory?</p>
 <div class="card-foot"><span>Singularities and admissibility</span>
-<a href="#" onclick="show('NL01');return false;">Read problem →</a></div>
+<a href="#NL01">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="sh01 what sets the safe buckling load of an imperfect cylindrical shell? shell buckling and imperfection sensitivity robust imperfection-sensitive stability can a physically admissible imperfection class be converted into a mechanics-based safe lower envelope for cylindrical-shell buckling? structural mechanics stability buckling imperfection sensitivity bifurcation energy landscape shells aerospace" data-tabs="Structural mechanics">
 <div class="meta"><span class="id">SH01</span><span class="badge cross">Structural mechanics</span><span class="badge">Open</span></div>
 <h3>What sets the safe buckling load of an imperfect cylindrical shell?</h3>
 <p>Can a physically admissible imperfection class be converted into a mechanics-based safe lower envelope for cylindrical-shell buckling?</p>
 <div class="card-foot"><span>Robust imperfection-sensitive stability</span>
-<a href="#" onclick="show('SH01');return false;">Read problem →</a></div>
+<a href="#SH01">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="co01 when does three-dimensional elastic contact with coulomb friction admit a quasistatic solution? contact mechanics existence and quasistatic evolution what is the sharp three-dimensional existence and evolution boundary for elastic contact with coulomb friction? contact contact friction variational inequalities boundary operators joints brakes tribology" data-tabs="Contact">
 <div class="meta"><span class="id">CO01</span><span class="badge cross">Contact</span><span class="badge">Open</span></div>
 <h3>When does three-dimensional elastic contact with Coulomb friction admit a quasistatic solution?</h3>
 <p>What is the sharp three-dimensional existence and evolution boundary for elastic contact with Coulomb friction?</p>
 <div class="card-foot"><span>Existence and quasistatic evolution</span>
-<a href="#" onclick="show('CO01');return false;">Read problem →</a></div>
+<a href="#CO01">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="s01 what randomness survives in macroscopic fracture of a random solid? stochastic mechanics stochastic fracture and homogenization which macroscopic fracture observables self-average, and which retain irreducible stochasticity as scale separation increases? fracture multiscale stochastic mechanics homogenization self averaging random media reliability concrete rocks ceramics" data-tabs="Fracture|Multiscale">
 <div class="meta"><span class="id">S01</span><span class="badge cross">Fracture</span><span class="badge cross">Multiscale</span><span class="badge">Open</span></div>
 <h3>What randomness survives in macroscopic fracture of a random solid?</h3>
 <p>Which macroscopic fracture observables self-average, and which retain irreducible stochasticity as scale separation increases?</p>
 <div class="card-foot"><span>Stochastic fracture and homogenization</span>
-<a href="#" onclick="show('S01');return false;">Read problem →</a></div>
+<a href="#S01">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="am02 can a griffith-type fracture law be defined for a solidifying metal? fracture mechanics evolving-medium fracture can crack advance and arrest in an evolving solidifying metal be governed by a griffith-type driving force and resistance? fracture solidification multiphysics additive manufacturing welding casting printability history dependence" data-tabs="Fracture">
 <div class="meta"><span class="id">AM02</span><span class="badge cross">Fracture</span><span class="badge">Open</span></div>
 <h3>Can a Griffith-type fracture law be defined for a solidifying metal?</h3>
 <p>Can crack advance and arrest in an evolving solidifying metal be governed by a Griffith-type driving force and resistance?</p>
 <div class="card-foot"><span>Evolving-medium fracture</span>
-<a href="#" onclick="show('AM02');return false;">Read problem →</a></div>
+<a href="#AM02">Read problem →</a></div>
 </article>
 <article class="card problem-card" data-search="bio01 how does structural hierarchy transform local failure into macroscopic fracture resistance? hierarchical materials hierarchical fracture mechanics how do failure mechanisms interacting across structural hierarchy determine crack path and emergent macroscopic fracture resistance? fracture multiscale biomechanics hierarchical materials fracture resistance interfaces bone nacre enamel tendon bio-inspired" data-tabs="Fracture|Multiscale">
 <div class="meta"><span class="id">BIO01</span><span class="badge cross">Fracture</span><span class="badge cross">Multiscale</span><span class="badge">Open</span></div>
 <h3>How does structural hierarchy transform local failure into macroscopic fracture resistance?</h3>
 <p>How do failure mechanisms interacting across structural hierarchy determine crack path and emergent macroscopic fracture resistance?</p>
 <div class="card-foot"><span>Hierarchical fracture mechanics</span>
-<a href="#" onclick="show('BIO01');return false;">Read problem →</a></div>
+<a href="#BIO01">Read problem →</a></div>
 </article></div>
 <div class="grow"><div><h3>Extend the collection</h3><p>New problems can enter through the same mechanics-first, literature-audited process. A problem may appear in more than one tab; the taxonomy should stay simple even as the content becomes richer.</p></div><a class="button secondary" href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Suggest a problem</a></div>
 </section>
@@ -368,14 +370,14 @@ math[display="inline"]{font-size:1em}
 <p>The project began with quantitative Eshelby stability as one practical test of human-led, AI-assisted theoretical mechanics. Its long-term contribution, however, should stand independently of that paper: a living research resource where new material systems and engineering demands can be translated into transferable theoretical questions, where progress is documented rather than overwritten, and where increasingly capable machine reasoning remains connected to human understanding of the physical world.</p>
 <p class="muted">Related preprint: Bo Ni. <a href="https://arxiv.org/abs/2610.13400"><em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em></a>. arXiv:2610.13400 (2026).</p>
 <div class="actions">
-<button class="button" onclick="show('problems')">Explore the problems</button>
+<a class="button" href="#problems">Explore the problems</a>
 <a class="button secondary" href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Suggest an update or problem</a>
 </div>
 </div></section>
 </div>
 <div class="view" id="EL01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">EL01 · Inclusion mechanics</div>
 <h1>How stable is Eshelby uniformity to shape imperfections?</h1>
 <p class="muted">Mechanics tabs: Elasticity · Multiscale</p>
@@ -542,7 +544,7 @@ boundary and finite-shape regimes remain open.</p></article>
 </div>
 <div class="view" id="FR01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">FR01 · Dynamic fracture</div>
 <h1>What determines the attainable speed and first instability of a tensile crack?</h1>
 <p class="muted">Mechanics tabs: Fracture</p>
@@ -792,7 +794,7 @@ are incorporated into the known/open boundary.</p></article>
 </div>
 <div class="view" id="DI02">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">DI02 · Dislocation mechanics / multiscale plasticity</div>
 <h1>How does continuum plasticity emerge from the collective dynamics of dislocations?</h1>
 <p class="muted">Mechanics tabs: Plasticity · Multiscale</p>
@@ -1252,7 +1254,7 @@ constitutive structure required at larger scales.</p></article>
 </div>
 <div class="view" id="PL01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">PL01 · Continuum plasticity and localization</div>
 <h1>What selects the physical evolution after plasticity loses ellipticity?</h1>
 <p class="muted">Mechanics tabs: Plasticity · Fracture</p>
@@ -1647,7 +1649,7 @@ for localized plastic flow.</p></article>
 </div>
 <div class="view" id="NL01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">NL01 · Nonlinear elasticity and singularities</div>
 <h1>Which singularities are physically admissible in finite elasticity?</h1>
 <p class="muted">Mechanics tabs: Elasticity · Fracture</p>
@@ -2090,7 +2092,7 @@ open problem.</p></article>
 </div>
 <div class="view" id="SH01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">SH01 · Shell buckling and imperfection sensitivity</div>
 <h1>What sets the safe buckling load of an imperfect cylindrical shell?</h1>
 <p class="muted">Mechanics tabs: Structural mechanics</p>
@@ -2478,7 +2480,7 @@ derive/validate the lower buckling envelope over that class.</p></article>
 </div>
 <div class="view" id="CO01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">CO01 · Contact mechanics</div>
 <h1>When does three-dimensional elastic contact with Coulomb friction admit a quasistatic solution?</h1>
 <p class="muted">Mechanics tabs: Contact</p>
@@ -2750,7 +2752,7 @@ September 2026.</p></article>
 </div>
 <div class="view" id="S01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">S01 · Stochastic mechanics</div>
 <h1>What randomness survives in macroscopic fracture of a random solid?</h1>
 <p class="muted">Mechanics tabs: Fracture · Multiscale</p>
@@ -2891,7 +2893,7 @@ S01 is formulated around the distinction between homogenization of fracture ener
 </div>
 <div class="view" id="AM02">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">AM02 · Fracture mechanics</div>
 <h1>Can a Griffith-type fracture law be defined for a solidifying metal?</h1>
 <p class="muted">Mechanics tabs: Fracture</p>
@@ -2982,7 +2984,7 @@ S01 is formulated around the distinction between homogenization of fracture ener
 </div>
 <div class="view" id="BIO01">
 <section class="problem-hero"><div class="wrap narrow">
-<a class="back" href="#" onclick="show('problems');return false;">← Back to all problems</a>
+<a class="back" href="#problems">← Back to all problems</a>
 <div class="eyebrow">BIO01 · Hierarchical materials</div>
 <h1>How does structural hierarchy transform local failure into macroscopic fracture resistance?</h1>
 <p class="muted">Mechanics tabs: Fracture · Multiscale</p>
@@ -3071,13 +3073,47 @@ S01 is formulated around the distinction between homogenization of fracture ener
 </article>
 </div>
 </div>
-<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 11 October 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
+<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 14 October 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
 <script>
-function show(id){
-  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
-  const el=document.getElementById(id); if(el){el.classList.add('active');window.scrollTo(0,0);}
-  document.querySelectorAll('nav.mainnav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
+// Hash routes work under the GitHub Pages project path without server rewrites.
+// Resolve existing section/reference IDs through their owning view, not a second roster.
+let routeScrollFrame=0;
+function renderRoute(){
+  const views=[...document.querySelectorAll('.view')];
+  let id;
+  try{id=decodeURIComponent(location.hash.slice(1))||'home';}
+  catch{ id=''; }
+  let target=document.getElementById(id);
+  let view=target?.closest('.view');
+  if(!view){
+    // A stale section goes to its problem; an unknown route goes to the catalogue.
+    view=views.find(v=>id.startsWith(v.id+'-'))||document.getElementById('problems');
+    target=view;
+    history.replaceState(null,'','#'+view.id);
+  }
+  views.forEach(v=>v.classList.toggle('active',v===view));
+  const navId=['home','problems','vision'].includes(view.id)?view.id:'problems';
+  document.querySelectorAll('nav.mainnav a').forEach(a=>{
+    const active=a.dataset.view===navId;
+    a.classList.toggle('active',active);
+    if(active)a.setAttribute('aria-current','page');
+    else a.removeAttribute('aria-current');
+  });
+  cancelAnimationFrame(routeScrollFrame);
+  routeScrollFrame=requestAnimationFrame(()=>{
+    if(target===view)window.scrollTo({top:0,left:0,behavior:'instant'});
+    else target.scrollIntoView({block:'start',behavior:'instant'});
+  });
 }
+function show(id){
+  const hash='#'+encodeURIComponent(id);
+  if(location.hash===hash)renderRoute();
+  else location.hash=hash;
+}
+// Native fragment links create history entries; hashchange also handles Back/Forward.
+history.scrollRestoration='manual';
+window.addEventListener('hashchange',renderRoute);
+renderRoute();
 function applyFilters(){
   const q=(document.getElementById('search')?.value||'').toLowerCase().trim();
   const tab=document.getElementById('tab')?.value||'';
