@@ -3077,7 +3077,6 @@ S01 is formulated around the distinction between homogenization of fracture ener
 <script>
 // Hash routes work under the GitHub Pages project path without server rewrites.
 // Resolve existing section/reference IDs through their owning view, not a second roster.
-let routeScrollFrame=0;
 function renderRoute(){
   const views=[...document.querySelectorAll('.view')];
   let id;
@@ -3099,11 +3098,8 @@ function renderRoute(){
     if(active)a.setAttribute('aria-current','page');
     else a.removeAttribute('aria-current');
   });
-  cancelAnimationFrame(routeScrollFrame);
-  routeScrollFrame=requestAnimationFrame(()=>{
-    if(target===view)window.scrollTo({top:0,left:0,behavior:'instant'});
-    else target.scrollIntoView({block:'start',behavior:'instant'});
-  });
+  if(target===view)window.scrollTo({top:0,left:0,behavior:'instant'});
+  else target.scrollIntoView({block:'start',behavior:'instant'});
 }
 function show(id){
   const hash='#'+encodeURIComponent(id);
