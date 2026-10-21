@@ -154,13 +154,25 @@
       "id": "R8",
       "role": "recent weak-limit injectivity",
       "label": "Bouchala, Hencl & Zhu, Weak limits of Sobolev homeomorphisms are one to one almost everywhere (2025)",
-      "url": "https://doi.org/10.1007/s00526-025-03041-2"
+      "url": "https://doi.org/10.1007/s00526-025-03041-2",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R9",
       "role": "latest obstruction · preprint",
       "label": "Barchiesi, Henao, Mora-Corral & Rodiac, A Lavrentiev phenomenon in the neo-Hookean model (2026)",
-      "url": "https://arxiv.org/abs/2603.22873"
+      "url": "https://arxiv.org/abs/2603.22873",
+      "publication_status": "Preprint",
+      "publication_status_checked": "2026-10-21"
+    },
+    {
+      "id": "R10",
+      "role": "inverse regularity and weak closure",
+      "label": "Kalayanamit, Sobolev regularity of the inverse for minimizers of the neo-Hookean energy satisfying condition INV (2025)",
+      "url": "https://doi.org/10.1017/prm.2025.20",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

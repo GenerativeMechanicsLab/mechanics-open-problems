@@ -135,13 +135,17 @@
       "id": "R6",
       "role": "sharp recent theory",
       "label": "Ballard & Iurlano, Existence results for the time-incremental elastic contact problem with Coulomb friction in 2D (2024)",
-      "url": "https://doi.org/10.1142/S0218202524500477"
+      "url": "https://doi.org/10.1142/S0218202524500477",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R7",
       "role": "recent progress · preprint",
       "label": "Ballard & Iurlano, Transition from Continuous to Jumping Solutions in 2D Quasi-static Elastic Contact Problems with Coulomb Friction (2025)",
-      "url": "https://arxiv.org/abs/2508.04863"
+      "url": "https://arxiv.org/abs/2508.04863",
+      "publication_status": "Preprint",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

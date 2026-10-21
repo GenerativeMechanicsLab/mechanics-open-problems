@@ -165,31 +165,41 @@
       "id": "R10",
       "role": "supershear continuum branch",
       "label": "Pundir, Adda-Bedia & Kammer, Transonic and Supershear Crack Propagation Driven by Geometric Nonlinearities (2024)",
-      "url": "https://doi.org/10.1103/PhysRevLett.132.226102"
+      "url": "https://doi.org/10.1103/PhysRevLett.132.226102",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R11",
       "role": "3D disorder and branching",
       "label": "Lubomirsky & Bouchbinder, Quenched disorder and instability control dynamic fracture in three dimensions (2024)",
-      "url": "https://doi.org/10.1038/s41467-024-51573-6"
+      "url": "https://doi.org/10.1038/s41467-024-51573-6",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R12",
       "role": "mode selection",
       "label": "Wang, Fineberg & Needleman, crack–supershear–spall transition (2025)",
-      "url": "https://doi.org/10.1016/j.jmps.2025.106213"
+      "url": "https://doi.org/10.1016/j.jmps.2025.106213",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R13",
       "role": "latest experiment",
       "label": "Dynamic fracture and catastrophic crack branching in highly entangled hydrogels (2026)",
-      "url": "https://doi.org/10.1073/pnas.2603322123"
+      "url": "https://doi.org/10.1073/pnas.2603322123",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R14",
       "role": "recent computation",
       "label": "Ignatev et al., peridynamic dynamic-fracture study with an incubation-time criterion (2026)",
-      "url": "https://doi.org/10.1016/j.engfracmech.2026.112254"
+      "url": "https://doi.org/10.1016/j.engfracmech.2026.112254",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

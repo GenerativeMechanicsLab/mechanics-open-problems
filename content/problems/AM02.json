@@ -154,7 +154,9 @@
       "id": "R1",
       "role": "historical fracture-mechanics framing",
       "label": "Eskin & Katgerman, A Quest for a New Hot Tearing Criterion (2007)",
-      "url": "https://doi.org/10.1007/s11661-007-9169-7"
+      "url": "https://doi.org/10.1007/s11661-007-9169-7",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R2",
@@ -166,7 +168,9 @@
       "id": "R3",
       "role": "Griffith-type cavity criterion",
       "label": "Suyitno, Kool & Katgerman, Integrated Approach for Prediction of Hot Tearing (2009)",
-      "url": "https://doi.org/10.1007/s11661-009-9941-y"
+      "url": "https://doi.org/10.1007/s11661-009-9941-y",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R4",
@@ -190,49 +194,65 @@
       "id": "R7",
       "role": "propagation energy model",
       "label": "Lin et al., A hot tearing propagation model for steel (2024)",
-      "url": "https://doi.org/10.1016/j.jmatprotec.2023.118273"
+      "url": "https://doi.org/10.1016/j.jmatprotec.2023.118273",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R8",
       "role": "solid-bridge fracture mechanics",
       "label": "Liu, Li & Lu, Modeling solidification cracking: A new perspective on solid bridge fracture (2024)",
-      "url": "https://doi.org/10.1016/j.jmps.2024.105651"
+      "url": "https://doi.org/10.1016/j.jmps.2024.105651",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R9",
       "role": "rate/solidification criterion",
       "label": "Li et al., A method for predicting hot tearing during alloy solidification and its application in AZ91D magnesium alloy (2025)",
-      "url": "https://doi.org/10.1016/j.engfailanal.2024.109194"
+      "url": "https://doi.org/10.1016/j.engfailanal.2024.109194",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R10",
       "role": "semisolid toughness extension",
       "label": "Guo et al., An extended criterion for hot cracking susceptibility of Al-Li alloys (2025)",
-      "url": "https://doi.org/10.1016/j.engfailanal.2025.109348"
+      "url": "https://doi.org/10.1016/j.engfailanal.2025.109348",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R11",
       "role": "bridge-state prediction",
       "label": "Sheikhi et al., On the development of an interfacial energy and microstructure dependent model to predict bridging phenomenon and solidification cracking behavior (2025)",
-      "url": "https://doi.org/10.1016/j.actamat.2025.121520"
+      "url": "https://doi.org/10.1016/j.actamat.2025.121520",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R12",
       "role": "semisolid fracture simulation",
       "label": "Remani & Nallathambi, Ordinary state based peridynamic thermomechanical simulation of hot crack occurrence during semi-solid plate quenching experiment (2026)",
-      "url": "https://doi.org/10.1016/j.engfracmech.2026.111963"
+      "url": "https://doi.org/10.1016/j.engfracmech.2026.111963",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R13",
       "role": "latest direct AM crack dynamics",
       "label": "Ali et al., Study of crack formation dynamics in aluminum alloy by using laser powder bed fusion and in-situ synchrotron X-ray characterization (2026)",
-      "url": "https://doi.org/10.1007/s40964-026-01933-z"
+      "url": "https://doi.org/10.1007/s40964-026-01933-z",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R14",
       "role": "latest AM susceptibility criterion",
       "label": "Guan et al., A new cracking criterion for additive manufacturing and repair of Ni-based superalloys via laser directed energy deposition (2026)",
-      "url": "https://doi.org/10.1016/j.actamat.2026.122400"
+      "url": "https://doi.org/10.1016/j.actamat.2026.122400",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

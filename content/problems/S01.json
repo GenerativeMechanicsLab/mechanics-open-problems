@@ -147,13 +147,17 @@
       "id": "R8",
       "role": "evolutionary homogenization",
       "label": "Negri, Homogenization of Griffith’s Criterion for Brittle Laminates (2024)",
-      "url": "https://doi.org/10.1007/s00205-024-02027-2"
+      "url": "https://doi.org/10.1007/s00205-024-02027-2",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R9",
       "role": "recent rigorous progress",
       "label": "Donnarumma & Friedrich, Stochastic homogenisation for functionals defined on asymptotically piecewise rigid functions (2025)",
-      "url": "https://doi.org/10.1007/s00526-025-02930-w"
+      "url": "https://doi.org/10.1007/s00526-025-02930-w",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

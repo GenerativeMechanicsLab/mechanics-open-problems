@@ -141,25 +141,39 @@
       "id": "R7",
       "role": "finite-strain gradient localization",
       "label": "Fleck & Hutchinson, Shear band localization in finite strain deformation theory with strain gradient effects (2026)",
-      "url": "https://doi.org/10.1016/j.jmps.2025.106371"
+      "url": "https://doi.org/10.1016/j.jmps.2025.106371",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R8",
       "role": "dislocation-based finite-width bands",
       "label": "Singh et al., Finite-width adiabatic shear banding and dislocation patterning in mesoscale polycrystalline aggregates (2026, preprint)",
-      "url": "https://arxiv.org/abs/2605.17619"
+      "url": "https://arxiv.org/abs/2605.17619",
+      "publication_status": "Preprint",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R9",
       "role": "variational selection",
       "label": "Comella et al., Nucleation in rank-one gradient plasticity: Exact solutions and geometry-dependent regimes (2026)",
-      "url": "https://doi.org/10.1016/j.jmps.2026.106688"
+      "url": "https://doi.org/10.1016/j.jmps.2026.106688",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R10",
       "role": "recent nonlinear band theory",
       "label": "Kumar & Procaccia, analytic nonlinear theory of shear banding in amorphous solids (2026)",
       "url": "https://www.pnas.org/doi/10.1073/pnas.2607028123"
+    },
+    {
+      "id": "R11",
+      "role": "viscous and defect regularization",
+      "label": "Clayton, Analytical Shear-Band Process Zone Model Incorporating Nonlinear Viscous Effects and Initial Defects (2025)",
+      "url": "https://doi.org/10.1115/1.4068648",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

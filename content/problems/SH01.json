@@ -122,13 +122,25 @@
       "id": "R4",
       "role": "latest imperfection-sensitivity progress · preprint",
       "label": "Yang & Schneider, origin of imperfection sensitivity in cylindrical-shell buckling (2026)",
-      "url": "https://arxiv.org/abs/2609.19436"
+      "url": "https://arxiv.org/abs/2609.19436",
+      "publication_status": "Preprint",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R5",
       "role": "recent uncertainty/lower-bound work · preprint",
       "label": "Ubamanyu et al., stochastic/engineering lower-bound framework for imperfect shells (2026)",
-      "url": "https://arxiv.org/abs/2607.19245"
+      "url": "https://arxiv.org/abs/2607.19245",
+      "publication_status": "Preprint",
+      "publication_status_checked": "2026-10-21"
+    },
+    {
+      "id": "R6",
+      "role": "numerical lower-bound knockdown factors",
+      "label": "Wang et al., A numerical framework for lower-bound knockdown factor prediction of compressed cylindrical shells (2026)",
+      "url": "https://doi.org/10.1016/j.tws.2026.115123",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

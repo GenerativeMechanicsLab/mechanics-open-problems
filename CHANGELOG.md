@@ -4,6 +4,13 @@ All notable public changes to **Open Problems in Mechanics** are recorded here.
 
 The project uses versioned public snapshots while remaining a living resource.
 
+## 21 October 2026 — Publication-status labels
+
+- Added quiet “Peer-reviewed article” and “Preprint” labels beside individual sources in recent-progress sections and their matching bibliography entries across all ten active problems.
+- Added a brief collection note distinguishing publication status from independent verification by OPM.
+- Checked 49 sources against primary publication records, linked Clayton’s shear-band paper to its published journal version, and synchronized bibliographic records for sources already discussed on the site.
+- Recorded the checks in `audit/PUBLICATION_STATUS_2026-10-21.md` and updated the site maintenance date. Scientific formulations, statement versions, literature-audit dates, navigation, and the first-publication date remain unchanged.
+
 ## 14 October 2026 — Shareable problem and section URLs
 
 - Added fragment routing for Home, Problems, Vision, and all ten problem pages.

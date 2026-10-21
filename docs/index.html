@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-10-14"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
+<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-10-21"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
 :root{--ink:#17222c;--muted:#5c6873;--line:#d9e0e5;--paper:#fbfcfd;--soft:#f2f5f7;--accent:#1d5b78;--accent2:#134157;--warm:#f6f1e8;--max:1180px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.62}
@@ -73,6 +73,7 @@ math[display="block"]{display:block;overflow-x:auto;text-align:center;margin:20p
 math[display="inline"]{font-size:1em}
 .technical math[display="block"],.short-layer math[display="block"]{font-size:1.03em}
 .math-audit-note{display:none}
+.publication-status{color:var(--muted);font-size:.8em;font-weight:500;white-space:nowrap}.publication-citation{display:inline-block;margin-left:.35em}.publication-note{font-size:14px;color:var(--muted);max-width:900px}
 </style></head><body>
 <header><div class="wrap nav"><div class="brand"><span class="mark">OPM</span><span>Open Problems in Mechanics</span></div><nav class="mainnav"><a class="active" data-view="home" href="#home">Home</a><a data-view="problems" href="#problems">Problems</a><a data-view="vision" href="#vision">Vision</a></nav></div></header>
 <div class="view active" id="home">
@@ -261,6 +262,7 @@ math[display="inline"]{font-size:1em}
 <a class="back" href="#home">← Home</a>
 <p class="eyebrow">The collection</p><h1>Problems</h1>
 <p class="lede">The first release contains ten theory-rich problems. The mechanics tabs are intentionally few and familiar; membership is nonexclusive, while richer topics and applications remain available through keyword search.</p>
+<p class="publication-note">Publication-status labels distinguish peer-reviewed articles from preprints. They do not indicate independent verification by OPM.</p>
 </div></section>
 <section class="wrap section">
 <div class="filters" style="grid-template-columns:1.8fr 1fr auto">
@@ -486,7 +488,7 @@ rigidity statement: if the interior strain is nearly uniform, must the
 shape itself be near some ellipsoid?</p><p>The correct shape distance is part of the mechanics. A metric based
 only on maximum radial amplitude can miss rapidly varying roughness that
 has a disproportionately large elastic effect.</p><hr/><h2 id="EL01-partial-progress-in-the-current-study">Recent progress: quantitative local stability and finite-shape bounds</h2>
-<p><a href="https://arxiv.org/abs/2610.13400">Ni (2026), <em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em></a>, is available as an arXiv preprint. It establishes three complementary results in an infinite homogeneous isotropic linear-elastic solid with uniform dilatational eigenstrain, identical inclusion and matrix moduli, perfect bonding, and no remote loading.</p>
+<p><a href="https://arxiv.org/abs/2610.13400">Ni (2026), <em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em></a> <span class="publication-status">[Preprint]</span>, is available as an arXiv preprint. It establishes three complementary results in an infinite homogeneous isotropic linear-elastic solid with uniform dilatational eigenstrain, identical inclusion and matrix moduli, perfect bonding, and no remote loading.</p>
 <p><strong>Nonlinear two-sided local stability.</strong> Near any fixed nondegenerate ellipsoid, whole-interior strain heterogeneity is bounded above and below by a geometry-only distance to the nearby ellipsoid family. The admissible shapes lie in a sufficiently small smooth neighborhood. Changes that merely translate, rotate, rescale, or otherwise produce another ellipsoid are removed from the distance. The theorem controls both how shape imperfections generate heterogeneity and how near-uniformity constrains the shape.</p>
 <p><strong>Critical half-order geometric scaling.</strong> The half-order Sobolev scale captures both imperfection amplitude and morphological wavelength. It is the critical order for frequency-independent two-sided control: a weaker order loses the uniform upper bound, while a stronger order loses the positive uniform lower bound. For a sphere, the preprint derives the exact linear spectrum and sharp all-mode bounds after the ellipsoidal directions are removed.</p>
 <p><strong>Convergent bounds for prescribed finite shapes.</strong> Subtracting a volume-balanced ellipsoidal source gives an exact residual-field budget. Partial interior and exterior field information yields lower and upper bounds on the heterogeneity. With exact integration, these bounds converge to the exact response as the resolved regions exhaust the respective domains. This construction applies to prescribed finite geometries beyond the local theorem's neighborhood.</p>
@@ -534,7 +536,7 @@ Huang &amp; J. Wang, <em>A constrained proof of the strong version of
 the Eshelby conjecture for three-dimensional isotropic media</em>
 (2023)</a> — constrained progress on the remaining strong-conjecture
 structure.</li>
-<li><a href="https://arxiv.org/abs/2610.13400">Bo Ni, <em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em>, arXiv:2610.13400 (2026, preprint)</a> — nonlinear local stability, critical half-order scaling, and convergent finite-shape bounds.</li>
+<li><a href="https://arxiv.org/abs/2610.13400">Bo Ni, <em>Quantitative Eshelby stability: local and finite-shape theory through AI-assisted mechanics</em>, arXiv:2610.13400 (2026)</a> <span class="publication-status">[Preprint]</span> — nonlinear local stability, critical half-order scaling, and convergent finite-shape bounds.</li>
 </ul><hr/><h2 id="EL01-progress-log">Progress log</h2><p><strong>11 October 2026 — Preprint incorporated; entry v1.1.</strong><br/>The <a href="https://arxiv.org/abs/2610.13400">arXiv preprint</a> supplies a public reference for the local theorem, critical geometric scaling and sphere spectrum, and convergent finite-shape construction. This update states the model assumptions, records the independent numerical comparisons, and distinguishes the remaining global geometry-only and broader physical-setting questions. Scientific status remains partial progress.</p><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
 Quantitative stability is separated explicitly from the classical exact
 Eshelby conjectures. The current manuscript is recorded as partial
@@ -627,24 +629,24 @@ classical sub-Rayleigh branch is not a universal description of all
 constitutive regimes.</p><hr/><h2 id="FR01-recent-progress">Recent progress</h2><p><strong>2024 — Geometric nonlinearity and 3D disorder sharpen the
 problem.</strong><br/>
 <a href="https://doi.org/10.1103/PhysRevLett.132.226102">Pundir,
-Adda-Bedia &amp; Kammer</a> showed that geometric nonlinearity can admit
+Adda-Bedia &amp; Kammer</a> <span class="publication-status">[Peer-reviewed article]</span> showed that geometric nonlinearity can admit
 transonic and supershear Mode-I propagation in a continuum model with
 the crack confined to a weak plane. Separately, <a href="https://doi.org/10.1038/s41467-024-51573-6">Lubomirsky &amp;
-Bouchbinder</a> showed in 3D simulations that quenched disorder and
+Bouchbinder</a> <span class="publication-status">[Peer-reviewed article]</span> showed in 3D simulations that quenched disorder and
 branching can generate an effective disorder-dependent limiting
 velocity.</p><p><strong>2025 — Dynamic failure can switch among distinct
 modes.</strong><br/>
 <a href="https://doi.org/10.1016/j.jmps.2025.106213">Wang, Fineberg
-&amp; Needleman</a> studied transitions among crack-like,
+&amp; Needleman</a> <span class="publication-status">[Peer-reviewed article]</span> studied transitions among crack-like,
 supershear-like, and spall-like separation modes under tensile loading,
 reinforcing that the modern problem is one of <strong>mode
 selection</strong>, not one universal velocity ceiling.</p><p><strong>2026 — New experiments and computations continue to expose
 material-dependent regimes.</strong><br/>
 <a href="https://doi.org/10.1073/pnas.2603322123">Dynamic fracture and
-catastrophic crack branching in highly entangled hydrogels</a> reports
+catastrophic crack branching in highly entangled hydrogels</a> <span class="publication-status">[Peer-reviewed article]</span> reports
 strongly rate- and material-dependent high-speed fracture with
 unconventional branching behavior. <a href="https://doi.org/10.1016/j.engfracmech.2026.112254">Ignatev et
-al.</a> reproduce crack-speed trends and microbranching in a peridynamic
+al.</a> <span class="publication-status">[Peer-reviewed article]</span> reproduce crack-speed trends and microbranching in a peridynamic
 framework using an incubation-time fracture criterion.</p><p>These advances narrow the problem but do not provide a general theory
 that predicts which dynamic branch a given material will select.</p><hr/><h2 id="FR01-the-frontier-branch-selection-and-stability">The frontier:
 branch selection and stability</h2><p>For a smooth Mode-I crack, a useful starting point is dynamic energy
@@ -773,18 +775,19 @@ limits</em> (2023)</a> — direct supershear Mode-I fracture in brittle
 neo-Hookean materials.</li>
 <li><a href="https://doi.org/10.1103/PhysRevLett.132.226102">M. Pundir,
 M. Adda-Bedia &amp; D. S. Kammer, <em>Transonic and Supershear Crack
-Propagation Driven by Geometric Nonlinearities</em> (2024)</a> —
+Propagation Driven by Geometric Nonlinearities</em> (2024)</a> <span class="publication-status">[Peer-reviewed article]</span> —
 nonlinear continuum supershear branch under path confinement.</li>
 <li><a href="https://doi.org/10.1038/s41467-024-51573-6">Y. Lubomirsky
 &amp; E. Bouchbinder, <em>Quenched disorder and instability control
-dynamic fracture in three dimensions</em> (2024)</a> — 3D disorder,
+dynamic fracture in three dimensions</em> (2024)</a> <span class="publication-status">[Peer-reviewed article]</span> — 3D disorder,
 branching, and effective limiting velocity.</li>
 <li><a href="https://doi.org/10.1016/j.jmps.2025.106213">M. Wang, J.
 Fineberg &amp; A. Needleman, crack–supershear–spall transition
-(2025)</a> — selection among distinct tensile separation modes.</li>
+(2025)</a> <span class="publication-status">[Peer-reviewed article]</span> — selection among distinct tensile separation modes.</li>
 <li><a href="https://doi.org/10.1073/pnas.2603322123">Dynamic fracture
 and catastrophic crack branching in highly entangled hydrogels
-(2026)</a> — recent high-speed fracture experiments in a distinctmaterial regime.</li>
+(2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — recent high-speed fracture experiments in a distinctmaterial regime.</li>
+<li><a href="https://doi.org/10.1016/j.engfracmech.2026.112254">Ignatev et al., peridynamic dynamic-fracture study with an incubation-time criterion (2026)</a> <span class="publication-status">[Peer-reviewed article]</span>.</li>
 </ul><hr/><h2 id="FR01-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
 The problem is framed as selection and stability of dynamic
 tensile-fracture branches rather than as a universal scalar crack-speed
@@ -960,20 +963,20 @@ phenomenologically</strong>.</p><hr/><h2 id="DI02-recent-rigorous-progress">Rece
 line-dislocation energy.</strong><br/>
 <a href="https://doi.org/10.1515/acv-2024-0007">Conti, Garroni &amp;
 Ortiz, <em>A discrete crystal model in three dimensions: The
-line-tension limit for dislocations</em></a> proved, under a dilute
+line-tension limit for dislocations</em></a> <span class="publication-status">[Peer-reviewed article]</span> proved, under a dilute
 scaling, convergence from a discrete three-dimensional crystal energy to
 a line-tension theory supported on Volterra dislocations.</p><p>This is a major controlled atomistic/discrete-to-line-defect result
 on the energetic side.</p><p><strong>2024 — Discrete dislocation evolution can be homogenized in a
 restricted setting.</strong><br/>
 <a href="https://arxiv.org/abs/2410.02906">Bonicatto &amp; Rindler,
 <em>Homogenization of elasto-plastic evolutions driven by the flow of
-dislocations</em></a> rigorously obtain continuously distributed
+dislocations</em></a> <span class="publication-status">[Preprint]</span> rigorously obtain continuously distributed
 dislocation-field evolutions as limits of discrete dislocation
 evolutions in a prototypical small-strain, quasistatic setting.</p><p><strong>2026 — Volterra dislocations converge to strain-gradient
 plasticity in 2D.</strong><br/>
 <a href="https://doi.org/10.1007/s00526-025-03195-z">Kupferman &amp;
 Maor, <em>From Volterra dislocations to strain-gradient
-plasticity</em></a> derived a finite-strain strain-gradient plasticity
+plasticity</em></a> <span class="publication-status">[Peer-reviewed article]</span> derived a finite-strain strain-gradient plasticity
 energy as a
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>-limit
 of two-dimensional bodies containing edge dislocations.</p><p>These results demonstrate that theorem-level multiscale passage is
@@ -983,19 +986,19 @@ progress: correlations, scale, and network state</h2><p><strong>2024 — Short-r
 explicitly.</strong><br/>
 <a href="https://doi.org/10.1103/PhysRevB.109.174103">Anderson &amp;
 El-Azab, <em>Dislocation correlations and the continuum dynamics of the
-weak line bundle ensemble</em></a> derived additional continuum driving
+weak line bundle ensemble</em></a> <span class="publication-status">[Peer-reviewed article]</span> derived additional continuum driving
 forces from coarse-grained dislocation correlations, directly
 confronting information lost by density-only descriptions.</p><p><strong>2026 — Pair correlations are extended to curved dislocation
 systems.</strong><br/>
 <a href="https://doi.org/10.1186/s41313-025-00071-3">Marx, Sandfeld
-&amp; Hochrainer</a> developed continuum approximations of pair
+&amp; Hochrainer</a> <span class="publication-status">[Peer-reviewed article]</span> developed continuum approximations of pair
 correlations for curved dislocations and explicitly framed continuum
 plasticity as a statistical theory of interacting flexible line
 defects.</p><p><strong>2026 — The correct closure depends on observation
 scale.</strong><br/>
 <a href="https://doi.org/10.1103/7jh2-4zxt">Anderson &amp; El-Azab,
 <em>Scale-dependence and the line bundle regime in continuum dislocation
-dynamics</em></a> showed that coarse-graining length changes the amount
+dynamics</em></a> <span class="publication-status">[Peer-reviewed article]</span> showed that coarse-graining length changes the amount
 of line-orientation cancellation and therefore the appropriate continuum
 representation. A proposed line-bundle closure works only within a
 finite resolution regime, while a standard maximum-entropy closure
@@ -1007,11 +1010,11 @@ scale.</strong></p>
 variables.</strong><br/>
 <a href="https://doi.org/10.1016/j.jmps.2026.106533">Akhondzadeh et al.,
 <em>Link statistics of dislocation network during strain
-hardening</em></a> showed that link-length distributions carry
+hardening</em></a> <span class="publication-status">[Peer-reviewed article]</span> showed that link-length distributions carry
 systematic information about active and inactive slip systems and the
 evolving network.</p><p>A complementary 2026 study of 3D DDD networks under tension, shear,
 bending, and torsion identified <a href="https://doi.org/10.1016/j.ijplas.2026.104744">link length,
-pinning, and proximity to free surfaces</a> as useful descriptors and
+pinning, and proximity to free surfaces</a> <span class="publication-status">[Peer-reviewed article]</span> as useful descriptors and
 embedded them in a probabilistic continuum plasticity model.</p><p>The deeper question is whether these are merely useful empirical
 descriptors or the correct <strong>slow variables</strong> selected by
 coarse-graining.</p><hr/><h2 id="DI02-the-frontier-what-information-must-survive-coarse-graining">The
@@ -1220,28 +1223,30 @@ laws from large-scale MD simulations</em> (2024)</a> — data-driven MD →
 DDD constitutive bridge.</li>
 <li><a href="https://doi.org/10.1103/PhysRevB.109.174103">J. P. Anderson
 &amp; A. El-Azab, <em>Dislocation correlations and the continuum
-dynamics of the weak line bundle ensemble</em> (2024)</a> —
+dynamics of the weak line bundle ensemble</em> (2024)</a> <span class="publication-status">[Peer-reviewed article]</span> —
 correlation-dependent continuum kinetics.</li>
 <li><a href="https://doi.org/10.1515/acv-2024-0007">S. Conti, A. Garroni
 &amp; M. Ortiz, <em>A discrete crystal model in three dimensions: The
-line-tension limit for dislocations</em> (2025)</a> — rigorous 3D
+line-tension limit for dislocations</em> (2025)</a> <span class="publication-status">[Peer-reviewed article]</span> — rigorous 3D
 discrete-crystal to line-dislocation energetic limit.</li>
 <li><a href="https://doi.org/10.1007/s00526-025-03195-z">R. Kupferman
 &amp; C. Maor, <em>From Volterra dislocations to strain-gradient
-plasticity</em> (2026)</a> — rigorous 2D
+plasticity</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — rigorous 2D
 dislocation-to-finite-strain-gradient-plasticity limit.</li>
 <li><a href="https://doi.org/10.1186/s41313-025-00071-3">A. J. Marx, S.
 Sandfeld &amp; T. Hochrainer, <em>Continuum approximation of dislocation
-correlations for systems of curved dislocations</em> (2026)</a> — pair
+correlations for systems of curved dislocations</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — pair
 correlations for curved line systems.</li>
 <li><a href="https://doi.org/10.1103/7jh2-4zxt">J. P. Anderson &amp; A.
 El-Azab, <em>Scale-dependence and the line bundle regime in continuum
-dislocation dynamics</em> (2026)</a> — resolution-dependent state
+dislocation dynamics</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — resolution-dependent state
 representation and closure.</li>
 <li><a href="https://doi.org/10.1016/j.jmps.2026.106533">Sh. Akhondzadeh
 et al., <em>Link statistics of dislocation network during strain
-hardening</em> (2026)</a> — candidate statistical descriptors of
+hardening</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — candidate statistical descriptors of
 evolving network state.</li>
+<li><a href="https://arxiv.org/abs/2410.02906">Bonicatto &amp; Rindler, Homogenization of elasto-plastic evolutions driven by the flow of dislocations (2024; revised 2025)</a> <span class="publication-status">[Preprint]</span>.</li>
+<li><a href="https://doi.org/10.1016/j.ijplas.2026.104744">Katzer et al., Characterization of dislocation networks under varying boundary conditions in the discrete to continuum transition regime (2026)</a> <span class="publication-status">[Peer-reviewed article]</span>.</li>
 </ul><hr/><h2 id="DI02-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
 The problem is formulated around the emergence of continuum plasticity
 rather than the derivation of crystal plasticity alone. Crystal
@@ -1492,25 +1497,24 @@ demonstrates that <strong>different regularizations can each generate
 plausible finite localized states</strong>.</p><p><strong>Gradient plasticity can select a finite post-localization
 width.</strong><br/>
 <a href="https://doi.org/10.1016/j.jmps.2025.106371">Fleck &amp;
-Hutchinson (2026)</a> studied finite-strain localization with a
+Hutchinson (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> studied finite-strain localization with a
 strain-gradient length and obtained detailed bifurcation and
 post-localization solutions; in their model class, band width is roughly
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math>–<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn><annotation encoding="application/x-tex">15</annotation></semantics></math>
 times the material length parameter.</p><p><strong>A variational defect energy can select the plastic support
 itself.</strong><br/>
 <a href="https://doi.org/10.1016/j.jmps.2026.106688">Comella et
-al. (2026)</a> derived exact solutions in rank-one gradient plasticity
+al. (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> derived exact solutions in rank-one gradient plasticity
 in which the extent of the plastic zone is not prescribed. The theory
 produces distinct nucleation regimes and geometry-dependent scaling of
 the localized support.</p><p><strong>Dislocation mechanics can regularize adiabatic shear without
 heat conduction.</strong><br/>
-<a href="https://arxiv.org/abs/2605.17619">Singh et al. (2026,
-preprint)</a> obtained finite-width, mesh-converged shear bands and GND
+<a href="https://arxiv.org/abs/2605.17619">Singh et al. (2026)</a> <span class="publication-status">[Preprint]</span> obtained finite-width, mesh-converged shear bands and GND
 patterning in mesoscale polycrystalline simulations even without heat
 conduction, through competition between dislocation hardening and
 thermal softening.</p><p><strong>Viscosity and defects can select process-zone
 width.</strong><br/>
-<a href="https://arxiv.org/abs/2503.06033">Clayton (2025)</a> showed
+<a href="https://doi.org/10.1115/1.4068648">Clayton (2025)</a> <span class="publication-status">[Peer-reviewed article]</span> showed
 analytically how nonlinear viscous dissipation can prevent an
 infinitesimal-width band while concentrated defects narrow localization.</p><p>These are not competing proofs of one universal mechanism. They
 demonstrate why PL01 must ask about <strong>selection among physically
@@ -1620,22 +1624,22 @@ of ellipticity and actual post-bifurcation localization.</li>
 Understanding the Mechanics of Flow Localization From Zener’s Time to
 the Present</em> (2020)</a> — modern review of shear-band mechanics and
 the post-localization challenge.</li>
-<li><a href="https://arxiv.org/abs/2503.06033">J. D. Clayton,
+<li><a href="https://doi.org/10.1115/1.4068648">J. D. Clayton,
 <em>Analytical Shear-Band Process Zone Model Incorporating Nonlinear
-Viscous Effects and Initial Defects</em> (2025)</a> — viscous/defect
+Viscous Effects and Initial Defects</em> (2025)</a> <span class="publication-status">[Peer-reviewed article]</span> — viscous/defect
 regularization of finite-width bands.</li>
 <li><a href="https://doi.org/10.1016/j.jmps.2025.106371">N. A. Fleck
 &amp; J. W. Hutchinson, <em>Shear band localization in finite strain
-deformation theory with strain gradient effects</em> (2026)</a> —
+deformation theory with strain gradient effects</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> —
 finite-width post-localization selected by a gradient length.</li>
 <li><a href="https://arxiv.org/abs/2605.17619">S. Singh et al.,
 <em>Finite-width adiabatic shear banding and dislocation patterning in
-mesoscale polycrystalline aggregates</em> (2026, preprint)</a> —
+mesoscale polycrystalline aggregates</em> (2026)</a> <span class="publication-status">[Preprint]</span> —
 dislocation/GND-based regularization and finite-width dynamic
 bands.</li>
 <li><a href="https://doi.org/10.1016/j.jmps.2026.106688">M. C. Comella
 et al., <em>Nucleation in rank-one gradient plasticity: Exact solutions
-and geometry-dependent regimes</em> (2026)</a> — variational selection
+and geometry-dependent regimes</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — variational selection
 of finite plastic support and geometry-dependent regimes.</li>
 </ul><hr/><h2 id="PL01-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v2.0.</strong><br/>
 PL01 is reformulated from a material-specific band-width question into a
@@ -1887,18 +1891,18 @@ nonphysical relaxation pathway?</strong></p>
 admissibility</h2><p><strong>2025 — Weak limits can remain one-to-one almost
 everywhere.</strong><br/>
 <a href="https://doi.org/10.1007/s00526-025-03041-2">Bouchala, Hencl
-&amp; Zhu</a> prove that a.e. injectivity can survive weak limits of
+&amp; Zhu</a> <span class="publication-status">[Peer-reviewed article]</span> prove that a.e. injectivity can survive weak limits of
 Sobolev homeomorphisms under very weak assumptions, provided the
 limiting Jacobian is positive.</p><p>This rules out an overly simple interpretation of the pathology as
 mere loss of injectivity.</p><p><strong>2025 — Minimizers exist in important weakly closed
 noncavitating classes.</strong><br/>
-<a href="https://doi.org/10.1017/prm.2025.20">Kalayanamit</a> proves
+<a href="https://doi.org/10.1017/prm.2025.20">Kalayanamit</a> <span class="publication-status">[Peer-reviewed article]</span> proves
 existence and inverse-regularity results for neo-Hookean minimizers
 satisfying condition (INV) in important weak-closure settings.</p><p>These results clarify what weak limits can preserve, but do not
 identify the original regular class with its weak closure.</p><hr/><h2 id="NL01-2026-the-lavrentiev-gap-makes-the-distinction-unavoidable">2026: the
 Lavrentiev gap makes the distinction unavoidable</h2><p><a href="https://arxiv.org/abs/2603.22873">Barchiesi, Henao,
 Mora-Corral &amp; Rodiac, <em>A Lavrentiev phenomenon in the neo-Hookean
-model</em></a> construct boundary data for which</p><p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><munder><mo>inf</mo><mrow><mi>y</mi><mo>∈</mo><msub><mi>𝒜</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi></mrow></msub></mrow></munder><mi>E</mi><mrow><mo form="prefix" stretchy="true">[</mo><mi>y</mi><mo form="postfix" stretchy="true">]</mo></mrow><mo>&gt;</mo><munder><mo>inf</mo><mrow><mi>y</mi><mo>∈</mo><msup><mover><msub><mi>𝒜</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi></mrow></msub><mo accent="true">¯</mo></mover><mrow><mspace width="0.167em"></mspace><msubsup><mi>H</mi><mrow><mi mathvariant="normal">w</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">k</mi></mrow><mn>1</mn></msubsup></mrow></msup></mrow></munder><mi>E</mi><mrow><mo form="prefix" stretchy="true">[</mo><mi>y</mi><mo form="postfix" stretchy="true">]</mo></mrow><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
+model</em></a> <span class="publication-status">[Preprint]</span> construct boundary data for which</p><p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><munder><mo>inf</mo><mrow><mi>y</mi><mo>∈</mo><msub><mi>𝒜</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi></mrow></msub></mrow></munder><mi>E</mi><mrow><mo form="prefix" stretchy="true">[</mo><mi>y</mi><mo form="postfix" stretchy="true">]</mo></mrow><mo>&gt;</mo><munder><mo>inf</mo><mrow><mi>y</mi><mo>∈</mo><msup><mover><msub><mi>𝒜</mi><mrow><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi></mrow></msub><mo accent="true">¯</mo></mover><mrow><mspace width="0.167em"></mspace><msubsup><mi>H</mi><mrow><mi mathvariant="normal">w</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">k</mi></mrow><mn>1</mn></msubsup></mrow></msup></mrow></munder><mi>E</mi><mrow><mo form="prefix" stretchy="true">[</mo><mi>y</mi><mo form="postfix" stretchy="true">]</mo></mrow><mi>.</mi></mrow></menclose><annotation encoding="application/x-tex">
 \boxed{
 \inf_{y\in\mathcal A_{\mathrm{reg}}}E[y]
 &gt;
@@ -2061,11 +2065,11 @@ in 3D</em> (2024)</a> — enlarged admissible space and
 inverse-singularity energy.</li>
 <li><a href="https://doi.org/10.1007/s00526-025-03041-2">O. Bouchala, S.
 Hencl &amp; Z. Zhu, <em>Weak limits of Sobolev homeomorphisms are one to
-one almost everywhere</em> (2025)</a> — preservation of a.e. injectivity
+one almost everywhere</em> (2025)</a> <span class="publication-status">[Peer-reviewed article]</span> — preservation of a.e. injectivity
 under weak convergence.</li>
 <li><a href="https://doi.org/10.1017/prm.2025.20">P. Kalayanamit,
 <em>Sobolev regularity of the inverse for minimizers of the neo-Hookean
-energy satisfying condition INV</em> (2025)</a> — existence and inverse
+energy satisfying condition INV</em> (2025)</a> <span class="publication-status">[Peer-reviewed article]</span> — existence and inverse
 regularity in important weakly closed classes.</li>
 <li><a href="https://doi.org/10.1007/s00245-025-10376-x">M. Bresciani
 &amp; M. Friedrich, <em>Core-Radius Approximation of Singular Minimizers
@@ -2074,8 +2078,7 @@ volume/perimeter cost and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Γ</mi><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math>-convergent
 core regularization.</li>
 <li><a href="https://arxiv.org/abs/2603.22873">M. Barchiesi et al.,
-<em>A Lavrentiev phenomenon in the neo-Hookean model</em> (2026,
-preprint)</a> — strict gap between a regular class and its weak closure
+<em>A Lavrentiev phenomenon in the neo-Hookean model</em> (2026)</a> <span class="publication-status">[Preprint]</span> — strict gap between a regular class and its weak closure
 for suitable boundary data.</li>
 </ul><hr/><h2 id="NL01-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v2.0.</strong><br/>
 NL01 is reframed from a narrow neo-Hookean minimizer-existence question
@@ -2291,7 +2294,7 @@ progress: defect geometry can switch the buckling mechanism</h2><p><strong>Septe
 bifurcation switching.</strong><br/>
 <a href="https://arxiv.org/abs/2609.19436">Yang &amp; Schneider, <em>The
 Origin of Imperfection Sensitivity in the Buckling of Cylindrical
-Shells</em></a> systematically vary the depth and size of one localized
+Shells</em></a> <span class="publication-status">[Preprint]</span> systematically vary the depth and size of one localized
 Gaussian defect using continuation and bifurcation analysis.</p><p>They find that localized equilibria already present in the perfect
 shell become pinned by the defect.</p><p>Small changes in defect geometry can change which bifurcation
 triggers buckling. As a result,</p><p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mi mathvariant="normal">c</mi><mi mathvariant="normal">r</mi></mrow></msub><annotation encoding="application/x-tex">
@@ -2306,7 +2309,7 @@ imperfection geometry changes smoothly.</p><p>The key implication is</p><p><math
 </annotation></semantics></math></p><p>The topology of the nonlinear equilibrium branches matters.</p><hr/><h2 id="SH01-recent-progress-local-defects-interact-nonlocally">Recent
 progress: local defects interact nonlocally</h2><p><strong>July 2026 — The “butterfly defect” effect.</strong><br/>
 <a href="https://arxiv.org/abs/2607.19245">Ubamanyu, Blond, Hutchinson
-&amp; Reis</a> study multiple localized imperfections and their
+&amp; Reis</a> <span class="publication-status">[Preprint]</span> study multiple localized imperfections and their
 interaction with shell boundaries.</p><p>A local dimple produces a spatially extended butterfly-like
 deformation pattern. Consequently:</p><ul>
 <li>nearby defects interact even when their cores are localized;</li>
@@ -2325,7 +2328,7 @@ defect for cylinders.</p><hr/><h2 id="SH01-recent-progress-engineering-lower-env
 progress: engineering lower envelopes are becoming explicit</h2><p><strong>2026 — Numerical lower-bound KDF envelopes.</strong><br/>
 <a href="https://doi.org/10.1016/j.tws.2026.115123">Wang et al., <em>A
 numerical framework for lower-bound knockdown factor prediction of
-compressed cylindrical shells</em></a> combine the Worst Multiple
+compressed cylindrical shells</em></a> <span class="publication-status">[Peer-reviewed article]</span> combine the Worst Multiple
 Perturbation Load Approach with surrogate-assisted FE evaluation and
 multi-gene genetic programming.</p><p>They construct explicit tolerance-aware lower-bound relations over
 ranges of</p><p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>t</mi><mo>,</mo><mspace width="2.0em"></mspace><mi>L</mi><mi>/</mi><mi>R</mi><mo>,</mo><mspace width="2.0em"></mspace><mtext mathvariant="normal">imperfection amplitude</mtext><mi>.</mi></mrow><annotation encoding="application/x-tex">
@@ -2457,15 +2460,15 @@ deterministic/probabilistic robust KDF design.</li>
 current NASA design guidance.</li>
 <li><a href="https://arxiv.org/abs/2609.19436">T. Yang &amp; T. M.
 Schneider, <em>The Origin of Imperfection Sensitivity in the Buckling of
-Cylindrical Shells</em> (2026, preprint)</a> — defect pinning and
+Cylindrical Shells</em> (2026)</a> <span class="publication-status">[Preprint]</span> — defect pinning and
 bifurcation switching.</li>
 <li><a href="https://arxiv.org/abs/2607.19245">U. K. Ubamanyu et al.,
 <em>The Butterfly Defect Effect in Cylindrical Shell Buckling</em>
-(2026, preprint)</a> — nonlocal defect interactions, edge coupling, and
+(2026)</a> <span class="publication-status">[Preprint]</span> — nonlocal defect interactions, edge coupling, and
 statistical size effect.</li>
 <li><a href="https://doi.org/10.1016/j.tws.2026.115123">F. Wang et al.,
 <em>A numerical framework for lower-bound knockdown factor prediction of
-compressed cylindrical shells</em> (2026)</a> — explicit numerical
+compressed cylindrical shells</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — explicit numerical
 lower-bound envelope construction.</li>
 </ul><hr/><h2 id="SH01-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
 SH01 is formulated as a robust nonlinear-stability problem rather than a
@@ -2612,7 +2615,7 @@ have a meaningful continuum limit.</p><hr/><h2 id="CO01-2024-the-two-dimensional
 two-dimensional incremental problem becomes sharp</h2><p>A major advance came from</p><ul>
 <li><a href="https://doi.org/10.1142/S0218202524500477">P. Ballard &amp;
 F. Iurlano, <em>Existence results for the time-incremental elastic
-contact problem with Coulomb friction in 2D</em> (2024)</a>.</li>
+contact problem with Coulomb friction in 2D</em> (2024)</a> <span class="publication-status">[Peer-reviewed article]</span>.</li>
 </ul><p>They consider the general incremental Signorini–Coulomb problem in
 two-dimensional linear elasticity with arbitrary geometry and elasticity
 tensor.</p><p>The formulation uses the normal traction as a principal unknown and
@@ -2645,8 +2648,7 @@ available.</p><p>This is the precise mathematical boundary behind CO01:</p><p><m
 quasistatic evolution in 2D</h2><p>The next step was studied in</p><ul>
 <li><a href="https://arxiv.org/abs/2508.04863">P. Ballard &amp; F.
 Iurlano, <em>Transition from Continuous to Jumping Solutions in 2D
-Quasi-static Elastic Contact Problems with Coulomb Friction</em> (2025
-preprint)</a>.</li>
+Quasi-static Elastic Contact Problems with Coulomb Friction</em> (2025)</a> <span class="publication-status">[Preprint]</span>.</li>
 </ul><p>They formulate the general two-dimensional quasistatic evolution
 allowing jumps in load and solution.</p><p>For an optimal condition on friction, absolutely continuous loading
 admits an absolutely continuous quasistatic solution.</p><p>When the condition is violated, they give examples in which the
@@ -2733,12 +2735,11 @@ elastic contact problem</em> (2022)</a> — 2D friction homogenization and
 effective Coulomb law.</li>
 <li><a href="https://doi.org/10.1142/S0218202524500477">P. Ballard &amp;
 F. Iurlano, <em>Existence results for the time-incremental elastic
-contact problem with Coulomb friction in 2D</em> (2024)</a> — sharp
+contact problem with Coulomb friction in 2D</em> (2024)</a> <span class="publication-status">[Peer-reviewed article]</span> — sharp
 general 2D incremental existence theory.</li>
 <li><a href="https://arxiv.org/abs/2508.04863">P. Ballard &amp; F.
 Iurlano, <em>Transition from Continuous to Jumping Solutions in 2D
-Quasi-static Elastic Contact Problems with Coulomb Friction</em> (2025,
-preprint)</a> — sharp 2D continuous-versus-jumping quasistatic
+Quasi-static Elastic Contact Problems with Coulomb Friction</em> (2025)</a> <span class="publication-status">[Preprint]</span> — sharp 2D continuous-versus-jumping quasistatic
 evolution.</li>
 </ul><hr/><h2 id="CO01-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
 CO01 is formulated around the sharp 3D existence/evolution boundary
@@ -2802,9 +2803,9 @@ E_\varepsilon^\omega\xrightarrow{\Gamma}E_{\mathrm{hom}}\not\Rightarrow Q_\varep
 <hr/>
 <h2 id="S01-recent-rigorous-progress">Recent rigorous progress</h2>
 <p><strong>2025 — Stochastic surface-energy homogenization broadens.</strong><br/>
-Donnarumma and Friedrich proved almost-sure stochastic homogenization for free-discontinuity surface functionals on asymptotically piecewise-rigid deformations; under ergodicity the effective density is deterministic.</p>
+<a href="https://doi.org/10.1007/s00526-025-02930-w">Donnarumma and Friedrich</a> <span class="publication-status">[Peer-reviewed article]</span> proved almost-sure stochastic homogenization for free-discontinuity surface functionals on asymptotically piecewise-rigid deformations; under ergodicity the effective density is deterministic.</p>
 <p><strong>2024 — Griffith evolution homogenizes in a periodic laminate.</strong><br/>
-Negri obtained an effective Griffith evolution for a periodic brittle laminate with a prescribed crack path.</p>
+<a href="https://doi.org/10.1007/s00205-024-02027-2">Negri</a> <span class="publication-status">[Peer-reviewed article]</span> obtained an effective Griffith evolution for a periodic brittle laminate with a prescribed crack path.</p>
 <p>Together these results sharpen the frontier. Static and even some evolutionary fracture quantities can homogenize. The unresolved issue is the fate of <strong>strength, nucleation, unrestricted paths, full random evolution, and fluctuations around the effective limit</strong>.</p>
 <hr/>
 <h2 id="S01-the-frontier-observable-by-observable-self-averaging">The frontier: observable-by-observable self-averaging</h2>
@@ -2882,8 +2883,8 @@ and limiting random variable or field
 <li>Lebihain, Ponson, Kondo &amp; Leblond, <em>Effective toughness of disordered brittle solids: A homogenization framework</em> (2021) — disorder and effective toughness.</li>
 <li>Cagnetti et al., <em>A global method for deterministic and stochastic homogenisation in BV</em> (2022) — general framework.</li>
 <li>Abedi et al. (2022) — finite-size fracture statistics and anisotropy.</li>
-<li>Negri, <em>Homogenization of Griffith’s Criterion for Brittle Laminates</em> (2024) — effective crack evolution in a periodic setting.</li>
-<li>Donnarumma &amp; Friedrich, stochastic homogenisation for asymptotically piecewise-rigid fracture functionals (2025) — recent rigorous progress.</li>
+<li><a href="https://doi.org/10.1007/s00205-024-02027-2">Negri, <em>Homogenization of Griffith’s Criterion for Brittle Laminates</em> (2024)</a> <span class="publication-status">[Peer-reviewed article]</span> — effective crack evolution in a periodic setting.</li>
+<li><a href="https://doi.org/10.1007/s00526-025-02930-w">Donnarumma &amp; Friedrich, stochastic homogenisation for asymptotically piecewise-rigid fracture functionals (2025)</a> <span class="publication-status">[Peer-reviewed article]</span> — recent rigorous progress.</li>
 </ul>
 <hr/>
 <h2 id="S01-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
@@ -2952,30 +2953,30 @@ S01 is formulated around the distinction between homogenization of fracture ener
 <hr/>
 <h2 id="AM02-recent-progress">Recent progress</h2>
 <h3 id="AM02-crack-dynamics-become-directly-measurable-and-fracture-style-simulations-mature">2026 — Crack dynamics become directly measurable and fracture-style simulations mature</h3>
-<p>Sub-millisecond LPBF synchrotron imaging now quantifies crack growth during solidification, while semisolid peridynamic simulations reproduce initiation and propagation with a declared critical-stretch law. These advances make the residual fracture closure experimentally and computationally testable.<a class="cite-ref" href="#AM02-ref-R12">[R12]</a><a class="cite-ref" href="#AM02-ref-R13">[R13]</a><a class="cite-ref" href="#AM02-ref-R14">[R14]</a></p>
+<p>Sub-millisecond LPBF synchrotron imaging now quantifies crack growth during solidification, while semisolid peridynamic simulations reproduce initiation and propagation with a declared critical-stretch law. These advances make the residual fracture closure experimentally and computationally testable.<span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R12">[R12]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R13">[R13]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R14">[R14]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="AM02-bridge-state-and-semisolid-resistance-become-more-quantitative">2025 — Bridge state and semisolid resistance become more quantitative</h3>
-<p>Rate-versus-solidification criteria, semisolid toughness measurements, and an interfacial-energy model for the bridging liquid fraction turn several previously empirical ingredients into measurable or computable state variables.<a class="cite-ref" href="#AM02-ref-R9">[R9]</a><a class="cite-ref" href="#AM02-ref-R10">[R10]</a><a class="cite-ref" href="#AM02-ref-R11">[R11]</a></p>
+<p>Rate-versus-solidification criteria, semisolid toughness measurements, and an interfacial-energy model for the bridging liquid fraction turn several previously empirical ingredients into measurable or computable state variables.<span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R9">[R9]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R10">[R10]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R11">[R11]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="AM02-propagation-and-solid-bridge-fracture-become-explicit-mechanics-targets">2024 — Propagation and solid-bridge fracture become explicit mechanics targets</h3>
-<p>Energy-balance propagation theory and solid-bridge fracture modeling move beyond susceptibility and initiation; the latter also shows that a classical crack-tip singularity need not exist in a solidifying crack.<a class="cite-ref" href="#AM02-ref-R7">[R7]</a><a class="cite-ref" href="#AM02-ref-R8">[R8]</a></p>
+<p>Energy-balance propagation theory and solid-bridge fracture modeling move beyond susceptibility and initiation; the latter also shows that a classical crack-tip singularity need not exist in a solidifying crack.<span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R7">[R7]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R8">[R8]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="AM02-fracture-mechanics-formulation-enters-the-hot-tearing-literature">2007–2009 — Fracture-mechanics formulation enters the hot-tearing literature</h3>
-<p>The field explicitly called for a nucleation-and-propagation fracture framework, and the SKK model subsequently introduced a Griffith-type critical cavity size. This establishes the historical baseline that the modern open problem must go beyond.<a class="cite-ref" href="#AM02-ref-R1">[R1]</a><a class="cite-ref" href="#AM02-ref-R3">[R3]</a></p>
+<p>The field explicitly called for a nucleation-and-propagation fracture framework, and the SKK model subsequently introduced a Griffith-type critical cavity size. This establishes the historical baseline that the modern open problem must go beyond.<span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R1">[R1]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R3">[R3]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <hr/>
 <h2 id="AM02-references">References</h2>
 <ul>
-<li><span id="AM02-ref-R1"><span class="ref-role">historical fracture-mechanics framing</span><a href="https://doi.org/10.1007/s11661-007-9169-7">[R1] Eskin &amp; Katgerman, A Quest for a New Hot Tearing Criterion (2007)</a></span></li>
+<li><span id="AM02-ref-R1"><span class="ref-role">historical fracture-mechanics framing</span><a href="https://doi.org/10.1007/s11661-007-9169-7">[R1] Eskin &amp; Katgerman, A Quest for a New Hot Tearing Criterion (2007)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
 <li><span id="AM02-ref-R2"><span class="ref-role">feeding/cavitation foundation</span><a href="https://doi.org/10.1007/s11661-999-0334-z">[R2] Rappaz, Drezet &amp; Gremaud, A new hot-tearing criterion (1999)</a></span></li>
-<li><span id="AM02-ref-R3"><span class="ref-role">Griffith-type cavity criterion</span><a href="https://doi.org/10.1007/s11661-009-9941-y">[R3] Suyitno, Kool &amp; Katgerman, Integrated Approach for Prediction of Hot Tearing (2009)</a></span></li>
+<li><span id="AM02-ref-R3"><span class="ref-role">Griffith-type cavity criterion</span><a href="https://doi.org/10.1007/s11661-009-9941-y">[R3] Suyitno, Kool &amp; Katgerman, Integrated Approach for Prediction of Hot Tearing (2009)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
 <li><span id="AM02-ref-R4"><span class="ref-role">solidification-path susceptibility</span><a href="https://doi.org/10.1016/j.actamat.2015.01.034">[R4] Kou, A criterion for cracking during solidification (2015)</a></span></li>
 <li><span id="AM02-ref-R5"><span class="ref-role">direct initiation and propagation kinetics</span><a href="https://doi.org/10.1038/srep40255">[R5] Aucott et al., Initiation and growth kinetics of solidification cracking during welding of steel (2017)</a></span></li>
 <li><span id="AM02-ref-R6"><span class="ref-role">thermodynamic phase-field fracture</span><a href="https://doi.org/10.1016/j.jmps.2022.105169">[R6] Ruan et al., A thermo-mechanical phase-field fracture model: Application to hot cracking simulations in additive manufacturing (2023)</a></span></li>
-<li><span id="AM02-ref-R7"><span class="ref-role">propagation energy model</span><a href="https://doi.org/10.1016/j.jmatprotec.2023.118273">[R7] Lin et al., A hot tearing propagation model for steel (2024)</a></span></li>
-<li><span id="AM02-ref-R8"><span class="ref-role">solid-bridge fracture mechanics</span><a href="https://doi.org/10.1016/j.jmps.2024.105651">[R8] Liu, Li &amp; Lu, Modeling solidification cracking: A new perspective on solid bridge fracture (2024)</a></span></li>
-<li><span id="AM02-ref-R9"><span class="ref-role">rate/solidification criterion</span><a href="https://doi.org/10.1016/j.engfailanal.2024.109194">[R9] Li et al., A method for predicting hot tearing during alloy solidification and its application in AZ91D magnesium alloy (2025)</a></span></li>
-<li><span id="AM02-ref-R10"><span class="ref-role">semisolid toughness extension</span><a href="https://doi.org/10.1016/j.engfailanal.2025.109348">[R10] Guo et al., An extended criterion for hot cracking susceptibility of Al-Li alloys (2025)</a></span></li>
-<li><span id="AM02-ref-R11"><span class="ref-role">bridge-state prediction</span><a href="https://doi.org/10.1016/j.actamat.2025.121520">[R11] Sheikhi et al., On the development of an interfacial energy and microstructure dependent model to predict bridging phenomenon and solidification cracking behavior (2025)</a></span></li>
-<li><span id="AM02-ref-R12"><span class="ref-role">semisolid fracture simulation</span><a href="https://doi.org/10.1016/j.engfracmech.2026.111963">[R12] Remani &amp; Nallathambi, Ordinary state based peridynamic thermomechanical simulation of hot crack occurrence during semi-solid plate quenching experiment (2026)</a></span></li>
-<li><span id="AM02-ref-R13"><span class="ref-role">latest direct AM crack dynamics</span><a href="https://doi.org/10.1007/s40964-026-01933-z">[R13] Ali et al., Study of crack formation dynamics in aluminum alloy by using laser powder bed fusion and in-situ synchrotron X-ray characterization (2026)</a></span></li>
-<li><span id="AM02-ref-R14"><span class="ref-role">latest AM susceptibility criterion</span><a href="https://doi.org/10.1016/j.actamat.2026.122400">[R14] Guan et al., A new cracking criterion for additive manufacturing and repair of Ni-based superalloys via laser directed energy deposition (2026)</a></span></li>
+<li><span id="AM02-ref-R7"><span class="ref-role">propagation energy model</span><a href="https://doi.org/10.1016/j.jmatprotec.2023.118273">[R7] Lin et al., A hot tearing propagation model for steel (2024)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R8"><span class="ref-role">solid-bridge fracture mechanics</span><a href="https://doi.org/10.1016/j.jmps.2024.105651">[R8] Liu, Li &amp; Lu, Modeling solidification cracking: A new perspective on solid bridge fracture (2024)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R9"><span class="ref-role">rate/solidification criterion</span><a href="https://doi.org/10.1016/j.engfailanal.2024.109194">[R9] Li et al., A method for predicting hot tearing during alloy solidification and its application in AZ91D magnesium alloy (2025)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R10"><span class="ref-role">semisolid toughness extension</span><a href="https://doi.org/10.1016/j.engfailanal.2025.109348">[R10] Guo et al., An extended criterion for hot cracking susceptibility of Al-Li alloys (2025)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R11"><span class="ref-role">bridge-state prediction</span><a href="https://doi.org/10.1016/j.actamat.2025.121520">[R11] Sheikhi et al., On the development of an interfacial energy and microstructure dependent model to predict bridging phenomenon and solidification cracking behavior (2025)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R12"><span class="ref-role">semisolid fracture simulation</span><a href="https://doi.org/10.1016/j.engfracmech.2026.111963">[R12] Remani &amp; Nallathambi, Ordinary state based peridynamic thermomechanical simulation of hot crack occurrence during semi-solid plate quenching experiment (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R13"><span class="ref-role">latest direct AM crack dynamics</span><a href="https://doi.org/10.1007/s40964-026-01933-z">[R13] Ali et al., Study of crack formation dynamics in aluminum alloy by using laser powder bed fusion and in-situ synchrotron X-ray characterization (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R14"><span class="ref-role">latest AM susceptibility criterion</span><a href="https://doi.org/10.1016/j.actamat.2026.122400">[R14] Guan et al., A new cracking criterion for additive manufacturing and repair of Ni-based superalloys via laser directed energy deposition (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
 </ul>
 <p>References document the known boundary or reported progress. Their inclusion does not by itself certify that the broader target is globally open.</p>
 <hr/>
@@ -3045,35 +3046,35 @@ S01 is formulated around the distinction between homogenization of fracture ener
 <hr/>
 <h2 id="BIO01-recent-progress">Recent progress</h2>
 <h3 id="BIO01-scale-environment-and-disorder-sharpen-the-fracture-state-problem">2026 — Scale, environment and disorder sharpen the fracture-state problem</h3>
-<p>Hydration-dependent fracture energy, random-architecture fractal cracking and loading-dependent nacre failure modes show that the active dissipation/process zone and mechanism set can change with structural scale, environment and microstructural statistics.<a class="cite-ref" href="#BIO01-ref-R10">[R10]</a><a class="cite-ref" href="#BIO01-ref-R11">[R11]</a><a class="cite-ref" href="#BIO01-ref-R12">[R12]</a></p>
+<p>Hydration-dependent fracture energy, random-architecture fractal cracking and loading-dependent nacre failure modes show that the active dissipation/process zone and mechanism set can change with structural scale, environment and microstructural statistics.<span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R10">[R10]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R11">[R11]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R12">[R12]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="BIO01-cross-level-synergy-becomes-quantitatively-modelled">2025 — Cross-level synergy becomes quantitatively modelled</h3>
-<p>A broad review consolidates hierarchy, interfaces and characteristic size as recurring ingredients across biological materials, while a hierarchical nacre model explicitly couples microstructural crack bridging to macroscale stress and morphology.<a class="cite-ref" href="#BIO01-ref-R8">[R8]</a><a class="cite-ref" href="#BIO01-ref-R9">[R9]</a></p>
+<p>A broad review consolidates hierarchy, interfaces and characteristic size as recurring ingredients across biological materials, while a hierarchical nacre model explicitly couples microstructural crack bridging to macroscale stress and morphology.<span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R8">[R8]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R9">[R9]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="BIO01-effective-fracture-scale-transitions-establishedand-shown-nonunique">2018–2020 — Effective fracture scale transitions established—and shown nonunique</h3>
-<p>Computational homogenization derives effective traction-separation relations from microscale fracture, but later work shows that distinct energy-consistent transition rules can generate different effective laws from the same microscale response.<a class="cite-ref" href="#BIO01-ref-R6">[R6]</a><a class="cite-ref" href="#BIO01-ref-R7">[R7]</a></p>
+<p>Computational homogenization derives effective traction-separation relations from microscale fracture, but later work shows that distinct energy-consistent transition rules can generate different effective laws from the same microscale response.<span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R6">[R6]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R7">[R7]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="BIO01-hierarchical-fracture-mechanics-establishes-the-foundation">2006–2011 — Hierarchical fracture mechanics establishes the foundation</h3>
-<p>Flaw-tolerance theory, recursive cohesive laws, optimal-hierarchy analysis and hierarchy-generated R-curves establish that architecture can transform local failure across scales; the modern problem is to predict that transformation for general interacting hierarchies.<a class="cite-ref" href="#BIO01-ref-R2">[R2]</a><a class="cite-ref" href="#BIO01-ref-R3">[R3]</a><a class="cite-ref" href="#BIO01-ref-R4">[R4]</a><a class="cite-ref" href="#BIO01-ref-R5">[R5]</a></p>
+<p>Flaw-tolerance theory, recursive cohesive laws, optimal-hierarchy analysis and hierarchy-generated R-curves establish that architecture can transform local failure across scales; the modern problem is to predict that transformation for general interacting hierarchies.<span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R2">[R2]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R3">[R3]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R4">[R4]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#BIO01-ref-R5">[R5]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <hr/>
 <h2 id="BIO01-references">References</h2>
 <ul>
 <li><span id="BIO01-ref-R1"><span class="ref-role">hierarchical-materials foundation</span><a href="https://doi.org/10.1016/j.pmatsci.2007.06.001">[R1] Fratzl &amp; Weinkamer, Nature’s hierarchical materials (2007)</a></span></li>
-<li><span id="BIO01-ref-R2"><span class="ref-role">hierarchical fracture foundation</span><a href="https://doi.org/10.1007/s10704-006-7156-4">[R2] Gao, Application of Fracture Mechanics Concepts to Hierarchical Biomechanics of Bone and Bone-like Materials (2006)</a></span></li>
-<li><span id="BIO01-ref-R3"><span class="ref-role">recursive cohesive mechanics</span><a href="https://doi.org/10.1016/j.ijsolstr.2007.06.007">[R3] Yao &amp; Gao, Multi-scale cohesive laws in hierarchical materials (2007)</a></span></li>
-<li><span id="BIO01-ref-R4"><span class="ref-role">optimal hierarchy</span><a href="https://doi.org/10.1098/rspb.2010.1093">[R4] Zhang, Zhang &amp; Gao, On optimal hierarchy of load-bearing biological materials (2011)</a></span></li>
-<li><span id="BIO01-ref-R5"><span class="ref-role">hierarchy-generated R-curve</span><a href="https://doi.org/10.1038/srep00035">[R5] Sen &amp; Buehler, Structural hierarchies define toughness and defect-tolerance despite simple and mechanically inferior brittle building blocks (2011)</a></span></li>
-<li><span id="BIO01-ref-R6"><span class="ref-role">effective fracture homogenization</span><a href="https://doi.org/10.1016/j.jmps.2018.04.009">[R6] Turteltaub et al., Multiscale analysis of mixed-mode fracture and effective traction-separation relations for composite materials (2018)</a></span></li>
-<li><span id="BIO01-ref-R7"><span class="ref-role">scale-transition nonuniqueness</span><a href="https://doi.org/10.1016/j.euromechsol.2020.104079">[R7] Turteltaub &amp; Suárez-Millán, Energetically-consistent multiscale analysis of fracture in composites materials (2020)</a></span></li>
-<li><span id="BIO01-ref-R8"><span class="ref-role">cross-system biological mechanics review</span><a href="https://doi.org/10.1016/j.mser.2025.100988">[R8] Toughening and strengthening mechanisms of biological materials: A review (2025)</a></span></li>
-<li><span id="BIO01-ref-R9"><span class="ref-role">hierarchical crack bridging</span><a href="https://doi.org/10.1016/j.jmps.2025.106067">[R9] Yan &amp; Feng, Synergistic toughening mechanisms of macro- and micro-structures in nacre: Effects of T-stresses (2025)</a></span></li>
-<li><span id="BIO01-ref-R10"><span class="ref-role">scale-dependent fracture resistance</span><a href="https://doi.org/10.1016/j.engfracmech.2026.112174">[R10] Kellersztein, Hydration- and scale-dependent fracture energy in hierarchical biological composites (2026)</a></span></li>
-<li><span id="BIO01-ref-R11"><span class="ref-role">disorder and emergent fracture mode</span><a href="https://doi.org/10.1016/j.jmps.2026.106552">[R11] Yan et al., Fractal cracking: An emergent failure mode of nacreous materials with microstructural randomness (2026)</a></span></li>
-<li><span id="BIO01-ref-R12"><span class="ref-role">loading-dependent mechanism selection</span><a href="https://doi.org/10.1016/j.mechmat.2026.105627">[R12] Vigliotti, Multiscale phase-field analysis of nacre’s asymmetric mechanical strength (2026)</a></span></li>
+<li><span id="BIO01-ref-R2"><span class="ref-role">hierarchical fracture foundation</span><a href="https://doi.org/10.1007/s10704-006-7156-4">[R2] Gao, Application of Fracture Mechanics Concepts to Hierarchical Biomechanics of Bone and Bone-like Materials (2006)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R3"><span class="ref-role">recursive cohesive mechanics</span><a href="https://doi.org/10.1016/j.ijsolstr.2007.06.007">[R3] Yao &amp; Gao, Multi-scale cohesive laws in hierarchical materials (2007)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R4"><span class="ref-role">optimal hierarchy</span><a href="https://doi.org/10.1098/rspb.2010.1093">[R4] Zhang, Zhang &amp; Gao, On optimal hierarchy of load-bearing biological materials (2011)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R5"><span class="ref-role">hierarchy-generated R-curve</span><a href="https://doi.org/10.1038/srep00035">[R5] Sen &amp; Buehler, Structural hierarchies define toughness and defect-tolerance despite simple and mechanically inferior brittle building blocks (2011)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R6"><span class="ref-role">effective fracture homogenization</span><a href="https://doi.org/10.1016/j.jmps.2018.04.009">[R6] Turteltaub et al., Multiscale analysis of mixed-mode fracture and effective traction-separation relations for composite materials (2018)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R7"><span class="ref-role">scale-transition nonuniqueness</span><a href="https://doi.org/10.1016/j.euromechsol.2020.104079">[R7] Turteltaub &amp; Suárez-Millán, Energetically-consistent multiscale analysis of fracture in composites materials (2020)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R8"><span class="ref-role">cross-system biological mechanics review</span><a href="https://doi.org/10.1016/j.mser.2025.100988">[R8] Toughening and strengthening mechanisms of biological materials: A review (2025)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R9"><span class="ref-role">hierarchical crack bridging</span><a href="https://doi.org/10.1016/j.jmps.2025.106067">[R9] Yan &amp; Feng, Synergistic toughening mechanisms of macro- and micro-structures in nacre: Effects of T-stresses (2025)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R10"><span class="ref-role">scale-dependent fracture resistance</span><a href="https://doi.org/10.1016/j.engfracmech.2026.112174">[R10] Kellersztein, Hydration- and scale-dependent fracture energy in hierarchical biological composites (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R11"><span class="ref-role">disorder and emergent fracture mode</span><a href="https://doi.org/10.1016/j.jmps.2026.106552">[R11] Yan et al., Fractal cracking: An emergent failure mode of nacreous materials with microstructural randomness (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="BIO01-ref-R12"><span class="ref-role">loading-dependent mechanism selection</span><a href="https://doi.org/10.1016/j.mechmat.2026.105627">[R12] Vigliotti, Multiscale phase-field analysis of nacre’s asymmetric mechanical strength (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
 </ul>
 <p>References document the known boundary or reported progress. Their inclusion does not by itself certify that the broader target is globally open.</p>
 <hr/>
 </article>
 </div>
 </div>
-<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 14 October 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
+<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 21 October 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
 <script>
 // Hash routes work under the GitHub Pages project path without server rewrites.
 // Resolve existing section/reference IDs through their owning view, not a second roster.

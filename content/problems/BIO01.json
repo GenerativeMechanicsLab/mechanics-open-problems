@@ -160,67 +160,89 @@
       "id": "R2",
       "role": "hierarchical fracture foundation",
       "label": "Gao, Application of Fracture Mechanics Concepts to Hierarchical Biomechanics of Bone and Bone-like Materials (2006)",
-      "url": "https://doi.org/10.1007/s10704-006-7156-4"
+      "url": "https://doi.org/10.1007/s10704-006-7156-4",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R3",
       "role": "recursive cohesive mechanics",
       "label": "Yao & Gao, Multi-scale cohesive laws in hierarchical materials (2007)",
-      "url": "https://doi.org/10.1016/j.ijsolstr.2007.06.007"
+      "url": "https://doi.org/10.1016/j.ijsolstr.2007.06.007",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R4",
       "role": "optimal hierarchy",
       "label": "Zhang, Zhang & Gao, On optimal hierarchy of load-bearing biological materials (2011)",
-      "url": "https://doi.org/10.1098/rspb.2010.1093"
+      "url": "https://doi.org/10.1098/rspb.2010.1093",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R5",
       "role": "hierarchy-generated R-curve",
       "label": "Sen & Buehler, Structural hierarchies define toughness and defect-tolerance despite simple and mechanically inferior brittle building blocks (2011)",
-      "url": "https://doi.org/10.1038/srep00035"
+      "url": "https://doi.org/10.1038/srep00035",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R6",
       "role": "effective fracture homogenization",
       "label": "Turteltaub et al., Multiscale analysis of mixed-mode fracture and effective traction-separation relations for composite materials (2018)",
-      "url": "https://doi.org/10.1016/j.jmps.2018.04.009"
+      "url": "https://doi.org/10.1016/j.jmps.2018.04.009",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R7",
       "role": "scale-transition nonuniqueness",
       "label": "Turteltaub & Suárez-Millán, Energetically-consistent multiscale analysis of fracture in composites materials (2020)",
-      "url": "https://doi.org/10.1016/j.euromechsol.2020.104079"
+      "url": "https://doi.org/10.1016/j.euromechsol.2020.104079",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R8",
       "role": "cross-system biological mechanics review",
       "label": "Toughening and strengthening mechanisms of biological materials: A review (2025)",
-      "url": "https://doi.org/10.1016/j.mser.2025.100988"
+      "url": "https://doi.org/10.1016/j.mser.2025.100988",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R9",
       "role": "hierarchical crack bridging",
       "label": "Yan & Feng, Synergistic toughening mechanisms of macro- and micro-structures in nacre: Effects of T-stresses (2025)",
-      "url": "https://doi.org/10.1016/j.jmps.2025.106067"
+      "url": "https://doi.org/10.1016/j.jmps.2025.106067",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R10",
       "role": "scale-dependent fracture resistance",
       "label": "Kellersztein, Hydration- and scale-dependent fracture energy in hierarchical biological composites (2026)",
-      "url": "https://doi.org/10.1016/j.engfracmech.2026.112174"
+      "url": "https://doi.org/10.1016/j.engfracmech.2026.112174",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R11",
       "role": "disorder and emergent fracture mode",
       "label": "Yan et al., Fractal cracking: An emergent failure mode of nacreous materials with microstructural randomness (2026)",
-      "url": "https://doi.org/10.1016/j.jmps.2026.106552"
+      "url": "https://doi.org/10.1016/j.jmps.2026.106552",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     },
     {
       "id": "R12",
       "role": "loading-dependent mechanism selection",
       "label": "Vigliotti, Multiscale phase-field analysis of nacre's asymmetric mechanical strength (2026)",
-      "url": "https://doi.org/10.1016/j.mechmat.2026.105627"
+      "url": "https://doi.org/10.1016/j.mechmat.2026.105627",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-10-21"
     }
   ],
   "categories": [

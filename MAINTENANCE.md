@@ -65,6 +65,12 @@ A curated entry is not a formal certification that a problem is globally open. M
 
 Corrections and counterexamples are first-class updates.
 
+## Publication-status labels
+
+Recent-progress citations and their matching bibliography entries use quiet “Peer-reviewed article” or “Preprint” labels. Check the primary publication record before assigning or changing a label; an arXiv copy may also have a published journal version. Books, reports, and standards should retain their actual source type.
+
+Store `publication_status` and `publication_status_checked` on the canonical reference, and update its visible labels in `docs/index.html` together. Record the evidence in a dated audit note. A publication-status check is distinct from a scientific literature audit: it does not by itself change `last_reviewed`, the statement version, or the problem’s scientific status, and it does not indicate independent verification by OPM.
+
 ## Repository hygiene
 
 Keep only material needed to understand, maintain, validate, and contribute to the public resource. Temporary review copies, private strategy, speculative candidate notes, obsolete generated pages, and internal research handoffs belong outside this repository.
