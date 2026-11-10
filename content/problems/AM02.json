@@ -90,6 +90,12 @@
       ]
     },
     {
+      "text": "Dendrite-scale X-ray observations in a solidifying Fe–Mn–Cr–Ni–Si alloy show a spread of crack-initiation strains at similar temperatures. This provides an experimental constraint on temperature-only criteria, while the state variables controlling the spread and a Griffith-type advance/arrest law remain unresolved.",
+      "refs": [
+        "R15"
+      ]
+    },
+    {
       "text": "Through the literature audit of 30 September 2026, no general result was identified that derives a process-independent crack-driving force and resistance for a solid-liquid load-bearing network whose bridges, liquid connectivity, and topology evolve during crack growth, together with a controlled reduction to ordinary solid fracture as f_s approaches one. That residual closure—not the absence of hot-cracking criteria—is the conservative open core.",
       "refs": [
         "R3",
@@ -110,6 +116,14 @@
     "A negative resolution is equally meaningful: prove that no state-local scalar resistance can close the problem for the stated class and identify the minimal additional internal variables, memory, or nonlocal information required."
   ],
   "progress": [
+    {
+      "date": "2026-10",
+      "title": "Dendrite-scale observations resolve a distribution of crack-initiation strains",
+      "text": "Dendrite-scale X-ray observations in a solidifying Fe–Mn–Cr–Ni–Si alloy show a spread of crack-initiation strains at similar temperatures. This provides an experimental constraint on temperature-only criteria, while the state variables controlling the spread and a Griffith-type advance/arrest law remain unresolved.",
+      "refs": [
+        "R15"
+      ]
+    },
     {
       "date": "2026",
       "title": "Crack dynamics become directly measurable and fracture-style simulations mature",
@@ -253,6 +267,14 @@
       "url": "https://doi.org/10.1016/j.actamat.2026.122400",
       "publication_status": "Peer-reviewed article",
       "publication_status_checked": "2026-10-21"
+    },
+    {
+      "id": "R15",
+      "role": "dendrite-scale crack-initiation strain distribution",
+      "label": "Kitano et al., Dendrite-scale quantitative evaluation of solidification cracking in welding using in-situ synchrotron X-ray imaging: distribution characteristics of critical strain (2026)",
+      "url": "https://doi.org/10.1080/14686996.2026.2736326",
+      "publication_status": "Peer-reviewed article",
+      "publication_status_checked": "2026-11-10"
     }
   ],
   "categories": [
@@ -278,3 +300,4 @@
     "Fracture"
   ]
 }
+

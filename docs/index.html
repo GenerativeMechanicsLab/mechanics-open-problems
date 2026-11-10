@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-10-21"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
+<html lang="en"><head><!-- OPM v1.0 public build: native MathML; source-audited 2026-10-06 --><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="A curated, evolving map of theoretical challenges in solid mechanics, structural mechanics, and mechanics of materials."/><meta name="robots" content="index,follow"/><meta name="opm:first-published" content="2026-10-06"/><meta name="opm:last-updated" content="2026-11-10"/><meta property="og:title" content="Open Problems in Mechanics"/><meta property="og:description" content="A curated map of theory-rich mechanics problems, their known/open boundaries, settlement criteria, and documented progress."/><meta property="og:type" content="website"/><meta property="og:url" content="https://generativemechanicslab.github.io/mechanics-open-problems/"/><meta name="twitter:card" content="summary"/><link rel="canonical" href="https://generativemechanicslab.github.io/mechanics-open-problems/"/><title>Open Problems in Mechanics · Version 1.0</title><style>
 :root{--ink:#17222c;--muted:#5c6873;--line:#d9e0e5;--paper:#fbfcfd;--soft:#f2f5f7;--accent:#1d5b78;--accent2:#134157;--warm:#f6f1e8;--max:1180px}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.62}
@@ -966,13 +966,9 @@ Ortiz, <em>A discrete crystal model in three dimensions: The
 line-tension limit for dislocations</em></a> <span class="publication-status">[Peer-reviewed article]</span> proved, under a dilute
 scaling, convergence from a discrete three-dimensional crystal energy to
 a line-tension theory supported on Volterra dislocations.</p><p>This is a major controlled atomistic/discrete-to-line-defect result
-on the energetic side.</p><p><strong>2024 — Discrete dislocation evolution can be homogenized in a
-restricted setting.</strong><br/>
-<a href="https://arxiv.org/abs/2410.02906">Bonicatto &amp; Rindler,
-<em>Homogenization of elasto-plastic evolutions driven by the flow of
-dislocations</em></a> <span class="publication-status">[Preprint]</span> rigorously obtain continuously distributed
-dislocation-field evolutions as limits of discrete dislocation
-evolutions in a prototypical small-strain, quasistatic setting.</p><p><strong>2026 — Volterra dislocations converge to strain-gradient
+on the energetic side.</p><p><strong>2024, revised October 2026: Discrete dislocation evolution can be homogenized in a restricted setting.</strong><br/>
+<a href="https://arxiv.org/abs/2410.02906">Bonicatto, Rindler &amp; Turnbull,
+<em>Homogenisation of elasto-plastic evolutions driven by the flow of dislocations</em></a> <span class="publication-status">[Preprint]</span>. The revised preprint establishes discrete-to-field homogenisation and recovery for a small-strain, rate-independent single-crystal model. The broader finite-strain closure problem remains open. The citation reflects arXiv v3, revised 28 October 2026.</p><p><strong>2026 — Volterra dislocations converge to strain-gradient
 plasticity in 2D.</strong><br/>
 <a href="https://doi.org/10.1007/s00526-025-03195-z">Kupferman &amp;
 Maor, <em>From Volterra dislocations to strain-gradient
@@ -1245,7 +1241,7 @@ representation and closure.</li>
 et al., <em>Link statistics of dislocation network during strain
 hardening</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — candidate statistical descriptors of
 evolving network state.</li>
-<li><a href="https://arxiv.org/abs/2410.02906">Bonicatto &amp; Rindler, Homogenization of elasto-plastic evolutions driven by the flow of dislocations (2024; revised 2025)</a> <span class="publication-status">[Preprint]</span>.</li>
+<li><a href="https://arxiv.org/abs/2410.02906">Bonicatto, Rindler &amp; Turnbull, Homogenisation of elasto-plastic evolutions driven by the flow of dislocations (2024; revised 28 October 2026, arXiv v3)</a> <span class="publication-status">[Preprint]</span>.</li>
 <li><a href="https://doi.org/10.1016/j.ijplas.2026.104744">Katzer et al., Characterization of dislocation networks under varying boundary conditions in the discrete to continuum transition regime (2026)</a> <span class="publication-status">[Peer-reviewed article]</span>.</li>
 </ul><hr/><h2 id="DI02-progress-log">Progress log</h2><p><strong>30 September 2026 — Problem statement v1.0.</strong><br/>
 The problem is formulated around the emergence of continuum plasticity
@@ -2321,10 +2317,7 @@ effect;</li>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>/</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">H/t</annotation></semantics></math>
 becomes important in addition to
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">R/t</annotation></semantics></math>.</li>
-</ul><p>Their calculated knockdown factors still remain above some historical
-experimental values.</p><p>That result is informative: a Gaussian dimple is a natural severe
-imperfection, but it is not established as the universal worst-case
-defect for cylinders.</p><hr/><h2 id="SH01-recent-progress-engineering-lower-envelopes-are-becoming-explicit">Recent
+</ul><p>Simulations of interacting localized dimples show that defect populations and edge coupling affect buckling statistics. The studied Gaussian-dimple class does not recover the low knockdown factors in historical experiments and does not establish a worst-case bound over general manufacturing imperfections.</p><hr/><h2 id="SH01-recent-progress-engineering-lower-envelopes-are-becoming-explicit">Recent
 progress: engineering lower envelopes are becoming explicit</h2><p><strong>2026 — Numerical lower-bound KDF envelopes.</strong><br/>
 <a href="https://doi.org/10.1016/j.tws.2026.115123">Wang et al., <em>A
 numerical framework for lower-bound knockdown factor prediction of
@@ -2463,9 +2456,8 @@ Schneider, <em>The Origin of Imperfection Sensitivity in the Buckling of
 Cylindrical Shells</em> (2026)</a> <span class="publication-status">[Preprint]</span> — defect pinning and
 bifurcation switching.</li>
 <li><a href="https://arxiv.org/abs/2607.19245">U. K. Ubamanyu et al.,
-<em>The Butterfly Defect Effect in Cylindrical Shell Buckling</em>
-(2026)</a> <span class="publication-status">[Preprint]</span> — nonlocal defect interactions, edge coupling, and
-statistical size effect.</li>
+<em>The Butterfly Defect Effect in Cylindrical Shell Buckling: Non-localized Interactions of Localized Imperfections</em>
+(2026)</a> <span class="publication-status">[Preprint]</span> — localized-defect interactions and stochastic size effects.</li>
 <li><a href="https://doi.org/10.1016/j.tws.2026.115123">F. Wang et al.,
 <em>A numerical framework for lower-bound knockdown factor prediction of
 compressed cylindrical shells</em> (2026)</a> <span class="publication-status">[Peer-reviewed article]</span> — explicit numerical
@@ -2944,6 +2936,7 @@ S01 is formulated around the distinction between homogenization of fracture ener
 <p>Work in 2025 resolved additional pieces of the evolving state. A strain-rate/solidification-rate criterion was validated for AZ91D casting; an Al-Li extension of SKK incorporated semisolid high-temperature toughness; and an interfacial-energy/microstructure model predicted the bridging liquid fraction. These advances make bridge formation and semisolid resistance more quantitative, but they produce model- or alloy-specific descriptors rather than a general crack-driving-force/resistance pair.<a class="cite-ref" href="#AM02-ref-R9">[R9]</a><a class="cite-ref" href="#AM02-ref-R10">[R10]</a><a class="cite-ref" href="#AM02-ref-R11">[R11]</a></p>
 <p>In 2026, fracture-style numerical prediction advanced further. A thermo-mechanical peridynamic model with a temperature-dependent critical-stretch law reproduced initiation and propagation of multiple hot cracks in a semisolid AA7050 quenching experiment, while a new analytical L-DED cracking criterion for Ni superalloys improved solidification-susceptibility prediction. These are important predictive closures in declared settings, not evidence that a unique Griffith-type law exists for the underlying evolving two-phase medium.<a class="cite-ref" href="#AM02-ref-R12">[R12]</a><a class="cite-ref" href="#AM02-ref-R14">[R14]</a></p>
 <p>Also in September 2026, high-speed synchrotron imaging of LPBF Al6061 quantified crack evolution at sub-millisecond resolution: cracking began shortly before melt-pool disappearance and developed over roughly a millisecond. The propagation dynamics needed to test a fracture law are therefore increasingly observable rather than hidden inside a post-mortem crack count.<a class="cite-ref" href="#AM02-ref-R13">[R13]</a></p>
+<p>Dendrite-scale X-ray observations in a solidifying Fe–Mn–Cr–Ni–Si alloy show a spread of crack-initiation strains at similar temperatures. This provides an experimental constraint on temperature-only criteria, while the state variables controlling the spread and a Griffith-type advance/arrest law remain unresolved.<a class="cite-ref" href="#AM02-ref-R15">[R15]</a></p>
 <p>Through the literature audit of 30 September 2026, no general result was identified that derives a process-independent crack-driving force and resistance for a solid-liquid load-bearing network whose bridges, liquid connectivity, and topology evolve during crack growth, together with a controlled reduction to ordinary solid fracture as f_s approaches one. That residual closure—not the absence of hot-cracking criteria—is the conservative open core.<a class="cite-ref" href="#AM02-ref-R3">[R3]</a><a class="cite-ref" href="#AM02-ref-R7">[R7]</a><a class="cite-ref" href="#AM02-ref-R8">[R8]</a><a class="cite-ref" href="#AM02-ref-R9">[R9]</a><a class="cite-ref" href="#AM02-ref-R10">[R10]</a><a class="cite-ref" href="#AM02-ref-R11">[R11]</a><a class="cite-ref" href="#AM02-ref-R12">[R12]</a><a class="cite-ref" href="#AM02-ref-R13">[R13]</a><a class="cite-ref" href="#AM02-ref-R14">[R14]</a></p>
 <hr/>
 <h2 id="AM02-what-would-settle-it">What would settle it</h2>
@@ -2952,6 +2945,8 @@ S01 is formulated around the distinction between homogenization of fracture ener
 <p>A negative resolution is equally meaningful: prove that no state-local scalar resistance can close the problem for the stated class and identify the minimal additional internal variables, memory, or nonlocal information required.</p>
 <hr/>
 <h2 id="AM02-recent-progress">Recent progress</h2>
+<h3 id="AM02-critical-strain-distribution">October 2026: Dendrite-scale observations resolve a distribution of crack-initiation strains</h3>
+<p>Dendrite-scale X-ray observations in a solidifying Fe–Mn–Cr–Ni–Si alloy show a spread of crack-initiation strains at similar temperatures. This provides an experimental constraint on temperature-only criteria, while the state variables controlling the spread and a Griffith-type advance/arrest law remain unresolved.<span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R15">[R15]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="AM02-crack-dynamics-become-directly-measurable-and-fracture-style-simulations-mature">2026 — Crack dynamics become directly measurable and fracture-style simulations mature</h3>
 <p>Sub-millisecond LPBF synchrotron imaging now quantifies crack growth during solidification, while semisolid peridynamic simulations reproduce initiation and propagation with a declared critical-stretch law. These advances make the residual fracture closure experimentally and computationally testable.<span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R12">[R12]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R13">[R13]</a> <span class="publication-status">[Peer-reviewed article]</span></span><span class="publication-citation"><a class="cite-ref" href="#AM02-ref-R14">[R14]</a> <span class="publication-status">[Peer-reviewed article]</span></span></p>
 <h3 id="AM02-bridge-state-and-semisolid-resistance-become-more-quantitative">2025 — Bridge state and semisolid resistance become more quantitative</h3>
@@ -2977,6 +2972,7 @@ S01 is formulated around the distinction between homogenization of fracture ener
 <li><span id="AM02-ref-R12"><span class="ref-role">semisolid fracture simulation</span><a href="https://doi.org/10.1016/j.engfracmech.2026.111963">[R12] Remani &amp; Nallathambi, Ordinary state based peridynamic thermomechanical simulation of hot crack occurrence during semi-solid plate quenching experiment (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
 <li><span id="AM02-ref-R13"><span class="ref-role">latest direct AM crack dynamics</span><a href="https://doi.org/10.1007/s40964-026-01933-z">[R13] Ali et al., Study of crack formation dynamics in aluminum alloy by using laser powder bed fusion and in-situ synchrotron X-ray characterization (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
 <li><span id="AM02-ref-R14"><span class="ref-role">latest AM susceptibility criterion</span><a href="https://doi.org/10.1016/j.actamat.2026.122400">[R14] Guan et al., A new cracking criterion for additive manufacturing and repair of Ni-based superalloys via laser directed energy deposition (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
+<li><span id="AM02-ref-R15"><span class="ref-role">dendrite-scale crack-initiation strain distribution</span><a href="https://doi.org/10.1080/14686996.2026.2736326">[R15] Kitano et al., Dendrite-scale quantitative evaluation of solidification cracking in welding using in-situ synchrotron X-ray imaging: distribution characteristics of critical strain (2026)</a> <span class="publication-status">[Peer-reviewed article]</span></span></li>
 </ul>
 <p>References document the known boundary or reported progress. Their inclusion does not by itself certify that the broader target is globally open.</p>
 <hr/>
@@ -3074,7 +3070,7 @@ S01 is formulated around the distinction between homogenization of fracture ener
 </article>
 </div>
 </div>
-<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 21 October 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
+<footer><div class="wrap footer-grid"><div><strong>Open Problems in Mechanics</strong><div>Bo Ni · <a href="https://genmechlab.org">GenMech Lab</a> · an independent research initiative</div><div>Version 1.0 · First published 6 October 2026 · Last updated 10 November 2026</div></div><div><a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/issues/new/choose">Contact / corrections</a> · <a href="https://github.com/GenerativeMechanicsLab/mechanics-open-problems/blob/main/LICENSE.md">Licensing</a></div></div></footer>
 <script>
 // Hash routes work under the GitHub Pages project path without server rewrites.
 // Resolve existing section/reference IDs through their owning view, not a second roster.
@@ -3171,3 +3167,4 @@ window.addEventListener('DOMContentLoaded',()=>{
  });
 })();
 </script></body></html>
+

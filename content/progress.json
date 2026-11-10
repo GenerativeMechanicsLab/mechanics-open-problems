@@ -1,5 +1,14 @@
 [
   {
+    "date": "2026-10",
+    "problem_id": "AM02",
+    "title": "Dendrite-scale observations resolve a distribution of crack-initiation strains",
+    "text": "Dendrite-scale X-ray observations in a solidifying Fe–Mn–Cr–Ni–Si alloy show a spread of crack-initiation strains at similar temperatures. This provides an experimental constraint on temperature-only criteria, while the state variables controlling the spread and a Griffith-type advance/arrest law remain unresolved.",
+    "refs": [
+      "AM02:R15"
+    ]
+  },
+  {
     "date": "2026-10-11",
     "problem_id": "EL01",
     "title": "Eshelby stability preprint: local theorem, critical scaling and finite-shape bounds",
@@ -120,3 +129,4 @@
     ]
   }
 ]
+

@@ -53,7 +53,7 @@
       ]
     },
     {
-      "text": "Additional recent stochastic/engineering lower-bound work addresses uncertainty in imperfection-sensitive shells but does not replace the need for a sharp physically grounded worst-case class.",
+      "text": "Simulations of interacting localized dimples show that defect populations and edge coupling affect buckling statistics. The studied Gaussian-dimple class does not recover the low knockdown factors in historical experiments and does not establish a worst-case bound over general manufacturing imperfections.",
       "refs": [
         "R5"
       ]
@@ -128,11 +128,11 @@
     },
     {
       "id": "R5",
-      "role": "recent uncertainty/lower-bound work · preprint",
-      "label": "Ubamanyu et al., stochastic/engineering lower-bound framework for imperfect shells (2026)",
+      "role": "localized-defect interactions and stochastic size effects",
+      "label": "Ubamanyu, Blond, Hutchinson & Reis, The Butterfly Defect Effect in Cylindrical Shell Buckling: Non-localized Interactions of Localized Imperfections (2026)",
       "url": "https://arxiv.org/abs/2607.19245",
       "publication_status": "Preprint",
-      "publication_status_checked": "2026-10-21"
+      "publication_status_checked": "2026-11-10"
     },
     {
       "id": "R6",
@@ -164,3 +164,4 @@
     "Structural mechanics"
   ]
 }
+

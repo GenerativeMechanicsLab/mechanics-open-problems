@@ -4,6 +4,14 @@ All notable public changes to **Open Problems in Mechanics** are recorded here.
 
 The project uses versioned public snapshots while remaining a living resource.
 
+## 10 November 2026 — Monthly literature update
+
+- Updated DI02's existing homogenisation preprint citation to arXiv v3, including Turnbull and the 28 October revision date, and clarified its small-strain, rate-independent single-crystal scope.
+- Refined SH01's localized-defect source description and full title, distinguishing its Gaussian-dimple results from a worst-case bound over general manufacturing imperfections.
+- Added AM02's October peer-reviewed dendrite-scale crack-initiation strain observations, with their limited implication for temperature-only criteria and the unresolved fracture closure.
+- Synchronized the three canonical records and public HTML, recorded the AM02 observation in the progress records, and documented sources and checks in `audit/MONTHLY_LITERATURE_2026-11-10.md`.
+- Updated the site maintenance date. The ten-problem roster, formulations, scientific statuses, statement versions, full literature-audit dates, routing, and mathematical markup are unchanged.
+
 ## 21 October 2026 — Publication-status labels
 
 - Added quiet “Peer-reviewed article” and “Preprint” labels beside individual sources in recent-progress sections and their matching bibliography entries across all ten active problems.
@@ -54,3 +62,4 @@ The project uses versioned public snapshots while remaining a living resource.
 ## Public history baseline
 
 The publication repository begins from a minimal initialization commit and the curated v1.0 release-candidate snapshot. Internal drafting history and private research strategy are maintained separately and are not part of this public repository.
+

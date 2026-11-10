@@ -70,6 +70,12 @@
       ]
     },
     {
+      "text": "The revised preprint establishes discrete-to-field homogenisation and recovery for a small-strain, rate-independent single-crystal model. The broader finite-strain closure problem remains open.",
+      "refs": [
+        "R16"
+      ]
+    },
+    {
       "text": "No controlled three-dimensional dynamic derivation was identified that simultaneously closes realistic multi-slip dislocation-network evolution, derives topology-changing reaction terms, identifies a minimal sufficient state, and then reduces that state to transferable macroscopic plasticity over finite strain.",
       "refs": [
         "R10",
@@ -226,10 +232,10 @@
     {
       "id": "R16",
       "role": "dislocation-flow evolutionary homogenization",
-      "label": "Bonicatto & Rindler, Homogenization of elasto-plastic evolutions driven by the flow of dislocations (2024; revised 2025)",
+      "label": "Bonicatto, Rindler & Turnbull, Homogenisation of elasto-plastic evolutions driven by the flow of dislocations (2024; revised 28 October 2026, arXiv v3)",
       "url": "https://arxiv.org/abs/2410.02906",
       "publication_status": "Preprint",
-      "publication_status_checked": "2026-10-21"
+      "publication_status_checked": "2026-11-10"
     },
     {
       "id": "R17",
@@ -263,3 +269,4 @@
     "Multiscale"
   ]
 }
+

@@ -8,7 +8,7 @@
     "version": "1.0",
     "status": "public",
     "first_published": "2026-10-06",
-    "last_updated": "2026-10-21"
+    "last_updated": "2026-11-10"
   },
   "author": "Bo Ni · GenMech Lab",
   "author_url": "https://github.com/GenerativeMechanicsLab",
@@ -17,3 +17,4 @@
   "author_note": "an independent research initiative",
   "public_url": "https://generativemechanicslab.github.io/mechanics-open-problems/"
 }
+
