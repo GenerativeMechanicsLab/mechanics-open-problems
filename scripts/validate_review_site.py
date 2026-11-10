@@ -224,6 +224,48 @@ def main() -> int:
     if extra_views:
         fail(errors, f"unexpected view ids: {extra_views}")
 
+    # Families remain part of the canonical parent, with independently scoped claims.
+    family_records = 0
+    for item in manifest.get("first_release", []):
+        if item.get("status") != "use":
+            continue
+        problem = json.loads((ROOT / item["latest_source"]).read_text(encoding="utf-8"))
+        if not problem.get("subproblems"):
+            continue
+        parent = problem["id"]
+        if (problem["title"], problem["statement_version"]) != (item["title"], item["version"]):
+            fail(errors, f"{parent}: family title/version differs from canonical manifest")
+        references = problem.get("references", [])
+        ref_ids = [r["id"] for r in references]
+        if len(ref_ids) != len(set(ref_ids)):
+            fail(errors, f"{parent}: duplicate reference IDs")
+        for ref in references:
+            anchor = f'{parent}-ref-{ref["id"]}'
+            if anchor not in id_set:
+                fail(errors, f"{parent}: reference missing from HTML: {anchor}")
+            if not ref.get("publication_status") or not ref.get("publication_status_checked"):
+                fail(errors, f"{anchor}: missing publication-status check")
+        sub_ids = [s.get("id") for s in problem["subproblems"]]
+        if len(sub_ids) != len(set(sub_ids)):
+            fail(errors, f"{parent}: duplicate subproblem IDs")
+        required = ("branch", "title", "problem_statement", "why_it_matters", "model_and_scope",
+                    "known_results", "what_remains_open", "settlement_criterion",
+                    "scientific_status", "editorial_status", "last_reviewed", "progress_and_sources")
+        for sub in problem["subproblems"]:
+            sid = sub.get("id", "")
+            family_records += 1
+            if not sid.startswith(parent + "-") or sid not in id_set:
+                fail(errors, f"{parent}: invalid or missing public subproblem anchor: {sid}")
+            missing = [key for key in required if not sub.get(key)]
+            if missing:
+                fail(errors, f"{sid}: incomplete record: {missing}")
+            for result in sub.get("known_results", []):
+                if not result.get("text") or not result.get("evidence_type") or not result.get("refs"):
+                    fail(errors, f"{sid}: known result lacks text, evidence type, or sources")
+                unknown = set(result.get("refs", [])) - set(ref_ids)
+                if unknown:
+                    fail(errors, f"{sid}: unknown source IDs: {sorted(unknown)}")
+
     scripts = re.findall(r"<script\b[^>]*>(.*?)</script>", html, flags=re.I | re.S)
     node = shutil.which("node")
     if scripts and node:
@@ -251,6 +293,7 @@ def main() -> int:
     print("Public-release validation PASSED")
     print(f"Release status: {status}")
     print(f"Canonical problems: {len(canonical)}")
+    print(f"Scoped family records: {family_records}")
     print(f"View targets: {len(actual_views)}")
     print(f"HTML ids: {len(parser.ids)}")
     print(f"Fragment links: {len(fragment_links)}")

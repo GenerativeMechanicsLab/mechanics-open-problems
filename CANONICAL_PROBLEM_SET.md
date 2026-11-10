@@ -1,6 +1,6 @@
 # Canonical problem set
 
-**Canonical as of:** 11 October 2026
+**Canonical as of:** 10 November 2026
 
 This file is the authoritative roster for website assembly and future editorial work. It overrides stale prototype pages, early recency tables, and obsolete problem IDs when they conflict.
 
@@ -8,7 +8,7 @@ This file is the authoritative roster for website assembly and future editorial 
 
 | ID | Canonical title | Version | Authoritative source |
 |---|---|---:|---|
-| EL01 | How stable is Eshelby uniformity to shape imperfections? | 1.1 | `content/problems/EL01.json` |
+| EL01 | Eshelby uniformity: existence, rigidity, and stability | 2.0 | `content/problems/EL01.json` |
 | FR01 | What determines the attainable speed and first instability of a tensile crack? | 1.0 | `content/problems/FR01.json` |
 | DI02 | How does continuum plasticity emerge from the collective dynamics of dislocations? | 1.0 | `content/problems/DI02.json` |
 | PL01 | What selects the physical evolution after plasticity loses ellipticity? | 2.0 | `content/problems/PL01.json` |
@@ -25,6 +25,8 @@ This file is the authoritative roster for website assembly and future editorial 
 Version 1.0 has a mature page, but MT01 is held out of the first public release unless it is deliberately re-admitted after further sharpening.
 
 ## Supersession history
+
+- EL01 v1.1 quantitative stability → **EL01 v2.0 Eshelby uniformity: existence, rigidity, and stability**, with the original stability statement retained as S1. E0 and R0 are established baselines within the family, not additional catalogue entries.
 
 - DI01 v1 grain-boundary transmission → DI01 v2 high-speed velocity branches → **DI02 v1 continuum plasticity from collective dislocation dynamics**.
 - PL01 v1 shear-band width/evolution → **PL01 v2 post-loss-of-ellipticity physical evolution**.

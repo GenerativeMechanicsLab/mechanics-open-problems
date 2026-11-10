@@ -4,6 +4,15 @@ All notable public changes to **Open Problems in Mechanics** are recorded here.
 
 The project uses versioned public snapshots while remaining a living resource.
 
+## 10 November 2026 · Eshelby family, EL01 v2.0
+
+- Expanded EL01 into existence, rigidity, and stability, starting with established infinite-3D ellipsoidal existence and the all-loadings converse. Preserved the original quantitative stability content, history, URL, and section anchors.
+- Added nine consistently scoped records, separating known theorems, constrained results, numerical evidence, and formulations under review. The catalogue still has ten entries.
+- Incorporated half-plane, finite-body, periodic, and interface literature with publication labels and explicit limits; distinguished necessary conditions from sufficient existence and forward solutions from inverse constructions.
+- Added the source and claim review in `audit/ESHELBY_FAMILY_2026-11-10.md`; synchronized the canonical manifests, reference records, progress log, atlas label, catalogue description, and page.
+- Added compact technical disclosures that expand for printing. The site remains Version 1.0; EL01's statement version is 2.0, and first publication remains 6 October 2026.
+- Added family-record maintenance guidance and validation for complete records, source IDs, public anchors, and publication checks.
+
 ## 10 November 2026 — Monthly literature update
 
 - Updated DI02's existing homogenisation preprint citation to arXiv v3, including Turnbull and the 28 October revision date, and clarified its small-strain, rate-independent single-crystal scope.
@@ -62,4 +71,3 @@ The project uses versioned public snapshots while remaining a living resource.
 ## Public history baseline
 
 The publication repository begins from a minimal initialization commit and the curated v1.0 release-candidate snapshot. Internal drafting history and private research strategy are maintained separately and are not part of this public repository.
-

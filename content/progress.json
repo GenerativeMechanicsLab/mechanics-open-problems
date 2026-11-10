@@ -1,6 +1,26 @@
 [
   {
     "date": "2026-10",
+    "recorded_on": "2026-11-10",
+    "title": "Necessary restrictions for plane-deformation half-plane uniformity",
+    "text": "Lu, Zhang and Dai establish necessary conditions for a fixed flat free surface. These restrict admissible eigenstrain/stress pairs without proving universal nonexistence or existence of the exceptional cases.",
+    "refs": [
+      "EL01:R10"
+    ],
+    "problem_id": "EL01"
+  },
+  {
+    "date": "2026-06-30",
+    "recorded_on": "2026-11-10",
+    "title": "Interface compensation in a finite concentric spherical domain",
+    "text": "Wang and Schiavone obtain a uniformity condition involving a Steigmann–Ogden interface under free or clamped outer conditions. This is a distinct imperfect-interface model.",
+    "refs": [
+      "EL01:R13"
+    ],
+    "problem_id": "EL01"
+  },
+  {
+    "date": "2026-10",
     "problem_id": "AM02",
     "title": "Dendrite-scale observations resolve a distribution of crack-initiation strains",
     "text": "Dendrite-scale X-ray observations in a solidifying Fe–Mn–Cr–Ni–Si alloy show a spread of crack-initiation strains at similar temperatures. This provides an experimental constraint on temperature-only criteria, while the state variables controlling the spread and a Griffith-type advance/arrest law remain unresolved.",
@@ -129,4 +149,3 @@
     ]
   }
 ]
-

@@ -65,6 +65,12 @@ A curated entry is not a formal certification that a problem is globally open. M
 
 Corrections and counterexamples are first-class updates.
 
+## Problem families and source review
+
+Keep related subproblems inside their canonical parent unless a roster change is separately approved. Each subrecord must state its question, significance, model and scope, source-backed known results, remaining question, settlement criterion, scientific status, editorial status, review date, and progress. Give every known result an evidence type and reference IDs. State dimension, material assumptions, loading quantifiers, interface and boundary conditions, and admissible geometry explicitly.
+
+Check foundational papers as well as emerging results. Record the source version and access level in a dated audit note, including whether a claim was checked in full text or only in a publisher abstract. Keep theorem claims, necessary conditions, numerical constructions, and forward calculations distinct. An unsuccessful search does not certify that a question is open. Keep uncertain formulations under review and update only the affected records during monthly sweeps.
+
 ## Publication-status labels
 
 Recent-progress citations and their matching bibliography entries use quiet “Peer-reviewed article” or “Preprint” labels. Check the primary publication record before assigning or changing a label; an arXiv copy may also have a published journal version. Books, reports, and standards should retain their actual source type.
